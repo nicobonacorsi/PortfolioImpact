@@ -13,7 +13,7 @@ from castle_risk.public_server import PublicPortfolioServer
 ROOT = Path(__file__).resolve().parents[1]
 V4 = ROOT / "web" / "portfolio_impact_v4"
 SOURCE_BLOB_SHA = {
-    "app.js": "a44845aa2186fb721d6db8d2dfa54ae5b498be4c",
+    "app.js": "ee4ae85c895af977a10bff33c636e87c35c25f02",
     "index.html": "87555a1a76c78c4f17f3105f072c7a4441a35ce4",
     "styles.css": "06bebb08f649203b6ccd5a198570804ad81e1019",
     "workspace.css": "fb753af34ac3556558ff5793a1ae729c3dda86b3",
