@@ -1,45 +1,38 @@
 # Portfolio Impact
 
-**Scenario analysis for portfolios.**
+**Event-driven scenario analysis for investment portfolios.**
 
-Portfolio Impact connects stock and ETF holdings to dated economic and geopolitical events. It researches event probabilities, maps portfolio exposures, and estimates the value change associated with each defined outcome.
+Portfolio Impact connects stocks and ETFs to dated macroeconomic and geopolitical events, researches their probabilities and estimates portfolio-level outcomes. The interface puts the most consequential scenarios first and lets users inspect the event definition, supporting evidence and holding-level exposure.
 
 **[Launch Portfolio Impact in GitHub Codespaces](https://codespaces.new/nicobonacorsi/PortfolioImpact)**
 
-## Explore the application
+## Open the application
 
-1. Open the launch link and select **Create codespace**. The application starts automatically.
-2. Choose a recorded portfolio, or select **Edit portfolio** to enter stock and ETF positions or import a CSV.
-3. Explore the event list, ordered by modeled portfolio impact.
-4. Select an event and switch between **YES** and **NO** to compare its conditional portfolio outcomes.
-5. Expand **Definitions & sources** for the settlement rule, evidence, assumptions, ETF exposures, and calculation inputs.
+1. Select **Create codespace** from the link above. The Python environment is configured automatically and the private application port opens in your browser.
+2. On the connection screen, choose **Open Portfolio Impact** to explore recorded analyses without entering credentials.
+3. Select an example portfolio, or use **Edit portfolio** to enter holdings, dollar amounts and weights or import CSV data.
+4. Review events ranked by modeled portfolio impact. Open any event to compare **YES** and **NO** outcomes on the same evaluation date.
+5. Expand **Definitions & sources** for exact event terms, related prediction-market contracts, assumptions, ETF exposures and research provenance.
 
-Recorded examples are available without API keys. Researching a new portfolio uses Massive market data and Anthropic models, configured by the user in the connection screen; provider charges may apply.
+For a *new* portfolio, connect Massive market data and Anthropic research in the private connection screen. Provider charges may apply. Credentials are held in server memory, not committed to the repository; keep the Codespaces port **Private**.
 
-## Recorded portfolio
+## Included demonstration data
 
-The November 3, 2026 demonstration covers an illustrative **$100,000** portfolio:
+- A recorded $100,000 portfolio from October 30, 2026: XOM 20%, TSM 25%, LMT 15%, SPY 25%, TLT 15%.
+- A browser scenario collection containing, among other cases, an NVDA / QQQ / TLT portfolio and paired contract-outcome scenarios.
+- A November 2 research snapshot for LMT, SMH, EWJ and LQD, including modeled event probabilities and conditional portfolio outcomes.
 
-| Holding | Weight |
-| --- | ---: |
-| Nvidia (NVDA) | 30% |
-| Taiwan Semiconductor (TSM) | 25% |
-| Lockheed Martin (LMT) | 25% |
-| iShares 20+ Year Treasury Bond ETF (TLT) | 20% |
+Saved outcomes are reproducible *scenario calculations*, not realized investment returns. Probability intervals and market quotes are shown with their definitions and evidence status.
 
-The saved analysis includes eight dated events, probability estimates and uncertainty ranges, and paired YES/NO portfolio scenarios. Its evaluation window ends February 1, 2027.
+## What the system does
 
-For one Taiwan port-blockade scenario, the model reports a 5.69% event probability, with conditional portfolio changes of −$9,420 for YES and +$3,200 for NO, measured against a common future-date reference. These are **scenario model outputs**, not observed returns or a claim of calibrated predictive accuracy.
-
-## Analysis workflow
-
-| Stage | Capability |
+| Stage | Function |
 | --- | --- |
-| Holdings | Resolve tickers, values, ETF constituents, and overlapping exposures. |
-| Discovery | Identify economic and geopolitical events relevant to the actual portfolio. |
-| Probability | Inspect dated research and related Kalshi or Polymarket contracts; distinguish matched market quotes from model estimates. |
-| Impact | Construct event-outcome return assumptions, calculate holding-level contributions, and aggregate portfolio-dollar scenarios on one comparison date. |
-| Inspection | Expose event definitions, market evidence, timestamps, uncertainty ranges, and model inputs. |
+| Portfolio | Resolve positions, ETF constituents and overlapping issuer exposures. |
+| Event discovery | Identify dated economic, regulatory and geopolitical scenarios relevant to the holdings. |
+| Probability | Compare the exact event question with prediction-market contract terms; use a modeled estimate when appropriate. |
+| Conditional impact | Model each outcome's holding-level changes and aggregate them into portfolio-dollar effects at a common endpoint. |
+| Inspection | Show the event trigger, venue and source information, estimation inputs and calculation details. |
 
 ## Run locally
 
@@ -51,13 +44,16 @@ For one Taiwan port-blockade scenario, the model reports a 5.69% event probabili
 bash scripts/start_v4_codespaces.sh --open
 ```
 
-Open `http://127.0.0.1:8765`. To run the regression suite:
+The local application runs at `http://127.0.0.1:8765`.
+
+Run the Python test suite:
 
 ```bash
+python -m pip install -r requirements-lock.txt
 python -m pytest -q
 ```
 
-Source: [analysis engine](castle_risk/) · [browser interface](web/portfolio_impact_v4/) · [tests](tests/) · [technical notes](docs/TECHNICAL_NOTES.md) · [original assignment](docs/CASTLE_ORIGINAL_ASSIGNMENT.md)
+Project files: [analysis engine](castle_risk/) · [application UI](web/portfolio_impact_v4/) · [test suite](tests/) · [methodology](docs/TECHNICAL_NOTES.md) · [assessment brief](docs/CASTLE_ORIGINAL_ASSIGNMENT.md).
 
 ---
 

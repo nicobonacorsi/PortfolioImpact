@@ -1,0 +1,724 @@
+{
+  "event_study": {
+    "close_to_close": true,
+    "event_dates_n": 31,
+    "fit_predictor": "Kalshi-ladder first-release surprise, units 100,000 jobs",
+    "fits": {
+      "DBC": {
+        "admitted_as_forecast": false,
+        "beats_zero_and_training_mean_on_holdout": false,
+        "intercept_fraction": -0.0044327496737152266,
+        "limitation": "Daily returns contain unrelated news. Kalshi-ladder expected jobs differ from economist consensus. Neither the regression nor the holdout identifies a causal future outcome gap.",
+        "mechanical_screen_passed": false,
+        "slope_fraction_per_100k_jobs": 0.001980645690652782,
+        "slope_hc3_normal_95": [
+          -0.00677208366196986,
+          0.010733375043275425
+        ],
+        "slope_hc3_standard_error": 0.0044657603005274875,
+        "slope_interval_excludes_zero": false,
+        "status": "DESCRIPTIVE_EVENT_DAY_REGRESSION",
+        "test_first": "2026-01-09",
+        "test_last": "2026-10-02",
+        "test_n": 9,
+        "test_rmse_fraction": {
+          "regression": 0.017449469457413106,
+          "training_mean": 0.016297162923815705,
+          "zero": 0.01501582519877755
+        },
+        "train_first": "2023-11-03",
+        "train_last": "2025-12-16",
+        "train_n": 22
+      },
+      "GLD": {
+        "admitted_as_forecast": false,
+        "beats_zero_and_training_mean_on_holdout": true,
+        "intercept_fraction": -0.0003347467853884157,
+        "limitation": "Daily returns contain unrelated news. Kalshi-ladder expected jobs differ from economist consensus. Neither the regression nor the holdout identifies a causal future outcome gap.",
+        "mechanical_screen_passed": false,
+        "slope_fraction_per_100k_jobs": -0.005973153426202342,
+        "slope_hc3_normal_95": [
+          -0.01493939471520853,
+          0.0029930878628038468
+        ],
+        "slope_hc3_standard_error": 0.004574696963684414,
+        "slope_interval_excludes_zero": false,
+        "status": "DESCRIPTIVE_EVENT_DAY_REGRESSION",
+        "test_first": "2026-01-09",
+        "test_last": "2026-10-02",
+        "test_n": 9,
+        "test_rmse_fraction": {
+          "regression": 0.015272688637772844,
+          "training_mean": 0.01803750825668531,
+          "zero": 0.017734048055213888
+        },
+        "train_first": "2023-11-03",
+        "train_last": "2025-12-16",
+        "train_n": 22
+      },
+      "HYG": {
+        "admitted_as_forecast": false,
+        "beats_zero_and_training_mean_on_holdout": false,
+        "intercept_fraction": -0.0005727664045375722,
+        "limitation": "Daily returns contain unrelated news. Kalshi-ladder expected jobs differ from economist consensus. Neither the regression nor the holdout identifies a causal future outcome gap.",
+        "mechanical_screen_passed": false,
+        "slope_fraction_per_100k_jobs": -0.0019785179733069953,
+        "slope_hc3_normal_95": [
+          -0.0057436474755386486,
+          0.001786611528924658
+        ],
+        "slope_hc3_standard_error": 0.001921019739102614,
+        "slope_interval_excludes_zero": false,
+        "status": "DESCRIPTIVE_EVENT_DAY_REGRESSION",
+        "test_first": "2026-01-09",
+        "test_last": "2026-10-02",
+        "test_n": 9,
+        "test_rmse_fraction": {
+          "regression": 0.0033205011077166095,
+          "training_mean": 0.0027917111262604575,
+          "zero": 0.0027474176287755623
+        },
+        "train_first": "2023-11-03",
+        "train_last": "2025-12-16",
+        "train_n": 22
+      },
+      "SPY": {
+        "admitted_as_forecast": false,
+        "beats_zero_and_training_mean_on_holdout": true,
+        "intercept_fraction": -0.0013674716865671864,
+        "limitation": "Daily returns contain unrelated news. Kalshi-ladder expected jobs differ from economist consensus. Neither the regression nor the holdout identifies a causal future outcome gap.",
+        "mechanical_screen_passed": false,
+        "slope_fraction_per_100k_jobs": -0.0005519383282715226,
+        "slope_hc3_normal_95": [
+          -0.013112718452642589,
+          0.012008841796099543
+        ],
+        "slope_hc3_standard_error": 0.006408679048925848,
+        "slope_interval_excludes_zero": false,
+        "status": "DESCRIPTIVE_EVENT_DAY_REGRESSION",
+        "test_first": "2026-01-09",
+        "test_last": "2026-10-02",
+        "test_n": 9,
+        "test_rmse_fraction": {
+          "regression": 0.010639185161765744,
+          "training_mean": 0.010704058545161375,
+          "zero": 0.010845088289500827
+        },
+        "train_first": "2023-11-03",
+        "train_last": "2025-12-16",
+        "train_n": 22
+      },
+      "USO": {
+        "admitted_as_forecast": false,
+        "beats_zero_and_training_mean_on_holdout": false,
+        "intercept_fraction": -0.00935732963989329,
+        "limitation": "Daily returns contain unrelated news. Kalshi-ladder expected jobs differ from economist consensus. Neither the regression nor the holdout identifies a causal future outcome gap.",
+        "mechanical_screen_passed": false,
+        "slope_fraction_per_100k_jobs": 0.005441968230557579,
+        "slope_hc3_normal_95": [
+          -0.009436673506213505,
+          0.02032060996732866
+        ],
+        "slope_hc3_standard_error": 0.007591283234861413,
+        "slope_interval_excludes_zero": false,
+        "status": "DESCRIPTIVE_EVENT_DAY_REGRESSION",
+        "test_first": "2026-01-09",
+        "test_last": "2026-10-02",
+        "test_n": 9,
+        "test_rmse_fraction": {
+          "regression": 0.05056954974627363,
+          "training_mean": 0.04742680336090052,
+          "zero": 0.0448844080269999
+        },
+        "train_first": "2023-11-03",
+        "train_last": "2025-12-16",
+        "train_n": 22
+      },
+      "UUP": {
+        "admitted_as_forecast": false,
+        "beats_zero_and_training_mean_on_holdout": false,
+        "intercept_fraction": -0.00036469477783770607,
+        "limitation": "Daily returns contain unrelated news. Kalshi-ladder expected jobs differ from economist consensus. Neither the regression nor the holdout identifies a causal future outcome gap.",
+        "mechanical_screen_passed": false,
+        "slope_fraction_per_100k_jobs": 0.006013891562660844,
+        "slope_hc3_normal_95": [
+          0.0011724742069943875,
+          0.0108553089183273
+        ],
+        "slope_hc3_standard_error": 0.0024701562854496,
+        "slope_interval_excludes_zero": true,
+        "status": "DESCRIPTIVE_EVENT_DAY_REGRESSION",
+        "test_first": "2026-01-09",
+        "test_last": "2026-10-02",
+        "test_n": 9,
+        "test_rmse_fraction": {
+          "regression": 0.004439865754227836,
+          "training_mean": 0.0036459269148109187,
+          "zero": 0.003535223371801422
+        },
+        "train_first": "2023-11-03",
+        "train_last": "2025-12-16",
+        "train_n": 22
+      },
+      "VWO": {
+        "admitted_as_forecast": false,
+        "beats_zero_and_training_mean_on_holdout": false,
+        "intercept_fraction": -0.0007621774276364723,
+        "limitation": "Daily returns contain unrelated news. Kalshi-ladder expected jobs differ from economist consensus. Neither the regression nor the holdout identifies a causal future outcome gap.",
+        "mechanical_screen_passed": false,
+        "slope_fraction_per_100k_jobs": -0.005581087365228491,
+        "slope_hc3_normal_95": [
+          -0.01647978623273238,
+          0.005317611502275401
+        ],
+        "slope_hc3_standard_error": 0.005560662825169973,
+        "slope_interval_excludes_zero": false,
+        "status": "DESCRIPTIVE_EVENT_DAY_REGRESSION",
+        "test_first": "2026-01-09",
+        "test_last": "2026-10-02",
+        "test_n": 9,
+        "test_rmse_fraction": {
+          "regression": 0.014473980486333702,
+          "training_mean": 0.014167147791076815,
+          "zero": 0.014153384442282674
+        },
+        "train_first": "2023-11-03",
+        "train_last": "2025-12-16",
+        "train_n": 22
+      }
+    },
+    "market_symbols": [
+      "DBC",
+      "GLD",
+      "HYG",
+      "SPY",
+      "USO",
+      "UUP",
+      "VWO"
+    ],
+    "not_a_calibrated_outcome_return_gap": true,
+    "observations": [
+      {
+        "date": "2023-11-03",
+        "return_fraction_by_symbol": {
+          "DBC": -0.0052398226521563895,
+          "GLD": 0.0036389311318705264,
+          "HYG": 0.009770660876645465,
+          "SPY": 0.00912340978735271,
+          "USO": -0.017458650564452727,
+          "UUP": -0.00936768149882905,
+          "VWO": 0.018298969072164883
+        },
+        "surprise_jobs": -49000.00000000003
+      },
+      {
+        "date": "2023-12-08",
+        "return_fraction_by_symbol": {
+          "DBC": 0.004366812227074357,
+          "GLD": -0.013340419877757248,
+          "HYG": -0.0019734245494014147,
+          "SPY": 0.004299151081334607,
+          "USO": 0.021809245891568185,
+          "UUP": 0.0037478705281090985,
+          "VWO": -0.004949269982677418
+        },
+        "surprise_jobs": 10000.0
+      },
+      {
+        "date": "2024-02-02",
+        "return_fraction_by_symbol": {
+          "DBC": -0.011332728921124247,
+          "GLD": -0.00945328501654319,
+          "HYG": -0.004513799329378454,
+          "SPY": 0.010527391659852947,
+          "USO": -0.022585782539452537,
+          "UUP": 0.009028530155290815,
+          "VWO": -0.007015785517413997
+        },
+        "surprise_jobs": 155401.0
+      },
+      {
+        "date": "2024-03-08",
+        "return_fraction_by_symbol": {
+          "DBC": -0.003147482014388303,
+          "GLD": 0.00845253576072813,
+          "HYG": 0.00025846471956580963,
+          "SPY": -0.006002214409199347,
+          "USO": -0.011720328708069605,
+          "UUP": 0.0003601008282319018,
+          "VWO": -0.0016734401147502354
+        },
+        "surprise_jobs": 46981.0
+      },
+      {
+        "date": "2024-04-05",
+        "return_fraction_by_symbol": {
+          "DBC": 0.005078290308929478,
+          "GLD": 0.017114220877458175,
+          "HYG": -0.0009103914683314951,
+          "SPY": 0.010446917574599812,
+          "USO": 0.001580162878327629,
+          "UUP": 0.0010596962204167948,
+          "VWO": 0.003095975232197956
+        },
+        "surprise_jobs": 80250.0
+      },
+      {
+        "date": "2024-05-03",
+        "return_fraction_by_symbol": {
+          "DBC": 0.0012998266897747968,
+          "GLD": -0.0007976352460938863,
+          "HYG": 0.004168837936425085,
+          "SPY": 0.01239530324931204,
+          "USO": -0.01053602001843823,
+          "UUP": -0.002784545770971203,
+          "VWO": 0.008786127167630164
+        },
+        "surprise_jobs": -62285.0
+      },
+      {
+        "date": "2024-06-07",
+        "return_fraction_by_symbol": {
+          "DBC": -0.01429190125595492,
+          "GLD": -0.03568336143644901,
+          "HYG": -0.0025943702166300042,
+          "SPY": -0.001215725881868801,
+          "USO": -0.003276003276003414,
+          "UUP": 0.008412197686645584,
+          "VWO": -0.008260670032124828
+        },
+        "surprise_jobs": 94750.0
+      },
+      {
+        "date": "2024-07-05",
+        "return_fraction_by_symbol": {
+          "DBC": 0.003799071338117299,
+          "GLD": 0.013486857195284196,
+          "HYG": 0.0029792746113990187,
+          "SPY": 0.005766510717005735,
+          "USO": 0.0004921865386982027,
+          "UUP": -0.0034506556245686992,
+          "VWO": -0.00022386389075457203
+        },
+        "surprise_jobs": 15180.0
+      },
+      {
+        "date": "2024-08-02",
+        "return_fraction_by_symbol": {
+          "DBC": -0.018377409233527597,
+          "GLD": -0.0019045931700403251,
+          "HYG": -0.003335043612108679,
+          "SPY": -0.018618441649325135,
+          "USO": -0.038012845720277966,
+          "UUP": -0.01004851004851004,
+          "VWO": -0.010789715335169814
+        },
+        "surprise_jobs": -61130.0
+      },
+      {
+        "date": "2024-09-06",
+        "return_fraction_by_symbol": {
+          "DBC": -0.013450834879406237,
+          "GLD": -0.007402625349687941,
+          "HYG": -0.0012619888944976898,
+          "SPY": -0.01683011590036576,
+          "USO": -0.013735870653884596,
+          "UUP": 0.001421464108031234,
+          "VWO": -0.014499320344358857
+        },
+        "surprise_jobs": -19250.0
+      },
+      {
+        "date": "2024-10-04",
+        "return_fraction_by_symbol": {
+          "DBC": 0.0025884383088869978,
+          "GLD": -0.001996007984031989,
+          "HYG": -0.0011293763332915763,
+          "SPY": 0.009087386847944634,
+          "USO": 0.008186980060741922,
+          "UUP": 0.00561206594177488,
+          "VWO": 0.012172477821332794
+        },
+        "surprise_jobs": 103160.0
+      },
+      {
+        "date": "2024-11-01",
+        "return_fraction_by_symbol": {
+          "DBC": -0.010624169986719667,
+          "GLD": -0.004102402272099681,
+          "HYG": -0.004927975739196344,
+          "SPY": 0.004220596510973618,
+          "USO": -0.014504652435686993,
+          "UUP": 0.004109589041095818,
+          "VWO": 0.000214730513205863
+        },
+        "surprise_jobs": -116860.0
+      },
+      {
+        "date": "2024-12-06",
+        "return_fraction_by_symbol": {
+          "DBC": -0.007699275362318736,
+          "GLD": 0.00037058387548372096,
+          "HYG": 0.0016296853453681148,
+          "SPY": 0.0018956252266508766,
+          "USO": -0.017210018189450227,
+          "UUP": 0.0026800670016748906,
+          "VWO": 0.00043140638481453664
+        },
+        "surprise_jobs": -4000.0
+      },
+      {
+        "date": "2025-01-10",
+        "return_fraction_by_symbol": {
+          "DBC": 0.026876737720111343,
+          "GLD": 0.009558285202960981,
+          "HYG": -0.005193818089688329,
+          "SPY": -0.01526743456207913,
+          "USO": 0.04320827943078909,
+          "UUP": 0.005065856129685908,
+          "VWO": -0.01744319485884782
+        },
+        "surprise_jobs": 62375.0
+      },
+      {
+        "date": "2025-03-07",
+        "return_fraction_by_symbol": {
+          "DBC": 0.008731617647058654,
+          "GLD": 0.0005219012115562638,
+          "HYG": 0.0016389309127584628,
+          "SPY": 0.005604930942361586,
+          "USO": 0.013496415014761842,
+          "UUP": -0.003160112359550604,
+          "VWO": 0.004151190736290111
+        },
+        "surprise_jobs": 22250.0
+      },
+      {
+        "date": "2025-04-04",
+        "return_fraction_by_symbol": {
+          "DBC": -0.03633854645814161,
+          "GLD": -0.023392221213602404,
+          "HYG": -0.014254526775394849,
+          "SPY": -0.05854294764300372,
+          "USO": -0.05993079584775085,
+          "UUP": 0.011091234347048395,
+          "VWO": -0.05601613264620209
+        },
+        "surprise_jobs": 89500.0
+      },
+      {
+        "date": "2025-05-02",
+        "return_fraction_by_symbol": {
+          "DBC": 0.004354136429608024,
+          "GLD": 0.0017481342029181945,
+          "HYG": 0.0030651340996170617,
+          "SPY": 0.014844127706054033,
+          "USO": -0.007904525728456124,
+          "UUP": -0.0014508523757706948,
+          "VWO": 0.02675215564890565
+        },
+        "surprise_jobs": 49000.0
+      },
+      {
+        "date": "2025-06-06",
+        "return_fraction_by_symbol": {
+          "DBC": 0.007914338919925434,
+          "GLD": -0.01341609284582801,
+          "HYG": -0.00012608750472831165,
+          "SPY": 0.010268948655256738,
+          "USO": 0.020735020735020537,
+          "UUP": 0.00512820512820511,
+          "VWO": 0.004372267332916957
+        },
+        "surprise_jobs": -1025.6035113387043
+      },
+      {
+        "date": "2025-07-03",
+        "return_fraction_by_symbol": {
+          "DBC": -0.00044863167339603827,
+          "GLD": -0.006822958771220744,
+          "HYG": 0.0006225099601595563,
+          "SPY": 0.007881376420340036,
+          "USO": -0.005291705252017498,
+          "UUP": 0.004841713221601429,
+          "VWO": 0.004417670682731023
+        },
+        "surprise_jobs": 55750.0
+      },
+      {
+        "date": "2025-08-01",
+        "return_fraction_by_symbol": {
+          "DBC": -0.01603563474387526,
+          "GLD": 0.02029970953261162,
+          "HYG": -0.004976362279173863,
+          "SPY": -0.016390330337931913,
+          "USO": -0.02676215604975507,
+          "UUP": -0.011827956989247213,
+          "VWO": -0.005220883534136522
+        },
+        "surprise_jobs": -49924.01960784313
+      },
+      {
+        "date": "2025-09-05",
+        "return_fraction_by_symbol": {
+          "DBC": -0.00810445745159838,
+          "GLD": 0.013345985490832435,
+          "HYG": 0.0004948657676606683,
+          "SPY": -0.002896228740448592,
+          "USO": -0.020895119978430965,
+          "UUP": -0.005083514887436524,
+          "VWO": 0.01148306734137794
+        },
+        "surprise_jobs": -54000.0
+      },
+      {
+        "date": "2025-12-16",
+        "return_fraction_by_symbol": {
+          "DBC": -0.010083296799649255,
+          "GLD": 0.00022738756947937588,
+          "HYG": 0.0006202704379107971,
+          "SPY": -0.0027323608479132844,
+          "USO": -0.02533510089851232,
+          "UUP": -0.0010741138560688146,
+          "VWO": -0.005578281889178194
+        },
+        "surprise_jobs": 4250.000000000007
+      },
+      {
+        "date": "2026-01-09",
+        "return_fraction_by_symbol": {
+          "DBC": 0.0008741258741258306,
+          "GLD": 0.007241974288561215,
+          "HYG": 0.000741289844329085,
+          "SPY": 0.006613392119041217,
+          "USO": 0.0034023249220300755,
+          "UUP": 0.002200220022002153,
+          "VWO": 0.002169589585969911
+        },
+        "surprise_jobs": -34075.0
+      },
+      {
+        "date": "2026-02-11",
+        "return_fraction_by_symbol": {
+          "DBC": 0.00952775476387746,
+          "GLD": 0.01131055363321809,
+          "HYG": -0.00012370113805049154,
+          "SPY": -0.00023117378489279083,
+          "USO": 0.011021402024862237,
+          "UUP": 0.0011194029850745135,
+          "VWO": 0.008619203585588764
+        },
+        "surprise_jobs": 89742.80087882109
+      },
+      {
+        "date": "2026-03-06",
+        "return_fraction_by_symbol": {
+          "DBC": 0.03733031674208154,
+          "GLD": 0.01583249308132917,
+          "HYG": -0.004870129870129913,
+          "SPY": -0.013107102493725264,
+          "USO": 0.12937389679161027,
+          "UUP": -0.0003639010189229186,
+          "VWO": -0.006927985414767579
+        },
+        "surprise_jobs": -149725.0
+      },
+      {
+        "date": "2026-05-08",
+        "return_fraction_by_symbol": {
+          "DBC": 0.0016528925619834212,
+          "GLD": 0.0048415492957745165,
+          "HYG": 0.003506135737540772,
+          "SPY": 0.008256103228628353,
+          "USO": -0.01022449433207373,
+          "UUP": -0.002553812477198103,
+          "VWO": 0.00548081714001003
+        },
+        "surprise_jobs": 53725.0
+      },
+      {
+        "date": "2026-06-05",
+        "return_fraction_by_symbol": {
+          "DBC": -0.021753681392235547,
+          "GLD": -0.03654533518126768,
+          "HYG": -0.005010647626205622,
+          "SPY": -0.025809348954549782,
+          "USO": -0.027204914436156247,
+          "UUP": 0.006465517241379226,
+          "VWO": -0.037804675841485724
+        },
+        "surprise_jobs": 79600.0
+      },
+      {
+        "date": "2026-07-02",
+        "return_fraction_by_symbol": {
+          "DBC": 0.004536862003780673,
+          "GLD": 0.02031840259039397,
+          "HYG": 0.0015077271013945737,
+          "SPY": -0.0013140956876207532,
+          "USO": 0.006875181562893573,
+          "UUP": -0.005265005265005174,
+          "VWO": -0.003039513677811523
+        },
+        "surprise_jobs": -70422.89633082517
+      },
+      {
+        "date": "2026-08-07",
+        "return_fraction_by_symbol": {
+          "DBC": 0.0017325017325018344,
+          "GLD": 0.022583211435317052,
+          "HYG": 0.0018877422602567862,
+          "SPY": 0.006115332570001186,
+          "USO": -0.007487170858921477,
+          "UUP": -0.004256828662646317,
+          "VWO": 0.008505670446964597
+        },
+        "surprise_jobs": -96025.0
+      },
+      {
+        "date": "2026-09-04",
+        "return_fraction_by_symbol": {
+          "DBC": -0.001877346683354264,
+          "GLD": -0.00841012139827424,
+          "HYG": -0.000631233430122391,
+          "SPY": -0.0038542623226456296,
+          "USO": -0.0009149130832570851,
+          "UUP": 0.002499107461620742,
+          "VWO": 0.0073782587309394465
+        },
+        "surprise_jobs": 121775.0
+      },
+      {
+        "date": "2026-10-02",
+        "return_fraction_by_symbol": {
+          "DBC": -0.006412213740458084,
+          "GLD": -0.006845020378304922,
+          "HYG": 0.00013003901170338672,
+          "SPY": 0.007395384756345047,
+          "USO": -0.017664311425143353,
+          "UUP": -0.0024171270718231774,
+          "VWO": 0.008978485515839463
+        },
+        "surprise_jobs": -59300.0
+      }
+    ],
+    "return_source": "Massive split-adjusted, not dividend-adjusted, one-day ETF closes on release dates",
+    "status": "EXPLORATORY_HISTORICAL_ASSOCIATION_NOT_CAUSAL",
+    "training_before": "2026-01-01"
+  },
+  "provenance": {
+    "DBC": {
+      "daily_closes": 753,
+      "first": "2023-10-31",
+      "last": "2026-10-30",
+      "observation_type": "HTTPS split-adjusted daily close, excludes dividends; not intraday",
+      "provider": "Massive",
+      "query": "adjusted=true&sort=asc&limit=50000",
+      "raw_response_sha256": "27a50cfeb80450968f492e2f78a0ad55faf7fc219fd71c2ab15098da757d19ad",
+      "response_metadata_sha256": "06c4c47414c985e2b3e6e090878e07d29ff991b511fa352312d86aa6d5dd9317",
+      "retrieved_at": "2026-10-31T23:10:18.104341+00:00",
+      "source_path": "/v2/aggs/ticker/DBC/range/1/day/2023-10-31/2026-10-30",
+      "ticker": "DBC"
+    },
+    "GLD": {
+      "daily_closes": 753,
+      "first": "2023-10-31",
+      "last": "2026-10-30",
+      "observation_type": "HTTPS split-adjusted daily close, excludes dividends; not intraday",
+      "provider": "Massive",
+      "query": "adjusted=true&sort=asc&limit=50000",
+      "raw_response_sha256": "05c8d6fdfca2d4148ae31366db5b8f20dc755288fa0907c625a010e20c7d9315",
+      "response_metadata_sha256": "27aee3bbe31eb8cec4717a8e4dd3f9aa69bad0fa2741b9df9632d6547625343b",
+      "retrieved_at": "2026-10-31T23:10:20.983894+00:00",
+      "source_path": "/v2/aggs/ticker/GLD/range/1/day/2023-10-31/2026-10-30",
+      "ticker": "GLD"
+    },
+    "HYG": {
+      "daily_closes": 753,
+      "first": "2023-10-31",
+      "last": "2026-10-30",
+      "observation_type": "HTTPS split-adjusted daily close, excludes dividends; not intraday",
+      "provider": "Massive",
+      "query": "adjusted=true&sort=asc&limit=50000",
+      "raw_response_sha256": "12285add7365b143fe85c4428dfbdd10e9fec80903770902d2f456f0c2bf94cd",
+      "response_metadata_sha256": "1e2d36a8a782411b6dccc5508b4d8df3f97a8b221c7ef061ce99136bd9607e37",
+      "retrieved_at": "2026-10-31T23:10:23.802326+00:00",
+      "source_path": "/v2/aggs/ticker/HYG/range/1/day/2023-10-31/2026-10-30",
+      "ticker": "HYG"
+    },
+    "SPY": {
+      "daily_closes": 753,
+      "first": "2023-10-31",
+      "last": "2026-10-30",
+      "observation_type": "HTTPS split-adjusted daily close, excludes dividends; not intraday",
+      "provider": "Massive",
+      "query": "adjusted=true&sort=asc&limit=50000",
+      "raw_response_sha256": "e280da1fb58c01dbc4ed1db6795fec32fce2cb02c7a2025da623aa996c025a9e",
+      "response_metadata_sha256": "950d921fff66d62cb702210c375592740da68ee7e69a9f41b24f8a056c385cb0",
+      "retrieved_at": "2026-10-31T23:10:03.189153+00:00",
+      "source_path": "/v2/aggs/ticker/SPY/range/1/day/2023-10-31/2026-10-30",
+      "ticker": "SPY"
+    },
+    "USO": {
+      "daily_closes": 753,
+      "first": "2023-10-31",
+      "last": "2026-10-30",
+      "observation_type": "HTTPS split-adjusted daily close, excludes dividends; not intraday",
+      "provider": "Massive",
+      "query": "adjusted=true&sort=asc&limit=50000",
+      "raw_response_sha256": "6ecc08d18ef78418098d5ea09c6c2e0bf70e78eeb6bcc3555a21b92db69c04c8",
+      "response_metadata_sha256": "1958dba32241e21d2df8858f76c84a721d626a033dd3b7d2fdf354a60b4b9bd4",
+      "retrieved_at": "2026-10-31T23:10:14.862155+00:00",
+      "source_path": "/v2/aggs/ticker/USO/range/1/day/2023-10-31/2026-10-30",
+      "ticker": "USO"
+    },
+    "UUP": {
+      "daily_closes": 753,
+      "first": "2023-10-31",
+      "last": "2026-10-30",
+      "observation_type": "HTTPS split-adjusted daily close, excludes dividends; not intraday",
+      "provider": "Massive",
+      "query": "adjusted=true&sort=asc&limit=50000",
+      "raw_response_sha256": "59b23564e3564b5c42250b9670d446541156f007a2a9ddb019c2a2d702194206",
+      "response_metadata_sha256": "9e56da04f4eedfa315f613574c1760aecba9e666c38609d27a0da3bf50267f8e",
+      "retrieved_at": "2026-10-31T23:10:30.602032+00:00",
+      "source_path": "/v2/aggs/ticker/UUP/range/1/day/2023-10-31/2026-10-30",
+      "ticker": "UUP"
+    },
+    "VWO": {
+      "daily_closes": 753,
+      "first": "2023-10-31",
+      "last": "2026-10-30",
+      "observation_type": "HTTPS split-adjusted daily close, excludes dividends; not intraday",
+      "provider": "Massive",
+      "query": "adjusted=true&sort=asc&limit=50000",
+      "raw_response_sha256": "20cec92bfacd914ecf20b915651ad97340f0830707f22c4979e6a193a8b5086d",
+      "response_metadata_sha256": "5da744b947b4cbcc4ed26598662789cb82271652a1486348b4103daf7147512b",
+      "retrieved_at": "2026-10-31T23:10:34.221529+00:00",
+      "source_path": "/v2/aggs/ticker/VWO/range/1/day/2023-10-31/2026-10-30",
+      "ticker": "VWO"
+    },
+    "kalshi_tape": {
+      "expectation": "Kalshi implied, not economists' consensus",
+      "path": "data/payrolls/payroll_surprise_tape.json",
+      "sha256": "88a5a3b4c481ca7f04e9a6c9ecf01e374513ceef89fabce4e886742a3072cfa6",
+      "source": "Existing reconstructed Kalshi public pre-release market ladders"
+    }
+  },
+  "reference_class": {
+    "count": 3,
+    "definition": "First-release payroll jobs at least 100,000 below the market expectation reconstructed from Kalshi pre-release ladders",
+    "denominator": 39,
+    "forecast_probability": null,
+    "not_equivalent_to": "A specific future payroll release at least 100,000 below economists' consensus",
+    "observed_frequency": 0.07692307692307693,
+    "source_expectation_method": "Kalshi traded-strike survival ladder, with explicit tail interpolation",
+    "status": "HISTORICAL_REFERENCE_CLASS_NOT_TARGET_PROBABILITY",
+    "wilson_95": [
+      0.02650739530377974,
+      0.2032107116795499
+    ]
+  },
+  "schema": "castle.empirical_payroll_context.v1",
+  "used_in_portfolio_pnl": false
+}

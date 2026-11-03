@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+runtime/
+*.egg-info/
+build/
+dist/
+
+# User-installed fonts from the owner-provided reference are never redistributed.
+static/fonts/*.woff2
+_pytest_castle_local/
+.streamlit/secrets.toml
+
+# Full offline Windows binary distribution is a release asset, not Git history.
+wheelhouse/
+*.zip
+artifacts/
+# User-specific provider response archives, snapshots and reports.
+*_existing_capture_for_import.zip
+
+# A6 contains licensed-derived local research; keep it out of public repos.
+data/a6_research_private/
+runtime/a6_private_replay/
+
+# A7 private derived research. Audit hashes are available inside internal ZIP only.
+data/a7_internal_private/

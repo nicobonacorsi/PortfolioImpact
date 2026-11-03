@@ -1,0 +1,3588 @@
+{
+ "events": [
+  {
+   "actual": 256000.0,
+   "event_ticker": "KXPAYROLLS-24DEC",
+   "excluded_reason": null,
+   "expected": 193625.0,
+   "ladder": [
+    {
+     "candle_sha256": "d3d504e04110ff9f7f9c8a0572f063e75046cceadc50bd0950d3821fe5eefa3e",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 156.0,
+     "minutes_before_cutoff": 11.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-24DEC-T100000"
+    },
+    {
+     "candle_sha256": "db8c7597c34ee46e8d3dee38df6b84e4f43287667472d10a39ee12eb891d6bb7",
+     "fitted_survival": 0.77,
+     "last_trade_price": 0.77,
+     "minute_volume": 447.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-24DEC-T150000"
+    },
+    {
+     "candle_sha256": "4a444794c460bf3f845bb5ad944aa845bc4e45fa33a6bdf07c5f8f1f9aa1539f",
+     "fitted_survival": 0.37,
+     "last_trade_price": 0.37,
+     "minute_volume": 40.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-24DEC-T200000"
+    },
+    {
+     "candle_sha256": "2dfe600215a26fb4f3c328ee7d173933b27ca88868374c463115712b9f3c502d",
+     "fitted_survival": 0.22,
+     "last_trade_price": 0.22,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 227000.0,
+     "ticker": "KXPAYROLLS-24DEC-T227000"
+    },
+    {
+     "candle_sha256": "0cd7e28cbbc04c0c6279f66614abe8f38ea0d649b6191b5364568b861d412416",
+     "fitted_survival": 0.12,
+     "last_trade_price": 0.12,
+     "minute_volume": 1200.0,
+     "minutes_before_cutoff": 9.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-24DEC-T250000"
+    },
+    {
+     "candle_sha256": "a664d6efff1c594f6b091e27c499eabb0d2bf05e7e10e13cba06e29bc5c4dff5",
+     "fitted_survival": 0.11,
+     "last_trade_price": 0.11,
+     "minute_volume": 28.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": 300000.0,
+     "ticker": "KXPAYROLLS-24DEC-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2024-12",
+   "release_date": "2025-01-10",
+   "strikes_used": 6,
+   "surprise": 62375.0
+  },
+  {
+   "actual": 227000.0,
+   "event_ticker": "KXPAYROLLS-24NOV",
+   "excluded_reason": null,
+   "expected": 231000.0,
+   "ladder": [
+    {
+     "candle_sha256": "d1674b38b070af256dce7864b89488a294f6efd09f6e3dc8b05f9e5872a57427",
+     "fitted_survival": 0.93,
+     "last_trade_price": 0.93,
+     "minute_volume": 150.0,
+     "minutes_before_cutoff": 10.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-24NOV-T100000"
+    },
+    {
+     "candle_sha256": "6a108fb1ce06e568189930d29e82a734b87a7b1516bdd162341a3d9cbb2e346d",
+     "fitted_survival": 0.89,
+     "last_trade_price": 0.89,
+     "minute_volume": 1250.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-24NOV-T150000"
+    },
+    {
+     "candle_sha256": "84524d0f0085e800be87113983a5278fb43addbe5545a00452c3262a2176c27a",
+     "fitted_survival": 0.75,
+     "last_trade_price": 0.75,
+     "minute_volume": 14.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-24NOV-T200000"
+    },
+    {
+     "candle_sha256": "93956d8de48c23b3fb6d4807dd5333b69add475294e5125311a23f42eca3bb92",
+     "fitted_survival": 0.39,
+     "last_trade_price": 0.39,
+     "minute_volume": 122.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-24NOV-T250000"
+    },
+    {
+     "candle_sha256": "b9f316a5fc79a9016081cb4e7b968b72a5ece426a1906acf45b19b18fa15134f",
+     "fitted_survival": 0.13,
+     "last_trade_price": 0.13,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 300000.0,
+     "ticker": "KXPAYROLLS-24NOV-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2024-11",
+   "release_date": "2024-12-06",
+   "strikes_used": 5,
+   "surprise": -4000.0
+  },
+  {
+   "actual": 177000.0,
+   "event_ticker": "KXPAYROLLS-25APR",
+   "excluded_reason": null,
+   "expected": 128000.0,
+   "ladder": [
+    {
+     "candle_sha256": "fd1a243f65c5f6d2a0c46e4cd82fc1b09857068d1be77fa485c153d164704fb3",
+     "fitted_survival": 0.98,
+     "last_trade_price": 0.98,
+     "minute_volume": 150.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-25APR-T-100000"
+    },
+    {
+     "candle_sha256": "40dc38c4e06ce33984bc45edb235569a8a4f89e7bdfb1bce936f2b87d0647604",
+     "fitted_survival": 0.95,
+     "last_trade_price": 0.95,
+     "minute_volume": 50.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25APR-T0"
+    },
+    {
+     "candle_sha256": "10efbbb497611aaa638ed1c837ce9c75cf77d260378eda4ff8c895d2e225d9e6",
+     "fitted_survival": 0.84,
+     "last_trade_price": 0.84,
+     "minute_volume": 2.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25APR-T100000"
+    },
+    {
+     "candle_sha256": "c753adbf0e1d045603036762a9c5c973d5ec45f4232c7bde964689e2a19c0747",
+     "fitted_survival": 0.31,
+     "last_trade_price": 0.31,
+     "minute_volume": 305.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-25APR-T150000"
+    },
+    {
+     "candle_sha256": "ed74bb8700bf712be30f2ca1f4a8530311b0847f40179d1ddd8d230cfc3d7127",
+     "fitted_survival": 0.06,
+     "last_trade_price": 0.06,
+     "minute_volume": 580.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-25APR-T200000"
+    },
+    {
+     "candle_sha256": "4255d309c858c87d08f4acdac5b2ec1b46c0e9ab74474fcdb62dfee74d289ba9",
+     "fitted_survival": 0.04,
+     "last_trade_price": 0.04,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 321.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-25APR-T250000"
+    },
+    {
+     "candle_sha256": "d58b016358a1fad04d1341b2cd88d16a0481646894b7e12416966cfb382325de",
+     "fitted_survival": 0.02,
+     "last_trade_price": 0.02,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 537.0,
+     "strike": 300000.0,
+     "ticker": "KXPAYROLLS-25APR-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2025-04",
+   "release_date": "2025-05-02",
+   "strikes_used": 7,
+   "surprise": 49000.0
+  },
+  {
+   "actual": 22000.0,
+   "event_ticker": "KXPAYROLLS-25AUG",
+   "excluded_reason": null,
+   "expected": 76000.0,
+   "ladder": [
+    {
+     "candle_sha256": "307fc84de4ac2148193df68164a1e725083e7b7dfc65a56e8a4d0e6be0876195",
+     "fitted_survival": 0.98,
+     "last_trade_price": 0.98,
+     "minute_volume": 22.0,
+     "minutes_before_cutoff": 490.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-25AUG-T-100000"
+    },
+    {
+     "candle_sha256": "58519b229883df07efdc016ff453046a3da7eb63c8c978cc751b9cc93ec9d4c0",
+     "fitted_survival": 0.98,
+     "last_trade_price": 0.98,
+     "minute_volume": 250.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25AUG-T0"
+    },
+    {
+     "candle_sha256": "f11bcf54e352e05d65b2d48820dc904eb3c028757d66d0a3a2847eaebc1a138a",
+     "fitted_survival": 0.9200000000000002,
+     "last_trade_price": 0.92,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 25000.0,
+     "ticker": "KXPAYROLLS-25AUG-T25000"
+    },
+    {
+     "candle_sha256": "7bea6c3900ba6e114f69e5bc66e55b90bb7b5ef499333d8039779f64cc634728",
+     "fitted_survival": 0.76,
+     "last_trade_price": 0.76,
+     "minute_volume": 39.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-25AUG-T50000"
+    },
+    {
+     "candle_sha256": "2e68f1e9c0e2849006cc1d3e7f7426323b1245311a79a20e8226aeb5d26820a2",
+     "fitted_survival": 0.47,
+     "last_trade_price": 0.47,
+     "minute_volume": 22.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 75000.0,
+     "ticker": "KXPAYROLLS-25AUG-T75000"
+    },
+    {
+     "candle_sha256": "e35fb0533689069abb3af61d7111aa3a39fb7335a8049f467fd7f6ed1a843a60",
+     "fitted_survival": 0.22,
+     "last_trade_price": 0.22,
+     "minute_volume": 11.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25AUG-T100000"
+    },
+    {
+     "candle_sha256": "b7e2c4c8b453ac3e513ea397f2183c3b6c0f21fa793d2b52887704f02bf2504d",
+     "fitted_survival": 0.06,
+     "last_trade_price": 0.06,
+     "minute_volume": 14211.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-25AUG-T150000"
+    },
+    {
+     "candle_sha256": "8dbf069fd3ad863b671af6215855464cf7aca3bdb4468438d095335bda0e966e",
+     "fitted_survival": 0.02,
+     "last_trade_price": 0.02,
+     "minute_volume": 4.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-25AUG-T200000"
+    },
+    {
+     "candle_sha256": "a7da5d5aa7adebfca40dc8a10b1184d3cfdbb6521850065c071422e75fee47af",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 2.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-25AUG-T250000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2025-08",
+   "release_date": "2025-09-05",
+   "strikes_used": 9,
+   "surprise": -54000.0
+  },
+  {
+   "actual": 50000.0,
+   "event_ticker": "KXPAYROLLS-25DEC",
+   "excluded_reason": null,
+   "expected": 84075.0,
+   "ladder": [
+    {
+     "candle_sha256": "584fb864e5b9cd8e0e2f1812e833b55337fc76e20c65d87a92c5f0ade0902c35",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 19.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-25DEC-T-25000"
+    },
+    {
+     "candle_sha256": "354af30ab90a8e2627128d1f78f38ec4bb690b70df01fa22198c7d6c2d323dec",
+     "fitted_survival": 0.96,
+     "last_trade_price": 0.96,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25DEC-T0"
+    },
+    {
+     "candle_sha256": "37b197ec74573831e4a7c228c5784c45032a43de7a1d25c3b45283e5c768d102",
+     "fitted_survival": 0.93,
+     "last_trade_price": 0.93,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-25DEC-T10000"
+    },
+    {
+     "candle_sha256": "8fa39facdd13a8d857b948ed12dd5a8eaecf8cb787eb7d6508ba8eb365c26d33",
+     "fitted_survival": 0.86,
+     "last_trade_price": 0.86,
+     "minute_volume": 188.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-25DEC-T20000"
+    },
+    {
+     "candle_sha256": "574dff245311daec01aa17cb05a1169ed471ac98876a08c67202b7e177f500ac",
+     "fitted_survival": 0.86,
+     "last_trade_price": 0.86,
+     "minute_volume": 168.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-25DEC-T30000"
+    },
+    {
+     "candle_sha256": "7cfb3957d53f67957af824e8e05f902ed17e9a26edbdf170e52f2a20cdfef6a4",
+     "fitted_survival": 0.82,
+     "last_trade_price": 0.82,
+     "minute_volume": 14.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-25DEC-T40000"
+    },
+    {
+     "candle_sha256": "734602ed45653686098155e0c0439c142861a707b9d5d841831e367f5ce4145c",
+     "fitted_survival": 0.76,
+     "last_trade_price": 0.76,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-25DEC-T50000"
+    },
+    {
+     "candle_sha256": "ab5f6a7306b8f9373140e57a9ef80647dd9121932cc015b15c470353807d5509",
+     "fitted_survival": 0.73,
+     "last_trade_price": 0.73,
+     "minute_volume": 13.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-25DEC-T60000"
+    },
+    {
+     "candle_sha256": "aa11dd9dce3df5ad49dbfd0d9f82b48e2855d229e7002f715dbe44ec93733bfa",
+     "fitted_survival": 0.67,
+     "last_trade_price": 0.67,
+     "minute_volume": 35.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-25DEC-T70000"
+    },
+    {
+     "candle_sha256": "230a56a1fd6b23babe842729b22fafd1717fdbfc818c00fe089fec5d9749bd64",
+     "fitted_survival": 0.56,
+     "last_trade_price": 0.56,
+     "minute_volume": 42.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-25DEC-T80000"
+    },
+    {
+     "candle_sha256": "a9852719254a6c982153e79d29a8269347af7a56917e5a0b44a2baca8cf76e0c",
+     "fitted_survival": 0.37,
+     "last_trade_price": 0.37,
+     "minute_volume": 56.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-25DEC-T90000"
+    },
+    {
+     "candle_sha256": "87bc5c1af4d898c62134bb71bf7e537a5175425ced2238d907b10b314aa41260",
+     "fitted_survival": 0.31,
+     "last_trade_price": 0.31,
+     "minute_volume": 4.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25DEC-T100000"
+    },
+    {
+     "candle_sha256": "4de00b423d0bed26ed1b7fb2100ddd6cf5533de036c8b687fa58f9a1e2192365",
+     "fitted_survival": 0.17,
+     "last_trade_price": 0.17,
+     "minute_volume": 33.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-25DEC-T125000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2025-12",
+   "release_date": "2026-01-09",
+   "strikes_used": 13,
+   "surprise": -34075.0
+  },
+  {
+   "actual": 151000.0,
+   "event_ticker": "KXPAYROLLS-25FEB",
+   "excluded_reason": null,
+   "expected": 128750.0,
+   "ladder": [
+    {
+     "candle_sha256": "00236e97420ba05911454c37fecab98b69f5cc192b587925befab795f094ca9b",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 95.0,
+     "minutes_before_cutoff": 649.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-25FEB-T-100000"
+    },
+    {
+     "candle_sha256": "cdcad75679df6b0071c6bf5d6b4ca1b3888a623e8327a24016974292220f3cbc",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 200.0,
+     "minutes_before_cutoff": 9.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25FEB-T0"
+    },
+    {
+     "candle_sha256": "ae616d60f1f510c34184648b18700b32431319c027adcc2bfa081ede22ad8170",
+     "fitted_survival": 0.68,
+     "last_trade_price": 0.68,
+     "minute_volume": 298.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25FEB-T100000"
+    },
+    {
+     "candle_sha256": "dad1f8106e5bc55121292e38bfd890c3f9f67500e61169d37e371b5d750c7513",
+     "fitted_survival": 0.39,
+     "last_trade_price": 0.39,
+     "minute_volume": 227.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-25FEB-T150000"
+    },
+    {
+     "candle_sha256": "c5e312f43717ef63b08c0d940f87106fdb809a53dfe3486d6be19af08255565f",
+     "fitted_survival": 0.18,
+     "last_trade_price": 0.18,
+     "minute_volume": 250.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-25FEB-T200000"
+    },
+    {
+     "candle_sha256": "613206433a7a81545d1fb8805a75d7234535ca08c197cec3b15efc6488336789",
+     "fitted_survival": 0.05,
+     "last_trade_price": 0.05,
+     "minute_volume": 503.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-25FEB-T250000"
+    },
+    {
+     "candle_sha256": "93a654c0b981950523ce009addaf17cbffe3283cf1ad5d170c79efbedd48df41",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 390.0,
+     "minutes_before_cutoff": 17.0,
+     "strike": 300000.0,
+     "ticker": "KXPAYROLLS-25FEB-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2025-02",
+   "release_date": "2025-03-07",
+   "strikes_used": 7,
+   "surprise": 22250.0
+  },
+  {
+   "actual": 143000.0,
+   "event_ticker": "KXPAYROLLS-25JAN",
+   "excluded_reason": "FEWER_THAN_THREE_TRADED_STRIKES",
+   "expected": null,
+   "ladder": [],
+   "reference_month": "2025-01",
+   "release_date": "2025-02-07",
+   "strikes_used": 0,
+   "surprise": null
+  },
+  {
+   "actual": 73000.0,
+   "event_ticker": "KXPAYROLLS-25JUL",
+   "excluded_reason": null,
+   "expected": 122924.01960784313,
+   "ladder": [
+    {
+     "candle_sha256": "4a7cedc8fd04f81f7581d7fcae09ad6cadee563c26957d54eddc11100d600128",
+     "fitted_survival": 0.98,
+     "last_trade_price": 0.98,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-25JUL-T-100000"
+    },
+    {
+     "candle_sha256": "cc58410594220d78bd03c91ffbd514dc38c2f50d76f02defe32a37484889a8e5",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25JUL-T0"
+    },
+    {
+     "candle_sha256": "6ae7c59630811860aa941ccdc5486f3dbb03ac6279403c26d4f41cebab3361f7",
+     "fitted_survival": 0.85,
+     "last_trade_price": 0.85,
+     "minute_volume": 29.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25JUL-T100000"
+    },
+    {
+     "candle_sha256": "d799a24461c80222d9d0521294f54250ff03c21c7797ba657ea33caed4723861",
+     "fitted_survival": 0.59,
+     "last_trade_price": 0.59,
+     "minute_volume": 161.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-25JUL-T125000"
+    },
+    {
+     "candle_sha256": "25f90d767213ae1ff543849487e859dc2b66470993f76e3302c6787f1e8335c4",
+     "fitted_survival": 0.18,
+     "last_trade_price": 0.18,
+     "minute_volume": 795.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-25JUL-T150000"
+    },
+    {
+     "candle_sha256": "1fd002f93b93c8903f90908246d4b81d1cbfb9b405796b05dba2a0cd7365fe4f",
+     "fitted_survival": 0.04,
+     "last_trade_price": 0.04,
+     "minute_volume": 1500.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-25JUL-T200000"
+    },
+    {
+     "candle_sha256": "1829a1405e98dc6e4954b662d0d26c32762249f61fd8cdfb5b4a64011b81da75",
+     "fitted_survival": 0.010392156862745097,
+     "last_trade_price": 0.01,
+     "minute_volume": 250.0,
+     "minutes_before_cutoff": 327.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-25JUL-T250000"
+    },
+    {
+     "candle_sha256": "e110e11051fbfcee17f5ad6714e5853a1790db731f11c55a4df85854340bda8f",
+     "fitted_survival": 0.010392156862745097,
+     "last_trade_price": 0.03,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 870.0,
+     "strike": 300000.0,
+     "ticker": "KXPAYROLLS-25JUL-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0196078431372549,
+   "reference_month": "2025-07",
+   "release_date": "2025-08-01",
+   "strikes_used": 8,
+   "surprise": -49924.01960784313
+  },
+  {
+   "actual": 147000.0,
+   "event_ticker": "KXPAYROLLS-25JUN",
+   "excluded_reason": null,
+   "expected": 91250.0,
+   "ladder": [
+    {
+     "candle_sha256": "4a6e652fb55c17baa9b3d381fa246e246001410e273918a46b7e821c98311b10",
+     "fitted_survival": 0.96,
+     "last_trade_price": 0.96,
+     "minute_volume": 16.0,
+     "minutes_before_cutoff": 15.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-25JUN-T-100000"
+    },
+    {
+     "candle_sha256": "45c9619a094127b22e13abbf751e9ea4c2bae012ea9b0c5ceb373f892bc8d914",
+     "fitted_survival": 0.92,
+     "last_trade_price": 0.92,
+     "minute_volume": 12.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25JUN-T0"
+    },
+    {
+     "candle_sha256": "310a116b38c26b6c35587bc14851ebfe3ff1ae3b23ec93add57a30d7cd197442",
+     "fitted_survival": 0.59,
+     "last_trade_price": 0.59,
+     "minute_volume": 593.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25JUN-T100000"
+    },
+    {
+     "candle_sha256": "8ef66309a833d1e4b3e48c24f4dbdcbe7e3139976e96b02774d87228c276fa8b",
+     "fitted_survival": 0.08,
+     "last_trade_price": 0.08,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-25JUN-T150000"
+    },
+    {
+     "candle_sha256": "578b61cfb7c81dc2b6a1aa98b7fc073375a6308e19c3265d8ca2283bee3c7f93",
+     "fitted_survival": 0.039999999999999994,
+     "last_trade_price": 0.04,
+     "minute_volume": 3244.0,
+     "minutes_before_cutoff": 336.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-25JUN-T200000"
+    },
+    {
+     "candle_sha256": "2d2d485d5ad8de64050ce7585b3494933d84b60b1fd7952f3029303f3d232a17",
+     "fitted_survival": 0.02,
+     "last_trade_price": 0.02,
+     "minute_volume": 250.0,
+     "minutes_before_cutoff": 1322.0,
+     "strike": 300000.0,
+     "ticker": "KXPAYROLLS-25JUN-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 6.938893903907228e-18,
+   "reference_month": "2025-06",
+   "release_date": "2025-07-03",
+   "strikes_used": 6,
+   "surprise": 55750.0
+  },
+  {
+   "actual": 228000.0,
+   "event_ticker": "KXPAYROLLS-25MAR",
+   "excluded_reason": null,
+   "expected": 138500.0,
+   "ladder": [
+    {
+     "candle_sha256": "6f6399de2e7a280d8693229368d52ac7fc031d2c4570cb98f1a0910850721a42",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 207.0,
+     "minutes_before_cutoff": 444.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25MAR-T0"
+    },
+    {
+     "candle_sha256": "54a59a6da9b634f62ee36270c0dc8502048be928ebda3d3122294b7e438af5a6",
+     "fitted_survival": 0.8,
+     "last_trade_price": 0.8,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25MAR-T100000"
+    },
+    {
+     "candle_sha256": "cc0ea442de27ae080158e06a1004195b948cf719aa0519a153668467ad928cc8",
+     "fitted_survival": 0.45,
+     "last_trade_price": 0.45,
+     "minute_volume": 8.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-25MAR-T150000"
+    },
+    {
+     "candle_sha256": "4f7a61de6a664d3b14900e67f830ce38dea537af35503f2b4701989eac29a73d",
+     "fitted_survival": 0.15,
+     "last_trade_price": 0.15,
+     "minute_volume": 500.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-25MAR-T200000"
+    },
+    {
+     "candle_sha256": "737f2df6d9909f905074d9d36cc20f4d06a0a2a9ecf413c0f88858676ee4b1ba",
+     "fitted_survival": 0.02,
+     "last_trade_price": 0.02,
+     "minute_volume": 186.0,
+     "minutes_before_cutoff": 627.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-25MAR-T250000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2025-03",
+   "release_date": "2025-04-04",
+   "strikes_used": 5,
+   "surprise": 89500.0
+  },
+  {
+   "actual": 139000.0,
+   "event_ticker": "KXPAYROLLS-25MAY",
+   "excluded_reason": null,
+   "expected": 140025.6035113387,
+   "ladder": [
+    {
+     "candle_sha256": "1291d4c3f7bd61607137050530e522f797d0eeed35d1f3f6a7237b40df857202",
+     "fitted_survival": 0.9701280175566934,
+     "last_trade_price": 0.97,
+     "minute_volume": 5433.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-25MAY-T-100000"
+    },
+    {
+     "candle_sha256": "b7465d84c3ee6eb0115aa21df78c1302f96f64ee3860bb83e714cebd83ac3207",
+     "fitted_survival": 0.9701280175566934,
+     "last_trade_price": 0.99,
+     "minute_volume": 35.0,
+     "minutes_before_cutoff": 369.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25MAY-T0"
+    },
+    {
+     "candle_sha256": "6e86ba5608599c2a7d8427efc7e91099ec1338f7dd0c79d51c829ebf04212202",
+     "fitted_survival": 0.9,
+     "last_trade_price": 0.9,
+     "minute_volume": 1200.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25MAY-T100000"
+    },
+    {
+     "candle_sha256": "219b7144d8ccc9f7c5a2bf09e798a0219145a364ff5b97717db38642b46d757d",
+     "fitted_survival": 0.4,
+     "last_trade_price": 0.4,
+     "minute_volume": 60.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-25MAY-T150000"
+    },
+    {
+     "candle_sha256": "2539e7aea97da0bb4a815ff055a20dfc1c62c8871b6c085ed1d1a38c850b85f9",
+     "fitted_survival": 0.11,
+     "last_trade_price": 0.11,
+     "minute_volume": 908.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-25MAY-T200000"
+    },
+    {
+     "candle_sha256": "ecf075c3dbfa012f4ad9be2b0a5cd753a5ffac6af438d6363f9f70b1dd282a36",
+     "fitted_survival": 0.03,
+     "last_trade_price": 0.03,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 538.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-25MAY-T250000"
+    },
+    {
+     "candle_sha256": "25650502bb2b6849aeaef2b895bfebe1e6123827d9991f15c45fe0751794cb8e",
+     "fitted_survival": 0.02,
+     "last_trade_price": 0.02,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 503.0,
+     "strike": 300000.0,
+     "ticker": "KXPAYROLLS-25MAY-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 0.01987198244330657,
+   "reference_month": "2025-05",
+   "release_date": "2025-06-06",
+   "strikes_used": 7,
+   "surprise": -1025.6035113387043
+  },
+  {
+   "actual": 64000.0,
+   "event_ticker": "KXPAYROLLS-25NOV",
+   "excluded_reason": null,
+   "expected": 59749.99999999999,
+   "ladder": [
+    {
+     "candle_sha256": "415278d5deb954b15ba8ad5ba8afafb7d2059e52ef625f0a872b48ce9753dd40",
+     "fitted_survival": 0.98,
+     "last_trade_price": 0.98,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 19.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-25NOV-T-100000"
+    },
+    {
+     "candle_sha256": "9068e31c06233a6cdd8bf92b7980499ecec1f56a57079b938dc8309fb80dfc43",
+     "fitted_survival": 0.86,
+     "last_trade_price": 0.86,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-25NOV-T0"
+    },
+    {
+     "candle_sha256": "290bc222fea6dedc37f31a92e755645cd29777ef9a948e135e21955eedab89c1",
+     "fitted_survival": 0.74,
+     "last_trade_price": 0.74,
+     "minute_volume": 1336.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 25000.0,
+     "ticker": "KXPAYROLLS-25NOV-T25000"
+    },
+    {
+     "candle_sha256": "c84954498ae3104dc9eb1dfe44836ebfa8419aa9b556d141d5f01c0a6b963846",
+     "fitted_survival": 0.6,
+     "last_trade_price": 0.6,
+     "minute_volume": 500.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-25NOV-T50000"
+    },
+    {
+     "candle_sha256": "de01b63308c85ed37f951765fcb0f7c4c2026391fc7c96e109d7f62d4df7a48d",
+     "fitted_survival": 0.4,
+     "last_trade_price": 0.4,
+     "minute_volume": 322.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 75000.0,
+     "ticker": "KXPAYROLLS-25NOV-T75000"
+    },
+    {
+     "candle_sha256": "a9ee959cbb83815b861e50e97377d9c2a63d172fe6ff2c11f8b18a9cf7b69954",
+     "fitted_survival": 0.22000000000000003,
+     "last_trade_price": 0.22,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-25NOV-T100000"
+    },
+    {
+     "candle_sha256": "17ba7a3612bdee4d53ea149dd0d01f281b72fab83c778f3be92f888e7457e219",
+     "fitted_survival": 0.08,
+     "last_trade_price": 0.08,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 10.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-25NOV-T150000"
+    },
+    {
+     "candle_sha256": "5b4b57e919ba842fde801e918baf91f9ba735b78fbdbc04b778714d339e1703a",
+     "fitted_survival": 0.02,
+     "last_trade_price": 0.02,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 19.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-25NOV-T200000"
+    },
+    {
+     "candle_sha256": "6c84fc7780089171628e25fb763f0b14406969c02df201a6104890920477c1c9",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 10520.0,
+     "minutes_before_cutoff": 57.0,
+     "strike": 250000.0,
+     "ticker": "KXPAYROLLS-25NOV-T250000"
+    },
+    {
+     "candle_sha256": "39aa9fe7fa75f519a3f6bc737077a8093fcc0304a033d1fb8798ad150e0e4d2b",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 250.0,
+     "minutes_before_cutoff": 524.0,
+     "strike": 300000.0,
+     "ticker": "KXPAYROLLS-25NOV-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 2.7755575615628914e-17,
+   "reference_month": "2025-11",
+   "release_date": "2025-12-16",
+   "strikes_used": 10,
+   "surprise": 4250.000000000007
+  },
+  {
+   "actual": null,
+   "event_ticker": "KXPAYROLLS-25OCT",
+   "excluded_reason": "NO_RELEASE_DATE_OR_CONTRACTS",
+   "expected": null,
+   "ladder": [],
+   "reference_month": "2025-10",
+   "release_date": null,
+   "strikes_used": 0,
+   "surprise": null
+  },
+  {
+   "actual": 119000.0,
+   "event_ticker": "KXPAYROLLS-25SEP",
+   "excluded_reason": "FEWER_THAN_THREE_TRADED_STRIKES",
+   "expected": null,
+   "ladder": [],
+   "reference_month": "2025-09",
+   "release_date": "2025-11-20",
+   "strikes_used": 0,
+   "surprise": null
+  },
+  {
+   "actual": 115000.0,
+   "event_ticker": "KXPAYROLLS-26APR",
+   "excluded_reason": null,
+   "expected": 61275.0,
+   "ladder": [
+    {
+     "candle_sha256": "4a0d93309014786cd16b5e37f74219d5328c0423c0943f44070cbbe63170c4db",
+     "fitted_survival": 0.96,
+     "last_trade_price": 0.96,
+     "minute_volume": 2118.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-26APR-T-100000"
+    },
+    {
+     "candle_sha256": "6e4bbd6d044d80d6afb7a1476ff67644e5d83a4ea19aa0411a17ac80587c449f",
+     "fitted_survival": 0.93,
+     "last_trade_price": 0.93,
+     "minute_volume": 1.36,
+     "minutes_before_cutoff": 8.0,
+     "strike": -75000.0,
+     "ticker": "KXPAYROLLS-26APR-T-75000"
+    },
+    {
+     "candle_sha256": "edf343238fa91e12a583abcfa95de963273d116191c1a623c2a8eadd515b2b4d",
+     "fitted_survival": 0.91,
+     "last_trade_price": 0.91,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 15.0,
+     "strike": -50000.0,
+     "ticker": "KXPAYROLLS-26APR-T-50000"
+    },
+    {
+     "candle_sha256": "7b07c6e567b7604068593e9bdf40ab7d91ca469cf5254ffe9da40a223d0c9167",
+     "fitted_survival": 0.83,
+     "last_trade_price": 0.83,
+     "minute_volume": 55.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26APR-T-25000"
+    },
+    {
+     "candle_sha256": "b34306aebf5000d5f3cb48f6a84dc96d0577e0e36ea9d8a457cdee53d788b598",
+     "fitted_survival": 0.76,
+     "last_trade_price": 0.76,
+     "minute_volume": 3.95,
+     "minutes_before_cutoff": 8.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26APR-T0"
+    },
+    {
+     "candle_sha256": "3b328b0ad1dc7c5c9936274f599e0acab9f1e80f75228dfa3dd6b728b7b8f2a7",
+     "fitted_survival": 0.71,
+     "last_trade_price": 0.71,
+     "minute_volume": 3.28,
+     "minutes_before_cutoff": 8.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26APR-T10000"
+    },
+    {
+     "candle_sha256": "781c7d10146f122681446296f20308a4e9238a77d31d95b2b104f44382dce9e7",
+     "fitted_survival": 0.7,
+     "last_trade_price": 0.7,
+     "minute_volume": 20.98,
+     "minutes_before_cutoff": 1.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26APR-T20000"
+    },
+    {
+     "candle_sha256": "ac95f75ffc92ab3cc46bcd2611501358388a795e2befba9ed3d296bd01047d86",
+     "fitted_survival": 0.68,
+     "last_trade_price": 0.68,
+     "minute_volume": 4.31,
+     "minutes_before_cutoff": 3.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26APR-T30000"
+    },
+    {
+     "candle_sha256": "5f7058021bd8a47dce3bacec4c3495fdd1b13b6f01f5eb5ae70b809a46ef4909",
+     "fitted_survival": 0.64,
+     "last_trade_price": 0.64,
+     "minute_volume": 26.19,
+     "minutes_before_cutoff": 1.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26APR-T40000"
+    },
+    {
+     "candle_sha256": "81f3754aed26e3091e626821cf9d0e0861503b5c4c65834fc4ff0dba898074a5",
+     "fitted_survival": 0.62,
+     "last_trade_price": 0.62,
+     "minute_volume": 381.23,
+     "minutes_before_cutoff": 1.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26APR-T50000"
+    },
+    {
+     "candle_sha256": "90866940126cc373931d30d264ac315bc5c15f96075358d464e584e1f850e266",
+     "fitted_survival": 0.61,
+     "last_trade_price": 0.61,
+     "minute_volume": 1.59,
+     "minutes_before_cutoff": 3.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26APR-T60000"
+    },
+    {
+     "candle_sha256": "eb32621840dae546ed59d94477221aadb85985d4b8376edc1fbb2fbffec98c06",
+     "fitted_survival": 0.55,
+     "last_trade_price": 0.55,
+     "minute_volume": 50.76,
+     "minutes_before_cutoff": 0.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26APR-T70000"
+    },
+    {
+     "candle_sha256": "9155d120fd52adbbcbdd9e0ffee2366d6a893e1286252f50a73fe164f49fd7ca",
+     "fitted_survival": 0.42,
+     "last_trade_price": 0.42,
+     "minute_volume": 247.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26APR-T80000"
+    },
+    {
+     "candle_sha256": "6cbd093f327ecd24d97bac585edb000975b9b5733167b6673f1ba756565b64a4",
+     "fitted_survival": 0.4,
+     "last_trade_price": 0.4,
+     "minute_volume": 34.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26APR-T90000"
+    },
+    {
+     "candle_sha256": "7bd2b300df75a3078a1c935190f7fe99c338613a8d05a4e0c368e504a9fe7a5b",
+     "fitted_survival": 0.36,
+     "last_trade_price": 0.36,
+     "minute_volume": 62.39,
+     "minutes_before_cutoff": 2.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26APR-T100000"
+    },
+    {
+     "candle_sha256": "65c2e08cfc12048319efd256d19c69259895c18987464fc6e7ed06908830cd2f",
+     "fitted_survival": 0.26,
+     "last_trade_price": 0.26,
+     "minute_volume": 200.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26APR-T125000"
+    },
+    {
+     "candle_sha256": "5279bb4a5013018718d28d1a50e4aa1a8e33537159411e0ed647f4c687592f0e",
+     "fitted_survival": 0.13,
+     "last_trade_price": 0.13,
+     "minute_volume": 1003.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-26APR-T150000"
+    },
+    {
+     "candle_sha256": "dccf5aba27b4f7cae68a67e717f9ccc1ab5e734f37ba6941f9228f3eca44dd9b",
+     "fitted_survival": 0.05,
+     "last_trade_price": 0.05,
+     "minute_volume": 209.79,
+     "minutes_before_cutoff": 70.0,
+     "strike": 175000.0,
+     "ticker": "KXPAYROLLS-26APR-T175000"
+    },
+    {
+     "candle_sha256": "3a681d3d3d0f09d362ed4049387afe7f323e67541cd6ddaf3b4259b888070921",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 634.22,
+     "minutes_before_cutoff": 12.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-26APR-T200000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2026-04",
+   "release_date": "2026-05-08",
+   "strikes_used": 19,
+   "surprise": 53725.0
+  },
+  {
+   "actual": 162000.0,
+   "event_ticker": "KXPAYROLLS-26AUG",
+   "excluded_reason": null,
+   "expected": 40224.99999999999,
+   "ladder": [
+    {
+     "candle_sha256": "26f42b837a1d927957d9284ba2fdd0b5fcc63382626d1da84beb1d3379ec5e96",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 19.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-26AUG-T-100000"
+    },
+    {
+     "candle_sha256": "d3a437ef86b10d259bd203913ca575ff8d785738c06ce7b09443f75a284c4999",
+     "fitted_survival": 0.94,
+     "last_trade_price": 0.94,
+     "minute_volume": 1.05,
+     "minutes_before_cutoff": 24.0,
+     "strike": -75000.0,
+     "ticker": "KXPAYROLLS-26AUG-T-75000"
+    },
+    {
+     "candle_sha256": "4db471c711dab47f4aebf10b82b2e20414636073bedf68613b17198367694926",
+     "fitted_survival": 0.91,
+     "last_trade_price": 0.91,
+     "minute_volume": 980.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": -50000.0,
+     "ticker": "KXPAYROLLS-26AUG-T-50000"
+    },
+    {
+     "candle_sha256": "587dec95a2f1e8c13d09aae763bd9ba197968c16d74c0d9db85ae710f88c58b4",
+     "fitted_survival": 0.84,
+     "last_trade_price": 0.84,
+     "minute_volume": 50.0,
+     "minutes_before_cutoff": 10.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26AUG-T-25000"
+    },
+    {
+     "candle_sha256": "b429f38fc1d2d84224334b7894bc245e684861230e8c1c842697b0478bacdfc8",
+     "fitted_survival": 0.74,
+     "last_trade_price": 0.74,
+     "minute_volume": 2.64,
+     "minutes_before_cutoff": 1.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26AUG-T0"
+    },
+    {
+     "candle_sha256": "2d88c926ee09293bb1a8bae403fc4b740c154502d1f555229d7a70140c6efac3",
+     "fitted_survival": 0.6899999999999998,
+     "last_trade_price": 0.69,
+     "minute_volume": 394.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26AUG-T10000"
+    },
+    {
+     "candle_sha256": "5a629c408ab6149504b33a11935da8fc33db2d626fcded4036b2dfaa21b33fba",
+     "fitted_survival": 0.66,
+     "last_trade_price": 0.66,
+     "minute_volume": 7.5,
+     "minutes_before_cutoff": 11.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26AUG-T20000"
+    },
+    {
+     "candle_sha256": "8b92d98abdffc15723ac4f95435019c97c5e081dbaafe105fbe0056d92d92f65",
+     "fitted_survival": 0.66,
+     "last_trade_price": 0.66,
+     "minute_volume": 112.19,
+     "minutes_before_cutoff": 0.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26AUG-T30000"
+    },
+    {
+     "candle_sha256": "d4592386cacc7d752dd20fa3888afea8cc2d3c19e92ab10faaeffd1abb1ae0c2",
+     "fitted_survival": 0.56,
+     "last_trade_price": 0.56,
+     "minute_volume": 88.36,
+     "minutes_before_cutoff": 1.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26AUG-T40000"
+    },
+    {
+     "candle_sha256": "a64ac75b420a674bbd5202c424dafb00991fb8d816fa7f489cbc4c1c741d93e3",
+     "fitted_survival": 0.48,
+     "last_trade_price": 0.48,
+     "minute_volume": 3448.8,
+     "minutes_before_cutoff": 1.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26AUG-T50000"
+    },
+    {
+     "candle_sha256": "94ac782e54eef81d49c2f5e135be38317147d4a3bd43defe7302a4fa77d16879",
+     "fitted_survival": 0.35,
+     "last_trade_price": 0.35,
+     "minute_volume": 149.0,
+     "minutes_before_cutoff": 21.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26AUG-T60000"
+    },
+    {
+     "candle_sha256": "586423ab821615308e36a265e0c71573ce92dc45cc567c4754216419ad293214",
+     "fitted_survival": 0.25,
+     "last_trade_price": 0.25,
+     "minute_volume": 33.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26AUG-T70000"
+    },
+    {
+     "candle_sha256": "c4a6d00fff1172828b60093440cacc62cb83c12b0955778c24afcd5de13f9bdc",
+     "fitted_survival": 0.22,
+     "last_trade_price": 0.22,
+     "minute_volume": 6.31,
+     "minutes_before_cutoff": 55.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26AUG-T80000"
+    },
+    {
+     "candle_sha256": "c2d19cfb026021e4c1e0131341b63bceea11c629f3ac72b2d61c68d44d00e1af",
+     "fitted_survival": 0.2,
+     "last_trade_price": 0.2,
+     "minute_volume": 47.34,
+     "minutes_before_cutoff": 3.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26AUG-T90000"
+    },
+    {
+     "candle_sha256": "851fe44eecb72a0296496829b3aeb4a21384e2cc6fdc510323b065ffb558975a",
+     "fitted_survival": 0.14,
+     "last_trade_price": 0.14,
+     "minute_volume": 1000.0,
+     "minutes_before_cutoff": 15.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26AUG-T100000"
+    },
+    {
+     "candle_sha256": "b7be33ae1339698c1f5221f59298f70012818fcba7d0c78df1619913a629866b",
+     "fitted_survival": 0.08,
+     "last_trade_price": 0.08,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26AUG-T125000"
+    },
+    {
+     "candle_sha256": "c8c5e0ab1923d61a9b2c7f30e9f3b6875995ae97a8fa5278153347321913de88",
+     "fitted_survival": 0.07,
+     "last_trade_price": 0.07,
+     "minute_volume": 35.0,
+     "minutes_before_cutoff": 10.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-26AUG-T150000"
+    },
+    {
+     "candle_sha256": "45d8b6f9dc69e636f21d2f8e4c1b63590a9b7799649c295e38202f68ef622977",
+     "fitted_survival": 0.05,
+     "last_trade_price": 0.05,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 714.0,
+     "strike": 175000.0,
+     "ticker": "KXPAYROLLS-26AUG-T175000"
+    },
+    {
+     "candle_sha256": "a1cfb83bcac25870f9c20530bc37cdd4c564089dc42e8d35b0352fbd63a94654",
+     "fitted_survival": 0.02,
+     "last_trade_price": 0.02,
+     "minute_volume": 3981.02,
+     "minutes_before_cutoff": 33.0,
+     "strike": 200000.0,
+     "ticker": "KXPAYROLLS-26AUG-T200000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2026-08",
+   "release_date": "2026-09-04",
+   "strikes_used": 19,
+   "surprise": 121775.0
+  },
+  {
+   "actual": -92000.0,
+   "event_ticker": "KXPAYROLLS-26FEB",
+   "excluded_reason": null,
+   "expected": 57725.0,
+   "ladder": [
+    {
+     "candle_sha256": "677042982b4adc0d1f7c965f8baaa14513f9dc6257e05577a35097f0312add24",
+     "fitted_survival": 0.96,
+     "last_trade_price": 0.96,
+     "minute_volume": 15842.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26FEB-T-25000"
+    },
+    {
+     "candle_sha256": "0e282ffa1d462c3c866a066a6dd61173f25a8945579cb93f22d45f85d5360aa2",
+     "fitted_survival": 0.89,
+     "last_trade_price": 0.89,
+     "minute_volume": 80.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26FEB-T0"
+    },
+    {
+     "candle_sha256": "ae741be260693cec4789af7c9bf0e418037f8790359f2ebddfc71c246daf5fd5",
+     "fitted_survival": 0.87,
+     "last_trade_price": 0.87,
+     "minute_volume": 550.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26FEB-T10000"
+    },
+    {
+     "candle_sha256": "f6f14c9ddc730314476a9ceddd59cd25c1d3780a68caacde67f5d05305f34947",
+     "fitted_survival": 0.8300000000000001,
+     "last_trade_price": 0.83,
+     "minute_volume": 45.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26FEB-T20000"
+    },
+    {
+     "candle_sha256": "6acb075d50c46ffbe32a920e6ac42e6352190dd3ee9b4e5a9282f890ce185e8b",
+     "fitted_survival": 0.77,
+     "last_trade_price": 0.77,
+     "minute_volume": 31.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26FEB-T30000"
+    },
+    {
+     "candle_sha256": "09e967ca4fed5d39d262a56789546010d0cd307ce88f7c6ff8bfadb71eb7f419",
+     "fitted_survival": 0.66,
+     "last_trade_price": 0.66,
+     "minute_volume": 22.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26FEB-T40000"
+    },
+    {
+     "candle_sha256": "94a1e9c21828dbba3693747284c17462d39bc4f89c16218fe6db38683efdc3ac",
+     "fitted_survival": 0.63,
+     "last_trade_price": 0.63,
+     "minute_volume": 56.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26FEB-T50000"
+    },
+    {
+     "candle_sha256": "48b44508b4554114c39acb88cda6631a6752d62f27ae158fc6058fe4f5f11c7d",
+     "fitted_survival": 0.47,
+     "last_trade_price": 0.47,
+     "minute_volume": 480.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26FEB-T60000"
+    },
+    {
+     "candle_sha256": "fdae2933c10f7d95ffd5f1c526158dbca7c35ee46172ab87859ac79df2f9f1d7",
+     "fitted_survival": 0.34,
+     "last_trade_price": 0.34,
+     "minute_volume": 1020.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26FEB-T70000"
+    },
+    {
+     "candle_sha256": "7a9793fd2d336f97702777e017f9f37bd67f4f889923373f600dc075350152c4",
+     "fitted_survival": 0.26,
+     "last_trade_price": 0.26,
+     "minute_volume": 325.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26FEB-T80000"
+    },
+    {
+     "candle_sha256": "e22a5fdbe27002e205ab2768e869ed87a6cdb72a2fbf149c4c493207a02698ed",
+     "fitted_survival": 0.14,
+     "last_trade_price": 0.14,
+     "minute_volume": 297.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26FEB-T90000"
+    },
+    {
+     "candle_sha256": "fd1ec3b19e9cecaf43853d59a9f04891200a1873a84c0e078f83a96609a7e95b",
+     "fitted_survival": 0.14,
+     "last_trade_price": 0.14,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26FEB-T100000"
+    },
+    {
+     "candle_sha256": "6f0b24b0e67de31ed587d00636c1efe14216260f0f2479226a2d1ec799107ca9",
+     "fitted_survival": 0.08,
+     "last_trade_price": 0.08,
+     "minute_volume": 54.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26FEB-T125000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2026-02",
+   "release_date": "2026-03-06",
+   "strikes_used": 13,
+   "surprise": -149725.0
+  },
+  {
+   "actual": 130000.0,
+   "event_ticker": "KXPAYROLLS-26JAN",
+   "excluded_reason": null,
+   "expected": 40257.199121178906,
+   "ladder": [
+    {
+     "candle_sha256": "14e9d54a73bd07ad553caa565541fe9149f69c7226e86b4b7fb3a5d1a0923a23",
+     "fitted_survival": 0.9399999999999998,
+     "last_trade_price": 0.94,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26JAN-T-25000"
+    },
+    {
+     "candle_sha256": "fd2d81eb3bc5ede38e9492bc6ed8d20742385f7d6aff66fd55b1d20fad4816e9",
+     "fitted_survival": 0.7722081218274112,
+     "last_trade_price": 0.77,
+     "minute_volume": 365.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26JAN-T0"
+    },
+    {
+     "candle_sha256": "cb555eb982dfafc413173fa9b977d0c50c5bfa9f71a425d1e92a8bb259f1fdc4",
+     "fitted_survival": 0.7722081218274112,
+     "last_trade_price": 0.8,
+     "minute_volume": 29.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26JAN-T10000"
+    },
+    {
+     "candle_sha256": "bd54ba57993fedd6a697a734d0bbbea1afd21b1ef78c99f9d0f14b383ccc876d",
+     "fitted_survival": 0.75,
+     "last_trade_price": 0.75,
+     "minute_volume": 132.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26JAN-T20000"
+    },
+    {
+     "candle_sha256": "3ec1a4b00cb33f0c952d5a540ae9074a7f5433cd3a1273fd70cb75ef937893eb",
+     "fitted_survival": 0.64,
+     "last_trade_price": 0.64,
+     "minute_volume": 134.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26JAN-T30000"
+    },
+    {
+     "candle_sha256": "1ba528acca80f58be511c59fce78cb4c015419a12f89f52416c95f07e2cf1d89",
+     "fitted_survival": 0.64,
+     "last_trade_price": 0.64,
+     "minute_volume": 128.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26JAN-T40000"
+    },
+    {
+     "candle_sha256": "efb7e0f2ee1a3f01e94a34897bc1ca978de3a4046290e54ca35d9b3a265414cf",
+     "fitted_survival": 0.49000000000000005,
+     "last_trade_price": 0.49,
+     "minute_volume": 47.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26JAN-T50000"
+    },
+    {
+     "candle_sha256": "77a8a3cffb11dbf92986ae21736b1c7e1edbc05bc0ffa913d7d6db5fb5db3c9a",
+     "fitted_survival": 0.28,
+     "last_trade_price": 0.28,
+     "minute_volume": 68.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26JAN-T60000"
+    },
+    {
+     "candle_sha256": "376322b1d234f133800493fa02d6063a26045c396efd2cc428e91f85d674f4b7",
+     "fitted_survival": 0.18,
+     "last_trade_price": 0.18,
+     "minute_volume": 14.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26JAN-T70000"
+    },
+    {
+     "candle_sha256": "d2fabef055e42daf997f84d6e53f1cc78a8049fe197a7ba33325342421e0b091",
+     "fitted_survival": 0.1098237885462555,
+     "last_trade_price": 0.1,
+     "minute_volume": 20.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26JAN-T80000"
+    },
+    {
+     "candle_sha256": "c37ec8338864540ef268a5f39f1a220334ed96a5662655c89b932cddd285b852",
+     "fitted_survival": 0.1098237885462555,
+     "last_trade_price": 0.11,
+     "minute_volume": 1115.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26JAN-T90000"
+    },
+    {
+     "candle_sha256": "33bb74d354db745958a1766121a8058e6265b461b8ee74bcc10bef55b1a0f449",
+     "fitted_survival": 0.08,
+     "last_trade_price": 0.08,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26JAN-T100000"
+    },
+    {
+     "candle_sha256": "617210cc9c953d3058e5b799296b95d9105fac283e0ea2e6b3ff41dbf08050ec",
+     "fitted_survival": 0.03,
+     "last_trade_price": 0.03,
+     "minute_volume": 20.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26JAN-T125000"
+    }
+   ],
+   "monotone_adjustment_max": 0.02779187817258888,
+   "reference_month": "2026-01",
+   "release_date": "2026-02-11",
+   "strikes_used": 13,
+   "surprise": 89742.80087882109
+  },
+  {
+   "actual": -23000.0,
+   "event_ticker": "KXPAYROLLS-26JUL",
+   "excluded_reason": null,
+   "expected": 73025.0,
+   "ladder": [
+    {
+     "candle_sha256": "67a8e68add5b5c0d1f20f4203b04c015bbe7d14f51920d5b7e6d03837560095b",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 0.03,
+     "minutes_before_cutoff": 2.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26JUL-T-25000"
+    },
+    {
+     "candle_sha256": "8e4645df77d46075a3c4c7f24d174b954eaab5aa5cd3f6a7faf8c0f1cd591880",
+     "fitted_survival": 0.92,
+     "last_trade_price": 0.92,
+     "minute_volume": 3.18,
+     "minutes_before_cutoff": 3.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26JUL-T0"
+    },
+    {
+     "candle_sha256": "98ed01460414a8b8faef1a5727ab3f0c68947ea23c9c0154a58a921808d44bff",
+     "fitted_survival": 0.8799999999999999,
+     "last_trade_price": 0.88,
+     "minute_volume": 22.53,
+     "minutes_before_cutoff": 0.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26JUL-T10000"
+    },
+    {
+     "candle_sha256": "4f6791a488b266a880043fa07f69534217e0192763f40ee9b44fd8b6c7e94d18",
+     "fitted_survival": 0.87,
+     "last_trade_price": 0.87,
+     "minute_volume": 112.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26JUL-T20000"
+    },
+    {
+     "candle_sha256": "3ec105e9423c7611256f92e447ff0a8f6913014896d1d49712330c7b91b3d751",
+     "fitted_survival": 0.85,
+     "last_trade_price": 0.85,
+     "minute_volume": 614.09,
+     "minutes_before_cutoff": 0.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26JUL-T30000"
+    },
+    {
+     "candle_sha256": "143b037bb1a10d564ca3da782354782f3eb2e472d4908787d9cb2dca6bf89ee2",
+     "fitted_survival": 0.76,
+     "last_trade_price": 0.76,
+     "minute_volume": 300.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26JUL-T40000"
+    },
+    {
+     "candle_sha256": "6e26b54e601a0433d9192e8fb40f0abc9c92b5c9168d79df5a2cba7f13987d2e",
+     "fitted_survival": 0.7,
+     "last_trade_price": 0.7,
+     "minute_volume": 2515.31,
+     "minutes_before_cutoff": 0.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26JUL-T50000"
+    },
+    {
+     "candle_sha256": "05443981ec3c7279723a98b6c5ccfc3f3877e314351054ec2e4304a712829b51",
+     "fitted_survival": 0.62,
+     "last_trade_price": 0.62,
+     "minute_volume": 47.12,
+     "minutes_before_cutoff": 0.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26JUL-T60000"
+    },
+    {
+     "candle_sha256": "0a5bb978c57bcb187fba3dcdecb23c0844b701b075412ff5f8e607ed5d9d9ab6",
+     "fitted_survival": 0.51,
+     "last_trade_price": 0.51,
+     "minute_volume": 252.07,
+     "minutes_before_cutoff": 0.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26JUL-T70000"
+    },
+    {
+     "candle_sha256": "6f06c75520c5e78e099d4578266514b3621fbd03c1ec38dbaec765f3160edc4d",
+     "fitted_survival": 0.37,
+     "last_trade_price": 0.37,
+     "minute_volume": 41.54,
+     "minutes_before_cutoff": 0.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26JUL-T80000"
+    },
+    {
+     "candle_sha256": "0eaa19061604dd206a711a4602cf6e657c0bbcc26abca439c677c57de170d885",
+     "fitted_survival": 0.31,
+     "last_trade_price": 0.31,
+     "minute_volume": 303.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26JUL-T90000"
+    },
+    {
+     "candle_sha256": "b7c2986296100e784cc85137371484eb358cf0d38f7102626b7b315c5de3d61b",
+     "fitted_survival": 0.22,
+     "last_trade_price": 0.22,
+     "minute_volume": 52.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26JUL-T100000"
+    },
+    {
+     "candle_sha256": "2df00a75726a14b10262633b73c385d01b4f4f39f570c1b021dd9699b78a77db",
+     "fitted_survival": 0.14,
+     "last_trade_price": 0.14,
+     "minute_volume": 50.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26JUL-T125000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2026-07",
+   "release_date": "2026-08-07",
+   "strikes_used": 13,
+   "surprise": -96025.0
+  },
+  {
+   "actual": 57000.0,
+   "event_ticker": "KXPAYROLLS-26JUN",
+   "excluded_reason": null,
+   "expected": 127422.89633082517,
+   "ladder": [
+    {
+     "candle_sha256": "22af8b2fb4a896437f7274c819125e63ea92516c7ab5a859724c804e1872fdcc",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 150.0,
+     "minutes_before_cutoff": 10.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26JUN-T-25000"
+    },
+    {
+     "candle_sha256": "62f7f9ae3c278f0dd758205658c5a6d07623f2ee113d66afcf9b68d044048a70",
+     "fitted_survival": 0.9499557122278984,
+     "last_trade_price": 0.94,
+     "minute_volume": 47.83,
+     "minutes_before_cutoff": 3.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26JUN-T0"
+    },
+    {
+     "candle_sha256": "8fcefbb823c106f59ab33095deb0daee500c743390006420e0fb3825a82c16a8",
+     "fitted_survival": 0.9499557122278984,
+     "last_trade_price": 0.99,
+     "minute_volume": 3.0,
+     "minutes_before_cutoff": 15.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26JUN-T10000"
+    },
+    {
+     "candle_sha256": "6cdb28cda98871691c393752ed67d784b851699034031716d021eac8185f82fd",
+     "fitted_survival": 0.9499557122278984,
+     "last_trade_price": 0.95,
+     "minute_volume": 1051.42,
+     "minutes_before_cutoff": 7.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26JUN-T20000"
+    },
+    {
+     "candle_sha256": "a785b4868e879ef5fec8a0d351370e8248ecbc216e5535b0cd95e41a28cc2d67",
+     "fitted_survival": 0.9499557122278984,
+     "last_trade_price": 0.97,
+     "minute_volume": 15.44,
+     "minutes_before_cutoff": 61.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26JUN-T30000"
+    },
+    {
+     "candle_sha256": "836dcb95996a775c07edca84f9b6a193fd9dd5a3a4545658e94b1f168ac1dede",
+     "fitted_survival": 0.94,
+     "last_trade_price": 0.94,
+     "minute_volume": 717.63,
+     "minutes_before_cutoff": 8.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26JUN-T40000"
+    },
+    {
+     "candle_sha256": "b5f88dbc9749fff93197db06f69e09e755dd956cac673cac94f3b7a934c41d37",
+     "fitted_survival": 0.85,
+     "last_trade_price": 0.85,
+     "minute_volume": 1280.67,
+     "minutes_before_cutoff": 1.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26JUN-T50000"
+    },
+    {
+     "candle_sha256": "6e6e38e09043d8a8e5710c24fe4f307bbdb98ff518a9827afb473013073fab1e",
+     "fitted_survival": 0.84,
+     "last_trade_price": 0.84,
+     "minute_volume": 1094.28,
+     "minutes_before_cutoff": 3.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26JUN-T60000"
+    },
+    {
+     "candle_sha256": "25c46e63b3fe525bfb75b1355aa9a1e36272eb121007aabaaf29181207ae454f",
+     "fitted_survival": 0.83,
+     "last_trade_price": 0.83,
+     "minute_volume": 3.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26JUN-T70000"
+    },
+    {
+     "candle_sha256": "d6e9926d0649e558c1680c424a61b6d4e6c7adb0b8f7d8ef40492b626468052e",
+     "fitted_survival": 0.77,
+     "last_trade_price": 0.77,
+     "minute_volume": 25.55,
+     "minutes_before_cutoff": 4.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26JUN-T80000"
+    },
+    {
+     "candle_sha256": "24ce09b4a7fe245e043ce6722a80e130805a4e65b5c6d333e84fdfa015dfe873",
+     "fitted_survival": 0.75,
+     "last_trade_price": 0.75,
+     "minute_volume": 13.1,
+     "minutes_before_cutoff": 0.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26JUN-T90000"
+    },
+    {
+     "candle_sha256": "d9fe764303b549c07220d571e03616f6a25edae41bb98ad4b9181710648ae636",
+     "fitted_survival": 0.7,
+     "last_trade_price": 0.7,
+     "minute_volume": 16.78,
+     "minutes_before_cutoff": 2.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26JUN-T100000"
+    },
+    {
+     "candle_sha256": "f5b3b019d711023290253e70fa44856b747fb7ca5e8af222ef78d41ca072ff6a",
+     "fitted_survival": 0.4600000000000001,
+     "last_trade_price": 0.46,
+     "minute_volume": 17.94,
+     "minutes_before_cutoff": 0.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26JUN-T125000"
+    },
+    {
+     "candle_sha256": "fe6c9c0f148e8d453e0d63d6fe5d7af52c7f5ff7cf08c3dc7462608f0c00638e",
+     "fitted_survival": 0.3,
+     "last_trade_price": 0.3,
+     "minute_volume": 64.19,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-26JUN-T150000"
+    },
+    {
+     "candle_sha256": "5eaf74e1670862a132334c2ce9b6bad0218ead2ee3d14a199bdb3748258c0646",
+     "fitted_survival": 0.23,
+     "last_trade_price": 0.23,
+     "minute_volume": 200.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 175000.0,
+     "ticker": "KXPAYROLLS-26JUN-T175000"
+    }
+   ],
+   "monotone_adjustment_max": 0.04004428777210156,
+   "reference_month": "2026-06",
+   "release_date": "2026-07-02",
+   "strikes_used": 15,
+   "surprise": -70422.89633082517
+  },
+  {
+   "actual": 178000.0,
+   "event_ticker": "KXPAYROLLS-26MAR",
+   "excluded_reason": null,
+   "expected": 72700.0,
+   "ladder": [
+    {
+     "candle_sha256": "2766f5a7bd053a198fb2bf28a00b66e56e1b29e41191b1afb2c07c7430f82e83",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 498.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": -100000.0,
+     "ticker": "KXPAYROLLS-26MAR-T-100000"
+    },
+    {
+     "candle_sha256": "d5e6583b49844960798edeb99dcab161b85f3550ccffef3ae51bb87829685348",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 5000.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": -75000.0,
+     "ticker": "KXPAYROLLS-26MAR-T-75000"
+    },
+    {
+     "candle_sha256": "454fa5be0872e4b177401e9f859f07e5c5dd15ae6aea28cf54cb9239736d21a4",
+     "fitted_survival": 0.94,
+     "last_trade_price": 0.94,
+     "minute_volume": 58.0,
+     "minutes_before_cutoff": 18.0,
+     "strike": -50000.0,
+     "ticker": "KXPAYROLLS-26MAR-T-50000"
+    },
+    {
+     "candle_sha256": "816e6e77b50341a7e6a839539743632df25f41ae3ccf06493dc16a9712f15fbc",
+     "fitted_survival": 0.91,
+     "last_trade_price": 0.91,
+     "minute_volume": 581.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26MAR-T-25000"
+    },
+    {
+     "candle_sha256": "459ebfb84f4fcc961065d1282d18490ec56845a0a16ca4c775136889f46dd46a",
+     "fitted_survival": 0.87,
+     "last_trade_price": 0.87,
+     "minute_volume": 1139.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26MAR-T0"
+    },
+    {
+     "candle_sha256": "ad2788524b2ac0c8ea6f7c741e37f88c04115d9630fe7fe5ae79115907393fb0",
+     "fitted_survival": 0.83,
+     "last_trade_price": 0.83,
+     "minute_volume": 1727.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26MAR-T10000"
+    },
+    {
+     "candle_sha256": "fc820bbc7f437257a7349c33c44f37e45e2cff00a4a67ba6c7f389db78875634",
+     "fitted_survival": 0.82,
+     "last_trade_price": 0.82,
+     "minute_volume": 131.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26MAR-T20000"
+    },
+    {
+     "candle_sha256": "4da3f187f5ceca2a5b77bf7250a4b612826bde856fa4ea9365a5d5b0e9a401ea",
+     "fitted_survival": 0.77,
+     "last_trade_price": 0.77,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26MAR-T30000"
+    },
+    {
+     "candle_sha256": "2aba05d3b60d203d5a704f80195ec631ebc901256a54e30fc6cf3ce72a6a88db",
+     "fitted_survival": 0.72,
+     "last_trade_price": 0.72,
+     "minute_volume": 752.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26MAR-T40000"
+    },
+    {
+     "candle_sha256": "bca887fec412031cdfb1714b27fa90af445e1636d59a646a68336b9cf1985ede",
+     "fitted_survival": 0.67,
+     "last_trade_price": 0.67,
+     "minute_volume": 15.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26MAR-T50000"
+    },
+    {
+     "candle_sha256": "2ee37fc22258e7682b17c27bab3775b9302a3aa57986bf38f0a7776e942342fe",
+     "fitted_survival": 0.65,
+     "last_trade_price": 0.65,
+     "minute_volume": 7.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26MAR-T60000"
+    },
+    {
+     "candle_sha256": "a06c0e7b6c68cc48fedf3ef82fca7de39aeaeab71229d98e20b051ebe3ddaacc",
+     "fitted_survival": 0.54,
+     "last_trade_price": 0.54,
+     "minute_volume": 70.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26MAR-T70000"
+    },
+    {
+     "candle_sha256": "cc3dfd16ce124470a3d81adacf117e319b0da15d7b27110c0e35f56d6e92d313",
+     "fitted_survival": 0.46,
+     "last_trade_price": 0.46,
+     "minute_volume": 4.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26MAR-T80000"
+    },
+    {
+     "candle_sha256": "12147f90ad854a66de57ff2de969a68bf4424aa5de61a3ec5ac71766a771350f",
+     "fitted_survival": 0.31,
+     "last_trade_price": 0.31,
+     "minute_volume": 812.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26MAR-T90000"
+    },
+    {
+     "candle_sha256": "d00d92a9e49b450fd17d12ae6ec2fc2ea195ce81410e43e46a3304ae8397f2fd",
+     "fitted_survival": 0.28,
+     "last_trade_price": 0.28,
+     "minute_volume": 34.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26MAR-T100000"
+    },
+    {
+     "candle_sha256": "d9b098a0b849ad934e6dbdbce2fa4594118ea5226865c796b919c89a3ce9eec1",
+     "fitted_survival": 0.2,
+     "last_trade_price": 0.2,
+     "minute_volume": 1024.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26MAR-T125000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2026-03",
+   "release_date": "2026-04-03",
+   "strikes_used": 16,
+   "surprise": 105300.0
+  },
+  {
+   "actual": 172000.0,
+   "event_ticker": "KXPAYROLLS-26MAY",
+   "excluded_reason": null,
+   "expected": 92400.0,
+   "ladder": [
+    {
+     "candle_sha256": "7395d6baab5496de4fcffa0d21c2af316fe0b3bcb6719f3ad920d6822364f7a0",
+     "fitted_survival": 0.98,
+     "last_trade_price": 0.98,
+     "minute_volume": 15.0,
+     "minutes_before_cutoff": 11.0,
+     "strike": -50000.0,
+     "ticker": "KXPAYROLLS-26MAY-T-50000"
+    },
+    {
+     "candle_sha256": "a2fdc0c6d72c5573fdb3cc009c825057a9f920423b8768086f2cab71fa92a634",
+     "fitted_survival": 0.94,
+     "last_trade_price": 0.94,
+     "minute_volume": 50.0,
+     "minutes_before_cutoff": 19.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26MAY-T-25000"
+    },
+    {
+     "candle_sha256": "4a1cdc125093d3407bab2d33a5f4376c9b36ce2a9c7c5b5ebcc6cf4c3da71549",
+     "fitted_survival": 0.91,
+     "last_trade_price": 0.91,
+     "minute_volume": 5755.61,
+     "minutes_before_cutoff": 4.0,
+     "strike": -10000.0,
+     "ticker": "KXPAYROLLS-26MAY-T-10000"
+    },
+    {
+     "candle_sha256": "5a9764c8fb1890f12db53195f420388c9ba46dfcc550996a3f52c129cad349e4",
+     "fitted_survival": 0.89,
+     "last_trade_price": 0.89,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26MAY-T0"
+    },
+    {
+     "candle_sha256": "4cf52a1f18dff72866116c0fd908b6edafefc9fce682f8a59a7149c1a48c3875",
+     "fitted_survival": 0.85,
+     "last_trade_price": 0.85,
+     "minute_volume": 300.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26MAY-T10000"
+    },
+    {
+     "candle_sha256": "b660bdb0327fc58ca88a64672cd784f30fc7c879495ccf0a4b0cc9ed3e44666d",
+     "fitted_survival": 0.84,
+     "last_trade_price": 0.84,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 19.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26MAY-T20000"
+    },
+    {
+     "candle_sha256": "e6690e2c4d4e55d282b275834484cfce2270691dfcae99805497348a3b9a186c",
+     "fitted_survival": 0.8,
+     "last_trade_price": 0.8,
+     "minute_volume": 200.0,
+     "minutes_before_cutoff": 11.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26MAY-T30000"
+    },
+    {
+     "candle_sha256": "95dad9fe7d5fae52bf4ddc20bf1a310cc0b0b23718353a585f18ff79dda0c2dc",
+     "fitted_survival": 0.76,
+     "last_trade_price": 0.76,
+     "minute_volume": 200.0,
+     "minutes_before_cutoff": 14.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26MAY-T40000"
+    },
+    {
+     "candle_sha256": "97d7247f8234e8c7ddc9442a468603e9a55dc00b153b019cbb04f016943cb48b",
+     "fitted_survival": 0.72,
+     "last_trade_price": 0.72,
+     "minute_volume": 3060.84,
+     "minutes_before_cutoff": 11.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26MAY-T50000"
+    },
+    {
+     "candle_sha256": "21f1a8341879f0e61554f66343961f8767674b958040f47f0ec143326e44f9f9",
+     "fitted_survival": 0.67,
+     "last_trade_price": 0.67,
+     "minute_volume": 619.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26MAY-T60000"
+    },
+    {
+     "candle_sha256": "81072194a5820ca8a7fdbacfe3b097548748804696059b805565ad5f9b68a9d1",
+     "fitted_survival": 0.65,
+     "last_trade_price": 0.65,
+     "minute_volume": 1500.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26MAY-T70000"
+    },
+    {
+     "candle_sha256": "2944472693211322f7bc05f741e42d67808e83662353db82df860eb4b2d25909",
+     "fitted_survival": 0.61,
+     "last_trade_price": 0.61,
+     "minute_volume": 158.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26MAY-T80000"
+    },
+    {
+     "candle_sha256": "d55f22b1ba6bf438a1979ab95a138c5d8484ea018a26e480dee60786984f3691",
+     "fitted_survival": 0.57,
+     "last_trade_price": 0.57,
+     "minute_volume": 1.7,
+     "minutes_before_cutoff": 2.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26MAY-T90000"
+    },
+    {
+     "candle_sha256": "5b6ba8f316433cb36a62c0a6f515e86b18b387de712d9d3aa6ddd5ec0449d744",
+     "fitted_survival": 0.49,
+     "last_trade_price": 0.49,
+     "minute_volume": 12.94,
+     "minutes_before_cutoff": 5.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26MAY-T100000"
+    },
+    {
+     "candle_sha256": "08f5609c38e679b3561492f5986d62de67e0cfd4b3e57c6e65bcb22330400ebe",
+     "fitted_survival": 0.42,
+     "last_trade_price": 0.42,
+     "minute_volume": 11.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 110000.0,
+     "ticker": "KXPAYROLLS-26MAY-T110000"
+    },
+    {
+     "candle_sha256": "3c56e93f184f7af2c2b9da96381568dc801ec887c003c7b7b4d093137ea7a72b",
+     "fitted_survival": 0.33,
+     "last_trade_price": 0.33,
+     "minute_volume": 2.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26MAY-T125000"
+    },
+    {
+     "candle_sha256": "1199d0d64934f4daafcc52865fa2e1d5a35f15ca0a651e0dd9bb9e5105995193",
+     "fitted_survival": 0.17,
+     "last_trade_price": 0.17,
+     "minute_volume": 1000.0,
+     "minutes_before_cutoff": 13.0,
+     "strike": 150000.0,
+     "ticker": "KXPAYROLLS-26MAY-T150000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2026-05",
+   "release_date": "2026-06-05",
+   "strikes_used": 17,
+   "surprise": 79600.0
+  },
+  {
+   "actual": 29000.0,
+   "event_ticker": "KXPAYROLLS-26SEP",
+   "excluded_reason": null,
+   "expected": 88300.0,
+   "ladder": [
+    {
+     "candle_sha256": "a8a388a843e132e5073b2b1208e93d585f7bbf1ac791218c99381ba5ab029cde",
+     "fitted_survival": 0.94,
+     "last_trade_price": 0.94,
+     "minute_volume": 2.0,
+     "minutes_before_cutoff": 27.0,
+     "strike": -25000.0,
+     "ticker": "KXPAYROLLS-26SEP-T-25000"
+    },
+    {
+     "candle_sha256": "7d756864c1ecae84c42c8fc8dbeba770b0b139b104a63fc54baa50f0d5e349d0",
+     "fitted_survival": 0.8799999999999999,
+     "last_trade_price": 0.88,
+     "minute_volume": 104.5,
+     "minutes_before_cutoff": 5.0,
+     "strike": 0.0,
+     "ticker": "KXPAYROLLS-26SEP-T0"
+    },
+    {
+     "candle_sha256": "8c29809c9a4b54ca83f28ea26e4318dcc9c267910d7ffcf75e4fa49d92b60878",
+     "fitted_survival": 0.86,
+     "last_trade_price": 0.86,
+     "minute_volume": 9.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 10000.0,
+     "ticker": "KXPAYROLLS-26SEP-T10000"
+    },
+    {
+     "candle_sha256": "70ac78720b402210e0ef60395d0f164ee89708d5acfe59d49e7a2ffa0865787a",
+     "fitted_survival": 0.86,
+     "last_trade_price": 0.86,
+     "minute_volume": 1.15,
+     "minutes_before_cutoff": 56.0,
+     "strike": 20000.0,
+     "ticker": "KXPAYROLLS-26SEP-T20000"
+    },
+    {
+     "candle_sha256": "d4a1cca5fd0a0829ca1e8feb71bb29d6c324ba1d9fceebf32c59a2227ea6483d",
+     "fitted_survival": 0.78,
+     "last_trade_price": 0.78,
+     "minute_volume": 25.25,
+     "minutes_before_cutoff": 3.0,
+     "strike": 30000.0,
+     "ticker": "KXPAYROLLS-26SEP-T30000"
+    },
+    {
+     "candle_sha256": "699828c0753a0315080526c69739270aaac3e5b9d9ff9a4fa06f3deb7eeb2a49",
+     "fitted_survival": 0.74,
+     "last_trade_price": 0.74,
+     "minute_volume": 20.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 40000.0,
+     "ticker": "KXPAYROLLS-26SEP-T40000"
+    },
+    {
+     "candle_sha256": "ba268e34f7fc597b1cb93813b2f78715ba24fb78ee0d26b38545662f0560db30",
+     "fitted_survival": 0.71,
+     "last_trade_price": 0.71,
+     "minute_volume": 34.51,
+     "minutes_before_cutoff": 2.0,
+     "strike": 50000.0,
+     "ticker": "KXPAYROLLS-26SEP-T50000"
+    },
+    {
+     "candle_sha256": "81679afd06f767e9317c69662effe5fe8409e11578ded891f7d37d9b2005c7e8",
+     "fitted_survival": 0.69,
+     "last_trade_price": 0.69,
+     "minute_volume": 35.9,
+     "minutes_before_cutoff": 2.0,
+     "strike": 60000.0,
+     "ticker": "KXPAYROLLS-26SEP-T60000"
+    },
+    {
+     "candle_sha256": "42b4343c6b4592a88a1450430ac22fbd11cfffdcd6dd2e5b5575706dd10bff95",
+     "fitted_survival": 0.62,
+     "last_trade_price": 0.62,
+     "minute_volume": 2.52,
+     "minutes_before_cutoff": 0.0,
+     "strike": 70000.0,
+     "ticker": "KXPAYROLLS-26SEP-T70000"
+    },
+    {
+     "candle_sha256": "e8a453eb213885bcfb97d84b09bef68803fec103308200621aef0b96598084c4",
+     "fitted_survival": 0.57,
+     "last_trade_price": 0.57,
+     "minute_volume": 275.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 80000.0,
+     "ticker": "KXPAYROLLS-26SEP-T80000"
+    },
+    {
+     "candle_sha256": "6b07b5a6172c471e734b538030c1399c4866d1f6b49a41a58808681839995d98",
+     "fitted_survival": 0.52,
+     "last_trade_price": 0.52,
+     "minute_volume": 9.3,
+     "minutes_before_cutoff": 3.0,
+     "strike": 90000.0,
+     "ticker": "KXPAYROLLS-26SEP-T90000"
+    },
+    {
+     "candle_sha256": "9025e3e66f67e020ff1a347569eb42469e4385792f0c2ea1d015200f6cb540c7",
+     "fitted_survival": 0.43,
+     "last_trade_price": 0.43,
+     "minute_volume": 42.57,
+     "minutes_before_cutoff": 3.0,
+     "strike": 100000.0,
+     "ticker": "KXPAYROLLS-26SEP-T100000"
+    },
+    {
+     "candle_sha256": "32735c3f0926501fefc52e7453c91fb39a82dba6e139d8e8dbd6645cf18b44b5",
+     "fitted_survival": 0.29,
+     "last_trade_price": 0.29,
+     "minute_volume": 82.12,
+     "minutes_before_cutoff": 2.0,
+     "strike": 125000.0,
+     "ticker": "KXPAYROLLS-26SEP-T125000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2026-09",
+   "release_date": "2026-10-02",
+   "strikes_used": 13,
+   "surprise": -59300.0
+  },
+  {
+   "actual": 175000.0,
+   "event_ticker": "PAYROLLS-24APR",
+   "excluded_reason": null,
+   "expected": 237285.0,
+   "ladder": [
+    {
+     "candle_sha256": "ec90d06280e278a584b60b4eb9438b19bfc9b7d6e86d6064f58076124bcf86d4",
+     "fitted_survival": 0.92,
+     "last_trade_price": 0.92,
+     "minute_volume": 300.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 100000.0,
+     "ticker": "PAYROLLS-24APR-T100000"
+    },
+    {
+     "candle_sha256": "33e0f1f0424d42dbb5d117c595e074aa9f6825be3d251c4d525a2b755fcc3ac3",
+     "fitted_survival": 0.84,
+     "last_trade_price": 0.84,
+     "minute_volume": 264.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": 150000.0,
+     "ticker": "PAYROLLS-24APR-T150000"
+    },
+    {
+     "candle_sha256": "52c1bbe3769cfd1fbbcc2834e8a06e0c21230e3cf227b77577a5a89fe244bbad",
+     "fitted_survival": 0.7,
+     "last_trade_price": 0.7,
+     "minute_volume": 175.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 200000.0,
+     "ticker": "PAYROLLS-24APR-T200000"
+    },
+    {
+     "candle_sha256": "30ee3ff013826615e6cc6b651c30939c7f2f727081e2a765e4dd13b0967075de",
+     "fitted_survival": 0.59,
+     "last_trade_price": 0.59,
+     "minute_volume": 365.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 225000.0,
+     "ticker": "PAYROLLS-24APR-T225000"
+    },
+    {
+     "candle_sha256": "40ed55a1dfa61a271a9b8f7ca6ae7a3ecffb794b44e1768689b646a2d643d77f",
+     "fitted_survival": 0.47,
+     "last_trade_price": 0.47,
+     "minute_volume": 205.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 250000.0,
+     "ticker": "PAYROLLS-24APR-T250000"
+    },
+    {
+     "candle_sha256": "b4a867dd55c655303b935d759480e44d258b544b4584dea303d7365fb9450e61",
+     "fitted_survival": 0.38,
+     "last_trade_price": 0.38,
+     "minute_volume": 76.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 275000.0,
+     "ticker": "PAYROLLS-24APR-T275000"
+    },
+    {
+     "candle_sha256": "918812d538802a34d57a0d3c7e18409dc411bd7ce5e820e4e6fe4fbf6475c10b",
+     "fitted_survival": 0.23,
+     "last_trade_price": 0.23,
+     "minute_volume": 75.0,
+     "minutes_before_cutoff": 18.0,
+     "strike": 300000.0,
+     "ticker": "PAYROLLS-24APR-T300000"
+    },
+    {
+     "candle_sha256": "f68ba99d488ac70e5921fa299e3f1ce9fe94a5e2a269e8d6c30e961f3b4e2c1a",
+     "fitted_survival": 0.21,
+     "last_trade_price": 0.21,
+     "minute_volume": 1.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 303000.0,
+     "ticker": "PAYROLLS-24APR-T303000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2024-04",
+   "release_date": "2024-05-03",
+   "strikes_used": 8,
+   "surprise": -62285.0
+  },
+  {
+   "actual": 142000.0,
+   "event_ticker": "PAYROLLS-24AUG",
+   "excluded_reason": null,
+   "expected": 161250.0,
+   "ladder": [
+    {
+     "candle_sha256": "07029a5885698b0a29bb55eccf68d8ab37e981a0d311effa8745420d3cf63f34",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 15.0,
+     "minutes_before_cutoff": 931.0,
+     "strike": 0.0,
+     "ticker": "PAYROLLS-24AUG-T0"
+    },
+    {
+     "candle_sha256": "355656e89a4888f364670027ce7f66733cf1e8cd983c986aba1263fbb91688d4",
+     "fitted_survival": 0.86,
+     "last_trade_price": 0.86,
+     "minute_volume": 215.0,
+     "minutes_before_cutoff": 624.0,
+     "strike": 100000.0,
+     "ticker": "PAYROLLS-24AUG-T100000"
+    },
+    {
+     "candle_sha256": "716adf880cff60f39048a661a6c9627e4cc5e816ba8cade410f1d9f698ff2883",
+     "fitted_survival": 0.68,
+     "last_trade_price": 0.68,
+     "minute_volume": 290.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 150000.0,
+     "ticker": "PAYROLLS-24AUG-T150000"
+    },
+    {
+     "candle_sha256": "3cb9745977ca428278775ff4179af6d69091263dc5ec901005948da8bfae6c8e",
+     "fitted_survival": 0.19,
+     "last_trade_price": 0.19,
+     "minute_volume": 1742.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 200000.0,
+     "ticker": "PAYROLLS-24AUG-T200000"
+    },
+    {
+     "candle_sha256": "0f07bcaa9d781e5ef48a53d6e92c68e2232a6973b8ffc575fa5ff759495a4795",
+     "fitted_survival": 0.08,
+     "last_trade_price": 0.08,
+     "minute_volume": 20.0,
+     "minutes_before_cutoff": 891.0,
+     "strike": 250000.0,
+     "ticker": "PAYROLLS-24AUG-T250000"
+    },
+    {
+     "candle_sha256": "917d306a04c5b782f6ccde3b3b8a4e03620e824230a5d870d16c075940cb398f",
+     "fitted_survival": 0.03,
+     "last_trade_price": 0.03,
+     "minute_volume": 1400.0,
+     "minutes_before_cutoff": 1176.0,
+     "strike": 300000.0,
+     "ticker": "PAYROLLS-24AUG-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2024-08",
+   "release_date": "2024-09-06",
+   "strikes_used": 6,
+   "surprise": -19250.0
+  },
+  {
+   "actual": 275000.0,
+   "event_ticker": "PAYROLLS-24FEB",
+   "excluded_reason": null,
+   "expected": 228019.0,
+   "ladder": [
+    {
+     "candle_sha256": "055cb0e8039cfd53fe36f5edff4f93fd1e167ae019e67328389f7d629cc771f3",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 240.0,
+     "minutes_before_cutoff": 11.0,
+     "strike": -1.0,
+     "ticker": "PAYROLLS-24FEB-T-1"
+    },
+    {
+     "candle_sha256": "b1091175ce7fc560bdadd9d72f2cbc8d5ef7650aa1b2b501bdb1fcbd9ae24b52",
+     "fitted_survival": 0.9,
+     "last_trade_price": 0.9,
+     "minute_volume": 442.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 99999.0,
+     "ticker": "PAYROLLS-24FEB-T99999"
+    },
+    {
+     "candle_sha256": "a4b7a8733ad08a9ee6cc76f3516013a484b6e9cdec4da1ba1b2e663480464b97",
+     "fitted_survival": 0.78,
+     "last_trade_price": 0.78,
+     "minute_volume": 631.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 149999.0,
+     "ticker": "PAYROLLS-24FEB-T149999"
+    },
+    {
+     "candle_sha256": "e38f29845c8954beefa404d4a8ee03a9bf69fe02ca1824a6e6fe910df270bf48",
+     "fitted_survival": 0.61,
+     "last_trade_price": 0.61,
+     "minute_volume": 638.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 199999.0,
+     "ticker": "PAYROLLS-24FEB-T199999"
+    },
+    {
+     "candle_sha256": "002725bb6f377c58ba68bf5534635ca146cb7da3d4d857d4e1046ef702ca076d",
+     "fitted_survival": 0.22000000000000003,
+     "last_trade_price": 0.22,
+     "minute_volume": 308.0,
+     "minutes_before_cutoff": 13.0,
+     "strike": 299999.0,
+     "ticker": "PAYROLLS-24FEB-T299999"
+    },
+    {
+     "candle_sha256": "54d5e6f6650acf610bb88f892dfeeeed23230e14ec07d94937ba0fe505399752",
+     "fitted_survival": 0.14,
+     "last_trade_price": 0.14,
+     "minute_volume": 415.0,
+     "minutes_before_cutoff": 12.0,
+     "strike": 352999.0,
+     "ticker": "PAYROLLS-24FEB-T352999"
+    },
+    {
+     "candle_sha256": "450a7efb2f17cdaf6ea85b8de46f79e4d32a45c67e463faed9b3f27ff7df1aec",
+     "fitted_survival": 0.04,
+     "last_trade_price": 0.04,
+     "minute_volume": 280.0,
+     "minutes_before_cutoff": 681.0,
+     "strike": 399999.0,
+     "ticker": "PAYROLLS-24FEB-T399999"
+    }
+   ],
+   "monotone_adjustment_max": 2.7755575615628914e-17,
+   "reference_month": "2024-02",
+   "release_date": "2024-03-08",
+   "strikes_used": 7,
+   "surprise": 46981.0
+  },
+  {
+   "actual": 114000.0,
+   "event_ticker": "PAYROLLS-24JUL",
+   "excluded_reason": null,
+   "expected": 175130.0,
+   "ladder": [
+    {
+     "candle_sha256": "1f6314f6f7e6ea0d52850ce7f48270628252f9fb0eee884ac612de465283f30e",
+     "fitted_survival": 0.9,
+     "last_trade_price": 0.9,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 734.0,
+     "strike": 100000.0,
+     "ticker": "PAYROLLS-24JUL-T100000"
+    },
+    {
+     "candle_sha256": "a156a396c170507faf611b128e01583d1cf43828a3aad6a844c0e9877de5f137",
+     "fitted_survival": 0.66,
+     "last_trade_price": 0.66,
+     "minute_volume": 1200.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 150000.0,
+     "ticker": "PAYROLLS-24JUL-T150000"
+    },
+    {
+     "candle_sha256": "cbfd44c47fdeed1fc56f41a5e3e56afe786d0b36326d92b268ed98ad7d9969ff",
+     "fitted_survival": 0.33,
+     "last_trade_price": 0.33,
+     "minute_volume": 1200.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 200000.0,
+     "ticker": "PAYROLLS-24JUL-T200000"
+    },
+    {
+     "candle_sha256": "0c56297ec774c85518f65ac72d9ca564ba539a20b6f24ed6c4b38600a4dc5859",
+     "fitted_survival": 0.27,
+     "last_trade_price": 0.27,
+     "minute_volume": 13.0,
+     "minutes_before_cutoff": 620.0,
+     "strike": 206000.0,
+     "ticker": "PAYROLLS-24JUL-T206000"
+    },
+    {
+     "candle_sha256": "d7e3e81f43999cea7d80f3d15780a4f7adaf5ad6493991c3fab6c5a445eb690c",
+     "fitted_survival": 0.12,
+     "last_trade_price": 0.12,
+     "minute_volume": 200.0,
+     "minutes_before_cutoff": 731.0,
+     "strike": 250000.0,
+     "ticker": "PAYROLLS-24JUL-T250000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2024-07",
+   "release_date": "2024-08-02",
+   "strikes_used": 5,
+   "surprise": -61130.0
+  },
+  {
+   "actual": 206000.0,
+   "event_ticker": "PAYROLLS-24JUN",
+   "excluded_reason": null,
+   "expected": 190820.0,
+   "ladder": [
+    {
+     "candle_sha256": "b2f4a8cbd839b3c8b1f0074ae7028c15bcf4a050f553c3032ced755818c7e0f9",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 8.0,
+     "minutes_before_cutoff": 1346.0,
+     "strike": -100000.0,
+     "ticker": "PAYROLLS-24JUN-T-100000"
+    },
+    {
+     "candle_sha256": "8d7fd6c31fdf70b799bc02effb60770c5d80730f8288c969b1efadeaa524b67d",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 8.0,
+     "minutes_before_cutoff": 1343.0,
+     "strike": 0.0,
+     "ticker": "PAYROLLS-24JUN-T0"
+    },
+    {
+     "candle_sha256": "832ea4fdae1ea49af87b42da1c8b253fb4d8e29fca6d11bd7a68c272991d5356",
+     "fitted_survival": 0.9,
+     "last_trade_price": 0.9,
+     "minute_volume": 680.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 100000.0,
+     "ticker": "PAYROLLS-24JUN-T100000"
+    },
+    {
+     "candle_sha256": "bfc2da16f87e85dea7fdbc2baec7df56c381eb02409950d47be2c26b8472d5b8",
+     "fitted_survival": 0.75,
+     "last_trade_price": 0.75,
+     "minute_volume": 600.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 150000.0,
+     "ticker": "PAYROLLS-24JUN-T150000"
+    },
+    {
+     "candle_sha256": "a44f63c4bf8e6a2369adcc360e5d768fc0c506df998f74d4f37f1ddb61e89669",
+     "fitted_survival": 0.48,
+     "last_trade_price": 0.48,
+     "minute_volume": 500.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 200000.0,
+     "ticker": "PAYROLLS-24JUN-T200000"
+    },
+    {
+     "candle_sha256": "1bc8641042525287ca77eb1c0f01a90c37ba47b1113e6f0af912f4a5cc9565e3",
+     "fitted_survival": 0.18000000000000002,
+     "last_trade_price": 0.18,
+     "minute_volume": 48.0,
+     "minutes_before_cutoff": 18.0,
+     "strike": 250000.0,
+     "ticker": "PAYROLLS-24JUN-T250000"
+    },
+    {
+     "candle_sha256": "0d2cb5aa99431480120056d10c44168548ab914342305e2a7c119674d61aa554",
+     "fitted_survival": 0.14,
+     "last_trade_price": 0.14,
+     "minute_volume": 22.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 272000.0,
+     "ticker": "PAYROLLS-24JUN-T272000"
+    },
+    {
+     "candle_sha256": "f56b40af4a44e541b08c0f0d52d5cafc35ef79c8d1062da3fb899715b6466de7",
+     "fitted_survival": 0.06,
+     "last_trade_price": 0.06,
+     "minute_volume": 2.0,
+     "minutes_before_cutoff": 16.0,
+     "strike": 300000.0,
+     "ticker": "PAYROLLS-24JUN-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 2.7755575615628914e-17,
+   "reference_month": "2024-06",
+   "release_date": "2024-07-05",
+   "strikes_used": 8,
+   "surprise": 15180.0
+  },
+  {
+   "actual": 303000.0,
+   "event_ticker": "PAYROLLS-24MAR",
+   "excluded_reason": null,
+   "expected": 222750.0,
+   "ladder": [
+    {
+     "candle_sha256": "5b653f0dce9f294cb164ab203abffcfe1b4011bc853d1c394fe0522957c7b640",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 0.0,
+     "ticker": "PAYROLLS-24MAR-T0"
+    },
+    {
+     "candle_sha256": "bd12e7f3855e75b1851ed69385850ee3bd7ea5ff50dd16cf133064d3627303ed",
+     "fitted_survival": 0.94,
+     "last_trade_price": 0.94,
+     "minute_volume": 135.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": 100000.0,
+     "ticker": "PAYROLLS-24MAR-T100000"
+    },
+    {
+     "candle_sha256": "dae6f699ec2e7ebf4eecd55808479ddc46613b10a2cd2a6376624ee493718d1d",
+     "fitted_survival": 0.8100000000000002,
+     "last_trade_price": 0.81,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "PAYROLLS-24MAR-T150000"
+    },
+    {
+     "candle_sha256": "c71132bb4082e3a9efa287bd58003839f7940a9d70ed855d963fd61aef582da1",
+     "fitted_survival": 0.71,
+     "last_trade_price": 0.71,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 175000.0,
+     "ticker": "PAYROLLS-24MAR-T175000"
+    },
+    {
+     "candle_sha256": "50e73d8e47f4833f9d0f55f8ee10e9fbd12e09f8cf9e5d9daecb9d5bfaa2bec6",
+     "fitted_survival": 0.59,
+     "last_trade_price": 0.59,
+     "minute_volume": 9.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 200000.0,
+     "ticker": "PAYROLLS-24MAR-T200000"
+    },
+    {
+     "candle_sha256": "79fb21795291f7db390c0b4d2bcde1571211ed4766ed4b6240b4516de74c6942",
+     "fitted_survival": 0.5,
+     "last_trade_price": 0.5,
+     "minute_volume": 685.0,
+     "minutes_before_cutoff": 15.0,
+     "strike": 225000.0,
+     "ticker": "PAYROLLS-24MAR-T225000"
+    },
+    {
+     "candle_sha256": "aa29be170831e7dbae0a542991ed8e23668e3035aa7b45379f1acf855a9f9e46",
+     "fitted_survival": 0.39,
+     "last_trade_price": 0.39,
+     "minute_volume": 50.0,
+     "minutes_before_cutoff": 13.0,
+     "strike": 250000.0,
+     "ticker": "PAYROLLS-24MAR-T250000"
+    },
+    {
+     "candle_sha256": "5ed51515dcf550dec936a3e9351e82099e82506f06c81a3c0eb595aab4173222",
+     "fitted_survival": 0.3,
+     "last_trade_price": 0.3,
+     "minute_volume": 127.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 275000.0,
+     "ticker": "PAYROLLS-24MAR-T275000"
+    },
+    {
+     "candle_sha256": "0e539eaf5f20243e51b2ec46bb4a1091356a7abbaa53991942d981a753b910ce",
+     "fitted_survival": 0.17,
+     "last_trade_price": 0.17,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 6.0,
+     "strike": 300000.0,
+     "ticker": "PAYROLLS-24MAR-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2024-03",
+   "release_date": "2024-04-05",
+   "strikes_used": 9,
+   "surprise": 80250.0
+  },
+  {
+   "actual": 272000.0,
+   "event_ticker": "PAYROLLS-24MAY",
+   "excluded_reason": null,
+   "expected": 177250.0,
+   "ladder": [
+    {
+     "candle_sha256": "2f860aa18c679ee14fa6b39cbf51c6dce6cc113c09a27184102be719a1c27e8e",
+     "fitted_survival": 0.84,
+     "last_trade_price": 0.84,
+     "minute_volume": 250.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 100000.0,
+     "ticker": "PAYROLLS-24MAY-T100000"
+    },
+    {
+     "candle_sha256": "c17faaf208e433a13108eadb17b5410eb05dc20f38bb864cab6956416000fc93",
+     "fitted_survival": 0.67,
+     "last_trade_price": 0.67,
+     "minute_volume": 2.0,
+     "minutes_before_cutoff": 12.0,
+     "strike": 150000.0,
+     "ticker": "PAYROLLS-24MAY-T150000"
+    },
+    {
+     "candle_sha256": "a4f3f883952deade45c5a4276cb87802628e2cac938e470991d603140ba8a7c4",
+     "fitted_survival": 0.45,
+     "last_trade_price": 0.45,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 15.0,
+     "strike": 175000.0,
+     "ticker": "PAYROLLS-24MAY-T175000"
+    },
+    {
+     "candle_sha256": "78c9d67032dcbe7ab8153efa623cf14d7d3b1384792cc3524f71ac0c26b8cb55",
+     "fitted_survival": 0.35,
+     "last_trade_price": 0.35,
+     "minute_volume": 664.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 200000.0,
+     "ticker": "PAYROLLS-24MAY-T200000"
+    },
+    {
+     "candle_sha256": "b9c7168e2209eefc2f000840513d0f5432cecc3789405264c6d2fe5b5e60a825",
+     "fitted_survival": 0.19,
+     "last_trade_price": 0.19,
+     "minute_volume": 300.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 250000.0,
+     "ticker": "PAYROLLS-24MAY-T250000"
+    },
+    {
+     "candle_sha256": "99126ac1d2a08b1310eeb989a5b1cf9a4e88193862d197760a9047a58d75928d",
+     "fitted_survival": 0.07,
+     "last_trade_price": 0.07,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 16.0,
+     "strike": 300000.0,
+     "ticker": "PAYROLLS-24MAY-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2024-05",
+   "release_date": "2024-06-07",
+   "strikes_used": 6,
+   "surprise": 94750.0
+  },
+  {
+   "actual": 12000.0,
+   "event_ticker": "PAYROLLS-24OCT",
+   "excluded_reason": null,
+   "expected": 128860.0,
+   "ladder": [
+    {
+     "candle_sha256": "b17c6d0ffd1a8cc11130702ff540a351bebafb8da85fc5ba5de86a06312d76b1",
+     "fitted_survival": 0.96,
+     "last_trade_price": 0.96,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 18.0,
+     "strike": -50000.0,
+     "ticker": "PAYROLLS-24OCT-T-50000"
+    },
+    {
+     "candle_sha256": "9a513368a48a63f32a75cf034bb778e490b2644c163593bedc6724226f57e5a7",
+     "fitted_survival": 0.92,
+     "last_trade_price": 0.92,
+     "minute_volume": 375.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 0.0,
+     "ticker": "PAYROLLS-24OCT-T0"
+    },
+    {
+     "candle_sha256": "bc5971b6655d4598263d57d9442cce3043f57a4a87a52d69736f6ae87bd85449",
+     "fitted_survival": 0.82,
+     "last_trade_price": 0.82,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 50000.0,
+     "ticker": "PAYROLLS-24OCT-T50000"
+    },
+    {
+     "candle_sha256": "0ac67b47d85136a7836946b00b3e4af14b6e197a72a02bcf66619e406a192b66",
+     "fitted_survival": 0.66,
+     "last_trade_price": 0.66,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "PAYROLLS-24OCT-T100000"
+    },
+    {
+     "candle_sha256": "ecd284015b57f5e464bdd8b8d026a77392d6036a00161b5e6fc7e32a71ec513d",
+     "fitted_survival": 0.39,
+     "last_trade_price": 0.39,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "PAYROLLS-24OCT-T150000"
+    },
+    {
+     "candle_sha256": "78299bd289cc0c17ae90501d9f52fca28ec5be6e97d0b36006c0721a6719d7e9",
+     "fitted_survival": 0.21,
+     "last_trade_price": 0.21,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 200000.0,
+     "ticker": "PAYROLLS-24OCT-T200000"
+    },
+    {
+     "candle_sha256": "f1807ac1b3142102cb6fa60c2ea3c776adfeff729facee7b87adc418e29699d1",
+     "fitted_survival": 0.1,
+     "last_trade_price": 0.1,
+     "minute_volume": 40.0,
+     "minutes_before_cutoff": 9.0,
+     "strike": 250000.0,
+     "ticker": "PAYROLLS-24OCT-T250000"
+    },
+    {
+     "candle_sha256": "c8f38e0a47dc45394db0ad8e624fe161631321315d06559d3e48e915ba214cd6",
+     "fitted_survival": 0.08,
+     "last_trade_price": 0.08,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 987.0,
+     "strike": 254000.0,
+     "ticker": "PAYROLLS-24OCT-T254000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2024-10",
+   "release_date": "2024-11-01",
+   "strikes_used": 8,
+   "surprise": -116860.0
+  },
+  {
+   "actual": 254000.0,
+   "event_ticker": "PAYROLLS-24SEP",
+   "excluded_reason": null,
+   "expected": 150840.0,
+   "ladder": [
+    {
+     "candle_sha256": "e858a8f52e0f83fa49816ff0c7e85e82909a38b9859dac34aa4d1bf69d7484ad",
+     "fitted_survival": 0.82,
+     "last_trade_price": 0.82,
+     "minute_volume": 21.0,
+     "minutes_before_cutoff": 703.0,
+     "strike": 100000.0,
+     "ticker": "PAYROLLS-24SEP-T100000"
+    },
+    {
+     "candle_sha256": "c271e7c22568e380d2d40d23fd9378a598c20862d9c5886df8571fc21216b6ab",
+     "fitted_survival": 0.58,
+     "last_trade_price": 0.58,
+     "minute_volume": 41.0,
+     "minutes_before_cutoff": 10.0,
+     "strike": 142000.0,
+     "ticker": "PAYROLLS-24SEP-T142000"
+    },
+    {
+     "candle_sha256": "e62e3a1d620c748bc12024320fe6314324c59e9b76b88424d224ad68a116beb5",
+     "fitted_survival": 0.53,
+     "last_trade_price": 0.53,
+     "minute_volume": 200.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 150000.0,
+     "ticker": "PAYROLLS-24SEP-T150000"
+    },
+    {
+     "candle_sha256": "cea6648730cda7105e0f30be45d12c9f3efd705116c965bc80084c1031576212",
+     "fitted_survival": 0.17,
+     "last_trade_price": 0.17,
+     "minute_volume": 50.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 200000.0,
+     "ticker": "PAYROLLS-24SEP-T200000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2024-09",
+   "release_date": "2024-10-04",
+   "strikes_used": 4,
+   "surprise": 103160.0
+  },
+  {
+   "actual": 253000.0,
+   "event_ticker": "PROLLS-23APR",
+   "excluded_reason": null,
+   "expected": 196000.0,
+   "ladder": [
+    {
+     "candle_sha256": "315274657ceab15c357a8e6bb527b3c94d40140efb9bb00df90b8a97670bf314",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 5000.0,
+     "minutes_before_cutoff": 628.0,
+     "strike": 0.0,
+     "ticker": "PROLLS-23APR-T0"
+    },
+    {
+     "candle_sha256": "ec526979aa7655ac0f83bbe7e5773cfaed49982fc31db3ea257487d1e1fd67fc",
+     "fitted_survival": 0.85,
+     "last_trade_price": 0.85,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23APR-T100000"
+    },
+    {
+     "candle_sha256": "9baaaaa7ce9983145fdf6da8216f350de16b589cda0fee2282f27f97fcc975ca",
+     "fitted_survival": 0.46,
+     "last_trade_price": 0.46,
+     "minute_volume": 35.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23APR-T200000"
+    },
+    {
+     "candle_sha256": "b8b0ee64371ae78586298351bba55ad750adbc32e8143a59b0bba74ba65c6953",
+     "fitted_survival": 0.14,
+     "last_trade_price": 0.14,
+     "minute_volume": 8.0,
+     "minutes_before_cutoff": 9.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23APR-T300000"
+    },
+    {
+     "candle_sha256": "fc939526f864effe9d401623988472e143a9196c0b95ec2e4832f4951eaeeb6a",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 635.0,
+     "minutes_before_cutoff": 632.0,
+     "strike": 400000.0,
+     "ticker": "PROLLS-23APR-T400000"
+    },
+    {
+     "candle_sha256": "f8eb181bc8a93bed946e2229e443ae05c214c3ffefe945cbba290aff49470740",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 1284.0,
+     "strike": 500000.0,
+     "ticker": "PROLLS-23APR-T500000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2023-04",
+   "release_date": "2023-05-05",
+   "strikes_used": 6,
+   "surprise": 57000.0
+  },
+  {
+   "actual": 187000.0,
+   "event_ticker": "PROLLS-23AUG",
+   "excluded_reason": null,
+   "expected": 167999.99999999997,
+   "ladder": [
+    {
+     "candle_sha256": "356c6a86507d80ae44d00969d09181f81c6cf673382b222f0c465cf7a4081fc1",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 200.0,
+     "minutes_before_cutoff": 1360.0,
+     "strike": 0.0,
+     "ticker": "PROLLS-23AUG-T0"
+    },
+    {
+     "candle_sha256": "ab52b6271137395ffb27e1e0bb75a4c5513235a67413dd90ca046a7707ebf447",
+     "fitted_survival": 0.8499999999999999,
+     "last_trade_price": 0.85,
+     "minute_volume": 411.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23AUG-T100000"
+    },
+    {
+     "candle_sha256": "d043e964bb4939fe8cdbabeee6b852f5980cc350f1e57a7528ff009fd2ec2578",
+     "fitted_survival": 0.31,
+     "last_trade_price": 0.31,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 4.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23AUG-T200000"
+    },
+    {
+     "candle_sha256": "fe2d5b5788958304dceffba8fa60dae2c8cc1cc7ff554ab880c6ea806bd58a48",
+     "fitted_survival": 0.05,
+     "last_trade_price": 0.05,
+     "minute_volume": 75.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23AUG-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2023-08",
+   "release_date": "2023-09-01",
+   "strikes_used": 4,
+   "surprise": 19000.00000000003
+  },
+  {
+   "actual": null,
+   "event_ticker": "PROLLS-23DECB",
+   "excluded_reason": "NO_RELEASE_DATE_OR_CONTRACTS",
+   "expected": null,
+   "ladder": [],
+   "reference_month": null,
+   "release_date": null,
+   "strikes_used": 0,
+   "surprise": null
+  },
+  {
+   "actual": 187000.0,
+   "event_ticker": "PROLLS-23JUL",
+   "excluded_reason": null,
+   "expected": 307000.0,
+   "ladder": [
+    {
+     "candle_sha256": "eacd68d5592ba6973c91d3c2dd1b276e8023e923568878ec8c53db6a9fe5a592",
+     "fitted_survival": 0.97,
+     "last_trade_price": 0.97,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23JUL-T100000"
+    },
+    {
+     "candle_sha256": "5d00468a6f71fdaa736472ea86c6cc046d1718f9b3bc6cae55c05b34067e3a4f",
+     "fitted_survival": 0.8299999999999998,
+     "last_trade_price": 0.83,
+     "minute_volume": 1599.0,
+     "minutes_before_cutoff": 18.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23JUL-T200000"
+    },
+    {
+     "candle_sha256": "41e19dd427609396085f37b3092e835b6c6b06cf3cce996306d921d07af2a3d8",
+     "fitted_survival": 0.49000000000000005,
+     "last_trade_price": 0.49,
+     "minute_volume": 135.0,
+     "minutes_before_cutoff": 10.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23JUL-T300000"
+    },
+    {
+     "candle_sha256": "b16c05156b47ab0e7e22d4c783a204f075c142f495df88eda6cdb341d6dcc6c0",
+     "fitted_survival": 0.22000000000000003,
+     "last_trade_price": 0.22,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 400000.0,
+     "ticker": "PROLLS-23JUL-T400000"
+    },
+    {
+     "candle_sha256": "b1962b556996b60767a4a0d02e6f115b3b0d2bbfebf51c3ab332d78554d0a408",
+     "fitted_survival": 0.06,
+     "last_trade_price": 0.06,
+     "minute_volume": 1900.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 500000.0,
+     "ticker": "PROLLS-23JUL-T500000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2023-07",
+   "release_date": "2023-08-04",
+   "strikes_used": 5,
+   "surprise": -120000.0
+  },
+  {
+   "actual": 209000.0,
+   "event_ticker": "PROLLS-23JUN",
+   "excluded_reason": null,
+   "expected": 293000.0,
+   "ladder": [
+    {
+     "candle_sha256": "7c2322de80e93fac2696e70424ad9d7a7183baf576de27f8d465f7de40303285",
+     "fitted_survival": 0.9899999999999999,
+     "last_trade_price": 0.99,
+     "minute_volume": 3.0,
+     "minutes_before_cutoff": 1431.0,
+     "strike": 0.0,
+     "ticker": "PROLLS-23JUN-T0"
+    },
+    {
+     "candle_sha256": "48ce508032a9e45a0087e88007750cdb4e2dede99fd29d14e978749b57f04e3b",
+     "fitted_survival": 0.96,
+     "last_trade_price": 0.96,
+     "minute_volume": 54.0,
+     "minutes_before_cutoff": 9.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23JUN-T100000"
+    },
+    {
+     "candle_sha256": "2a048d32a0d4ccf1a93b3a592d74572dbe473543c415c0c8826b93abeff88f9c",
+     "fitted_survival": 0.8,
+     "last_trade_price": 0.8,
+     "minute_volume": 50.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23JUN-T200000"
+    },
+    {
+     "candle_sha256": "6b34c3cea81c1ee6ffa5188fb11db0e20b53154da51ac86ee3073ca69bd540f9",
+     "fitted_survival": 0.38,
+     "last_trade_price": 0.38,
+     "minute_volume": 52.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23JUN-T300000"
+    },
+    {
+     "candle_sha256": "7cfdda09f015bca6a8e580927e80160f011d729c4a9d6f36d8ca713eff41bf85",
+     "fitted_survival": 0.2,
+     "last_trade_price": 0.2,
+     "minute_volume": 105.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 400000.0,
+     "ticker": "PROLLS-23JUN-T400000"
+    },
+    {
+     "candle_sha256": "e541021eb64295e97b03fbc1c66a1a10daaa026d1872eba1eab161717618730b",
+     "fitted_survival": 0.1,
+     "last_trade_price": 0.1,
+     "minute_volume": 94.0,
+     "minutes_before_cutoff": 5.0,
+     "strike": 500000.0,
+     "ticker": "PROLLS-23JUN-T500000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2023-06",
+   "release_date": "2023-07-07",
+   "strikes_used": 6,
+   "surprise": -84000.0
+  },
+  {
+   "actual": 236000.0,
+   "event_ticker": "PROLLS-23MAR",
+   "excluded_reason": null,
+   "expected": 233999.99999999997,
+   "ladder": [
+    {
+     "candle_sha256": "b848cc88252c99b748ef8e901af7a929f260a5623cff8f653c85063e69aba702",
+     "fitted_survival": 0.99,
+     "last_trade_price": 0.99,
+     "minute_volume": 39.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 0.0,
+     "ticker": "PROLLS-23MAR-T0"
+    },
+    {
+     "candle_sha256": "b57d71d08ac3717c355e099a89209d515d355d797221bd63e2651046e207f6e6",
+     "fitted_survival": 0.9399999999999998,
+     "last_trade_price": 0.94,
+     "minute_volume": 559.0,
+     "minutes_before_cutoff": 8.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23MAR-T100000"
+    },
+    {
+     "candle_sha256": "db51273538dd3e1fb95e555c738bb27db166ca8c612f2b253e61d71595a507c5",
+     "fitted_survival": 0.72,
+     "last_trade_price": 0.72,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23MAR-T200000"
+    },
+    {
+     "candle_sha256": "6dd1a9cdc1cd665f0664e5487f7c21c9200d10f3e80f1a8132fd33d737d541d3",
+     "fitted_survival": 0.15,
+     "last_trade_price": 0.15,
+     "minute_volume": 2.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23MAR-T300000"
+    },
+    {
+     "candle_sha256": "6c94806313337b349c6c4ecd464c22e5017b9f0a1817993c279320006d5f0251",
+     "fitted_survival": 0.04,
+     "last_trade_price": 0.04,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 808.0,
+     "strike": 400000.0,
+     "ticker": "PROLLS-23MAR-T400000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2023-03",
+   "release_date": "2023-04-07",
+   "strikes_used": 5,
+   "surprise": 2000.000000000029
+  },
+  {
+   "actual": 339000.0,
+   "event_ticker": "PROLLS-23MAY",
+   "excluded_reason": null,
+   "expected": 212999.99999999997,
+   "ladder": [
+    {
+     "candle_sha256": "209900881512e2488f97cc85e8d1907814914f0ad5bbe0ac004b724192695243",
+     "fitted_survival": 0.9799999999999999,
+     "last_trade_price": 0.98,
+     "minute_volume": 1095.0,
+     "minutes_before_cutoff": 1242.0,
+     "strike": 0.0,
+     "ticker": "PROLLS-23MAY-T0"
+    },
+    {
+     "candle_sha256": "04cf00f3d1c79ec9511d123586dc41f8b8edb7feb4033d99739046dd4077a9aa",
+     "fitted_survival": 0.95,
+     "last_trade_price": 0.95,
+     "minute_volume": 2.0,
+     "minutes_before_cutoff": 1031.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23MAY-T100000"
+    },
+    {
+     "candle_sha256": "2e2833004ae5e432966ba2c29f0eac863aba970036ead425d6d9849ed09b97e4",
+     "fitted_survival": 0.52,
+     "last_trade_price": 0.52,
+     "minute_volume": 375.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23MAY-T200000"
+    },
+    {
+     "candle_sha256": "5bdd004ec8d82bb06aaa690bbdc6958271b9e0cbcd01ede24dcd60bca56cba4b",
+     "fitted_survival": 0.15,
+     "last_trade_price": 0.15,
+     "minute_volume": 39.0,
+     "minutes_before_cutoff": 16.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23MAY-T300000"
+    },
+    {
+     "candle_sha256": "7c846edb75d5c6174b67eeb2ca780bf5cdfba1486c2cd10796c703f95da7bc13",
+     "fitted_survival": 0.03,
+     "last_trade_price": 0.03,
+     "minute_volume": 102.0,
+     "minutes_before_cutoff": 1388.0,
+     "strike": 400000.0,
+     "ticker": "PROLLS-23MAY-T400000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2023-05",
+   "release_date": "2023-06-02",
+   "strikes_used": 5,
+   "surprise": 126000.00000000003
+  },
+  {
+   "actual": 199000.0,
+   "event_ticker": "PROLLS-23NOV",
+   "excluded_reason": null,
+   "expected": 189000.0,
+   "ladder": [
+    {
+     "candle_sha256": "b3e5b36f585d38d4fbb89a0067b809a796b2471e60825c8f278cd03b75bc2066",
+     "fitted_survival": 0.98,
+     "last_trade_price": 0.98,
+     "minute_volume": 2000.0,
+     "minutes_before_cutoff": 692.0,
+     "strike": 0.0,
+     "ticker": "PROLLS-23NOV-T0"
+    },
+    {
+     "candle_sha256": "25da38a1a9d2ae29a550478ae8e38192ad3f898fd11d66f810c05114239be042",
+     "fitted_survival": 0.92,
+     "last_trade_price": 0.92,
+     "minute_volume": 500.0,
+     "minutes_before_cutoff": 1.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23NOV-T100000"
+    },
+    {
+     "candle_sha256": "54d978f060ba742401931049e207fb4d1c85266b000b5733289a508327aed061",
+     "fitted_survival": 0.66,
+     "last_trade_price": 0.66,
+     "minute_volume": 28.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 150000.0,
+     "ticker": "PROLLS-23NOV-T150000"
+    },
+    {
+     "candle_sha256": "812859a10cccd97fcc2f8c2bd1c59594f2c59ad3a565c132a518d2cc6f7a4879",
+     "fitted_survival": 0.4,
+     "last_trade_price": 0.4,
+     "minute_volume": 400.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23NOV-T200000"
+    },
+    {
+     "candle_sha256": "ddbca66abf9118c60a3dc3f27fb1364b44b22101abc82a57c05448e6c82c4df7",
+     "fitted_survival": 0.06,
+     "last_trade_price": 0.06,
+     "minute_volume": 50.0,
+     "minutes_before_cutoff": 11.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23NOV-T300000"
+    },
+    {
+     "candle_sha256": "0f1a68ceb4041fbf9bfddb50872325eadd79507b5541d9a5434e962af6f3de6a",
+     "fitted_survival": 0.02,
+     "last_trade_price": 0.02,
+     "minute_volume": 100.0,
+     "minutes_before_cutoff": 16.0,
+     "strike": 400000.0,
+     "ticker": "PROLLS-23NOV-T400000"
+    },
+    {
+     "candle_sha256": "c4c2c2c50d017551dec613bccf51ac9122f6f998bbaeee3679e533c2cd517f6d",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 1000.0,
+     "minutes_before_cutoff": 1355.0,
+     "strike": 500000.0,
+     "ticker": "PROLLS-23NOV-T500000"
+    }
+   ],
+   "monotone_adjustment_max": 0.0,
+   "reference_month": "2023-11",
+   "release_date": "2023-12-08",
+   "strikes_used": 7,
+   "surprise": 10000.0
+  },
+  {
+   "actual": 150000.0,
+   "event_ticker": "PROLLS-23OCT",
+   "excluded_reason": null,
+   "expected": 199000.00000000003,
+   "ladder": [
+    {
+     "candle_sha256": "386df3ba900111aeb0c9ec31198afeb4dc8f6e09e06394ef6821e852eccab31f",
+     "fitted_survival": 0.9800000000000001,
+     "last_trade_price": 0.98,
+     "minute_volume": 1190.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 0.0,
+     "ticker": "PROLLS-23OCT-T0"
+    },
+    {
+     "candle_sha256": "5af4e5ddfa8d66547fbbfcd5ffaff6c09645919d8c16c447bdfb3d0f726798f6",
+     "fitted_survival": 0.8400000000000001,
+     "last_trade_price": 0.84,
+     "minute_volume": 5.0,
+     "minutes_before_cutoff": 0.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23OCT-T100000"
+    },
+    {
+     "candle_sha256": "52afc2f0fb867764061f804e75ca640556808dc31b76fa517398029318af65d8",
+     "fitted_survival": 0.44,
+     "last_trade_price": 0.44,
+     "minute_volume": 221.0,
+     "minutes_before_cutoff": 3.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23OCT-T200000"
+    },
+    {
+     "candle_sha256": "04dc441005ef023849a9fedbb0185780551dc9f29839b578422a5d952ba7a6e0",
+     "fitted_survival": 0.17,
+     "last_trade_price": 0.17,
+     "minute_volume": 12.0,
+     "minutes_before_cutoff": 7.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23OCT-T300000"
+    },
+    {
+     "candle_sha256": "e19f24fe99cbaa5b8992677bcac79943ace61464a15a75f4894d7c3b2ccdbf62",
+     "fitted_survival": 0.05,
+     "last_trade_price": 0.05,
+     "minute_volume": 494.0,
+     "minutes_before_cutoff": 18.0,
+     "strike": 400000.0,
+     "ticker": "PROLLS-23OCT-T400000"
+    },
+    {
+     "candle_sha256": "d271ae755ada7a630f1fe0a2e0a7cb82896d31e56201a2c855b4a18c7b480b79",
+     "fitted_survival": 0.01,
+     "last_trade_price": 0.01,
+     "minute_volume": 25.0,
+     "minutes_before_cutoff": 1233.0,
+     "strike": 500000.0,
+     "ticker": "PROLLS-23OCT-T500000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2023-10",
+   "release_date": "2023-11-03",
+   "strikes_used": 6,
+   "surprise": -49000.00000000003
+  },
+  {
+   "actual": 336000.0,
+   "event_ticker": "PROLLS-23SEP",
+   "excluded_reason": null,
+   "expected": 156000.0,
+   "ladder": [
+    {
+     "candle_sha256": "c8f60efd017f8006ffa5c92623d5dc6bba9c95361c4b178c72f054c3d877169b",
+     "fitted_survival": 0.9700000000000001,
+     "last_trade_price": 0.97,
+     "minute_volume": 3.0,
+     "minutes_before_cutoff": 621.0,
+     "strike": 0.0,
+     "ticker": "PROLLS-23SEP-T0"
+    },
+    {
+     "candle_sha256": "56cac333b999c89184446492d432d4c7953f734bc39230e2b8972dc2c393f603",
+     "fitted_survival": 0.8,
+     "last_trade_price": 0.8,
+     "minute_volume": 484.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 100000.0,
+     "ticker": "PROLLS-23SEP-T100000"
+    },
+    {
+     "candle_sha256": "53d46b5189e33e50ee99ae8257363df7a653a3c83b28b2a4de92d0b159d83e61",
+     "fitted_survival": 0.25,
+     "last_trade_price": 0.25,
+     "minute_volume": 4.0,
+     "minutes_before_cutoff": 14.0,
+     "strike": 200000.0,
+     "ticker": "PROLLS-23SEP-T200000"
+    },
+    {
+     "candle_sha256": "2250e420b0f39330d540067ea6eba4c9984940a7cbc966494d3fc537b7d22f04",
+     "fitted_survival": 0.04,
+     "last_trade_price": 0.04,
+     "minute_volume": 45.0,
+     "minutes_before_cutoff": 2.0,
+     "strike": 300000.0,
+     "ticker": "PROLLS-23SEP-T300000"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2023-09",
+   "release_date": "2023-10-06",
+   "strikes_used": 4,
+   "surprise": 180000.0
+  },
+  {
+   "actual": 353000.0,
+   "event_ticker": "PROLLS-24JAN",
+   "excluded_reason": null,
+   "expected": 197599.0,
+   "ladder": [
+    {
+     "candle_sha256": "36d4853a72dbe0a69500fc64ee3549bca0be3d2446910f537897fe8d5eafc6f7",
+     "fitted_survival": 0.9399999999999998,
+     "last_trade_price": 0.94,
+     "minute_volume": 10.0,
+     "minutes_before_cutoff": 721.0,
+     "strike": 99999.0,
+     "ticker": "PROLLS-24JAN-T99999"
+    },
+    {
+     "candle_sha256": "a9039c585b45b33c193cbe57299d8568bfb3870ebf2d2e6fdc5104ebe041d9d2",
+     "fitted_survival": 0.78,
+     "last_trade_price": 0.78,
+     "minute_volume": 500.0,
+     "minutes_before_cutoff": 773.0,
+     "strike": 149999.0,
+     "ticker": "PROLLS-24JAN-T149999"
+    },
+    {
+     "candle_sha256": "341bcc01910af9f42caa179408e89ca9b4643da769a76f68fe6fcca429a401da",
+     "fitted_survival": 0.5,
+     "last_trade_price": 0.5,
+     "minute_volume": 400.0,
+     "minutes_before_cutoff": 699.0,
+     "strike": 199999.0,
+     "ticker": "PROLLS-24JAN-T199999"
+    },
+    {
+     "candle_sha256": "e445850bb8f82b3ed5a6a632498f1a7a62e9cc7f4f449d18b4de71b938ebf736",
+     "fitted_survival": 0.34,
+     "last_trade_price": 0.34,
+     "minute_volume": 11.0,
+     "minutes_before_cutoff": 10.0,
+     "strike": 215999.0,
+     "ticker": "PROLLS-24JAN-T215999"
+    },
+    {
+     "candle_sha256": "2682f5541532efc2b7fc9c1a5e2d47b376be564705919f87774f4b8c205a5eda",
+     "fitted_survival": 0.05000000000000001,
+     "last_trade_price": 0.05,
+     "minute_volume": 3.0,
+     "minutes_before_cutoff": 15.0,
+     "strike": 299999.0,
+     "ticker": "PROLLS-24JAN-T299999"
+    }
+   ],
+   "monotone_adjustment_max": 1.1102230246251565e-16,
+   "reference_month": "2024-01",
+   "release_date": "2024-02-02",
+   "strikes_used": 5,
+   "surprise": 155401.0
+  }
+ ],
+ "schema": "castle.payroll_surprise_tape.v1",
+ "source": {
+  "actual_rule": "Kalshi settlement value: the BLS first release for the reference month.",
+  "asset_returns_read": false,
+  "cutoff_rule": "08:20 America/New_York on the BLS release date",
+  "expectation_rule": "Band midpoints; open tails one 50,000-job step beyond the last traded strike.",
+  "input_tape_sha256": "07938c7c99e32ab7e92e4dc32e2390a386cb7ae74123dd5ef503ce52971d736f",
+  "kind": "KALSHI_PUBLIC_PAYROLL_LADDERS_LAST_TRADE_BEFORE_CUTOFF",
+  "price_rule": "Close of the last one-minute candle with traded volume in the 24 hours before the cutoff; weighted non-increasing fit across strikes.",
+  "series": [
+   "KXPAYROLLS",
+   "PAYROLLS"
+  ]
+ },
+ "summary": {
+  "events": 43,
+  "with_surprise": 39
+ }
+}

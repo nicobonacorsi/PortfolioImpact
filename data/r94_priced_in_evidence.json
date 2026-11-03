@@ -1,0 +1,372 @@
+{
+ "schema": "castle.r94_priced_in_evidence.v1",
+ "source_result": "docs/r94_kalshi_surprise_result.json",
+ "families": {
+  "CPI": {
+   "family": "CPI",
+   "claim_scope": "Scheduled CPI releases listed on Kalshi, November 2021 to October 2026",
+   "headline": "Across 56 Kalshi-listed CPI releases since November 2021, a retrospective regression estimated expectation-centering coefficients of 1.02 for SPY (90% profile 0.89\u20131.13) and 1.08 for IEF (0.97\u20131.18). These are model coefficients, NOT fractions of equity value or event risk already discounted. The corresponding outcome-specific forecast failed its preregistered out-of-sample test.",
+   "details": "Method: Kalshi last pre-release quotes estimate expected CPI. Release-window returns are regressed on actual CPI \u2212 \u03bb\u00b7expected \u2212 (1\u2212\u03bb)\u00b7previous print. Lambda describes expectation-centering within this regression; it is not a traded equity pricing-state probability. A separate anticipated-change coefficient for SPY was 0.0016 \u00b1 0.0041, statistically indistinguishable from zero in this sample (not proof of zero). Out-of-sample outcome-specific prediction failed (0/15 portfolios improved), with a much weaker SPY surprise association in 2024\u20132026 than in 2021\u20132024. The historical release-day band is descriptive, not an outcome-conditional prediction interval.",
+   "long_sample_test": "The preregistered test on 98 earlier CPI releases (2013\u20132021) with Cleveland Fed nowcasts failed on all 14 testable portfolios. The observed surprise-return association was stronger during 2021\u20132024; no stable all-regime response was established.",
+   "what_it_does_not_show": "CPI lambda is not the fraction of this stock's current price or event risk already discounted. It is a full-sample expectation coefficient, not a physical probability, a validated future P&L forecast, or a geopolitical equity pricing weight. Recent equity surprise responses were too weak to identify lambda reliably; IEF yielded 1.07 with a 90% interval 0.49\u20131.5.",
+   "lambda": {
+    "SPY": {
+     "lambda_hat": 1.02,
+     "profile90": [
+      0.89,
+      1.13
+     ],
+     "n": 56,
+     "ci_touches_grid_edge": false
+    },
+    "QQQ": {
+     "lambda_hat": 1.05,
+     "profile90": [
+      0.91,
+      1.17
+     ],
+     "n": 56,
+     "ci_touches_grid_edge": false
+    },
+    "IEF": {
+     "lambda_hat": 1.08,
+     "profile90": [
+      0.97,
+      1.18
+     ],
+     "n": 56,
+     "ci_touches_grid_edge": false
+    },
+    "TLT": {
+     "lambda_hat": 1.15,
+     "profile90": [
+      1.04,
+      1.27
+     ],
+     "n": 56,
+     "ci_touches_grid_edge": false
+    },
+    "SHY": {
+     "lambda_hat": 1.05,
+     "profile90": [
+      0.95,
+      1.15
+     ],
+     "n": 56,
+     "ci_touches_grid_edge": false
+    }
+   },
+   "band_coverage80_holdout": 0.8666666666666667,
+   "band_test_portfolio_events": 375,
+   "band_test_status": "POST_HOC_ON_ALREADY_SEEN_2024_2026_CPI_RELEASES",
+   "probability_calibration": "Kalshi's CPI ladders were well calibrated: across 429 strike forecasts, outcomes priced at 5\u201320% happened 10% of the time and those priced at 80\u201395% happened 86%; they beat a history-based forecast in 84% of releases.",
+   "calibration": {
+    "n_events": 57,
+    "n_strike_forecasts": 429,
+    "brier_kalshi_all": 0.05997507284382284,
+    "reliability": [
+     {
+      "bin": [
+       0,
+       0.05
+      ],
+      "n": 133,
+      "mean_forecast": 0.018721804511278195,
+      "observed_frequency": 0.007518796992481203
+     },
+     {
+      "bin": [
+       0.05,
+       0.2
+      ],
+      "n": 51,
+      "mean_forecast": 0.11107843137254904,
+      "observed_frequency": 0.09803921568627451
+     },
+     {
+      "bin": [
+       0.2,
+       0.4
+      ],
+      "n": 27,
+      "mean_forecast": 0.2998148148148148,
+      "observed_frequency": 0.2222222222222222
+     },
+     {
+      "bin": [
+       0.4,
+       0.6
+      ],
+      "n": 22,
+      "mean_forecast": 0.5129545454545453,
+      "observed_frequency": 0.5454545454545454
+     },
+     {
+      "bin": [
+       0.6,
+       0.8
+      ],
+      "n": 30,
+      "mean_forecast": 0.7168333333333332,
+      "observed_frequency": 0.8
+     },
+     {
+      "bin": [
+       0.8,
+       0.95
+      ],
+      "n": 43,
+      "mean_forecast": 0.8881395348837209,
+      "observed_frequency": 0.8604651162790697
+     },
+     {
+      "bin": [
+       0.95,
+       1.0
+      ],
+      "n": 123,
+      "mean_forecast": 0.9802439024390242,
+      "observed_frequency": 0.991869918699187
+     }
+    ],
+    "paired_events_vs_naive": 45,
+    "mean_rps_kalshi": 0.056434098324515,
+    "mean_rps_naive_last24": 0.16129773269263964,
+    "kalshi_better_share": 0.8444444444444444,
+    "naive_definition": "P(X>k) = share of the previous 24 realized releases above k (needs 12)"
+   }
+  },
+  "FOMC": {
+   "family": "FOMC",
+   "claim_scope": "Scheduled FOMC decisions listed on Kalshi, March 2022 to October 2026",
+   "headline": "Kalshi rate-expectation changes correlate strongly with the San Francisco Fed futures-based surprise (0.85 across 32 meetings, versus 0.32 for the raw decision). This does not establish that the decision is mostly priced into stocks or identify what share of an equity price is already discounted. Guidance and concurrent information confound the attribution.",
+   "details": "The preregistered test also required the futures surprise to move one-for-one with the Kalshi surprise; it moved 0.25 times as much (90% interval 0.23\u20130.28), partly because the front-month futures change is a monthly average, so that test failed. Models that tried to predict the outcome-specific move from 2022\u20132024 meetings did not beat an outcome-blind range on 2024\u20132026 meetings (1 of 15 portfolios; the shipped published transfer 5 of 15).",
+   "long_sample_test": "The preregistered test on 112 earlier FOMC meetings fitted 2008\u20132014 and tested 56 meetings in 2015\u20132022. Although the modeled shift pointed correctly for 9/10 portfolios, the daily improvement +0.9% (90% interval +0.1% to +1.6%) failed the frozen 2% materiality criterion; it does not validate prospective event-conditional P&L.",
+   "what_it_does_not_show": "This does not identify the share of an FOMC-day move caused by the decision, does not convert Kalshi prices into physical probabilities, and does not apply to unscheduled events.",
+   "cross_venue": {
+    "n": 32,
+    "corr_kalshi_ff1": 0.8501059616871346,
+    "corr_naive_ff1": 0.321355973391452,
+    "slope_ff1_on_kalshi": 0.25423732763457774,
+    "slope90": [
+     0.22964377750548698,
+     0.2788308777636685
+    ],
+    "corr_kalshi_mp1": 0.8800298766417194,
+    "slope_mp1_on_kalshi": 0.6923170948223618,
+    "slope90_mp1": [
+     0.59342721422479,
+     0.7912069754199337
+    ],
+    "corr_naive_mp1": 0.2469338534283205
+   },
+   "band_coverage80_holdout": 0.8352941176470589,
+   "band_test_portfolio_events": 255,
+   "band_test_status": "INDEPENDENT_FROZEN_BEFORE_FOMC_RESULTS",
+   "probability_calibration": "Kalshi's rate ladders were sharp: across 190 strike forecasts (Brier score 0.0033), no outcome priced at 5% or less happened and every outcome priced at 95% or more did.",
+   "calibration": {
+    "n_events": 33,
+    "n_strike_forecasts": 190,
+    "brier_kalshi_all": 0.0032886184210526312,
+    "reliability": [
+     {
+      "bin": [
+       0,
+       0.05
+      ],
+      "n": 74,
+      "mean_forecast": 0.012837837837837839,
+      "observed_frequency": 0.0
+     },
+     {
+      "bin": [
+       0.05,
+       0.2
+      ],
+      "n": 5,
+      "mean_forecast": 0.088,
+      "observed_frequency": 0.0
+     },
+     {
+      "bin": [
+       0.6,
+       0.8
+      ],
+      "n": 1,
+      "mean_forecast": 0.69,
+      "observed_frequency": 0.0
+     },
+     {
+      "bin": [
+       0.8,
+       0.95
+      ],
+      "n": 5,
+      "mean_forecast": 0.892,
+      "observed_frequency": 1.0
+     },
+     {
+      "bin": [
+       0.95,
+       1.0
+      ],
+      "n": 105,
+      "mean_forecast": 0.9907142857142857,
+      "observed_frequency": 1.0
+     }
+    ],
+    "paired_events_vs_naive": 21,
+    "mean_rps_kalshi": 0.003934824263038548,
+    "mean_rps_naive_last24": 0.23006053188334272,
+    "kalshi_better_share": 1.0,
+    "naive_definition": "P(X>k) = share of the previous 24 realized releases above k (needs 12)"
+   }
+  },
+  "PAYROLLS": {
+   "family": "PAYROLLS",
+   "claim_scope": "Scheduled jobs reports listed on Kalshi, April 2023 to October 2026",
+   "headline": "For payrolls no equity priced-in share is identified. Across 41 Kalshi-listed reports since 2023, SPY surprise sensitivity was not statistically detectable (t = -0.4), while IEF responded more strongly (t = -3.0). That does not pin down any stock-specific discounted share. The outcome scenario is illustrative and the historical release-day width is not outcome-conditional.",
+   "details": "Preregistered replication (frozen before any payroll data were downloaded): the \u03bb test failed (0 of 4 reference funds), and an adaptive model of the outcome-specific move did not beat an outcome-blind range on 2024\u20132026 reports (2 of 15 portfolios). Kalshi's payroll ladders were also less reliable than its CPI ladders: outcomes it priced at 5\u201320% happened 34% of the time.",
+   "what_it_does_not_show": "This does not convert Kalshi prices into physical probabilities and does not apply to unscheduled events.",
+   "lambda": {
+    "SPY": {
+     "lambda_hat": -0.5,
+     "profile90": [
+      -0.5,
+      1.5
+     ],
+     "n": 38,
+     "surprise_slope": -7.947637181424933e-06,
+     "surprise_t": -0.3709097843547449,
+     "contains_1": true,
+     "excludes_0": false,
+     "ci_touches_grid_edge": true
+    },
+    "QQQ": {
+     "lambda_hat": -0.5,
+     "profile90": [
+      -0.5,
+      1.5
+     ],
+     "n": 38,
+     "surprise_slope": -7.11634879731415e-06,
+     "surprise_t": -0.27317372316084776,
+     "contains_1": true,
+     "excludes_0": false,
+     "ci_touches_grid_edge": true
+    },
+    "IEF": {
+     "lambda_hat": 0.81,
+     "profile90": [
+      -0.1,
+      1.45
+     ],
+     "n": 39,
+     "surprise_slope": -3.338452571260874e-05,
+     "surprise_t": -3.0427199013481117,
+     "contains_1": true,
+     "excludes_0": false,
+     "ci_touches_grid_edge": false
+    },
+    "TLT": {
+     "lambda_hat": 0.7,
+     "profile90": [
+      -0.5,
+      1.5
+     ],
+     "n": 38,
+     "surprise_slope": -4.442571469243475e-05,
+     "surprise_t": -2.0996356775636436,
+     "contains_1": true,
+     "excludes_0": false,
+     "ci_touches_grid_edge": true
+    }
+   },
+   "gate_G6_rep": {
+    "references_passing": 0,
+    "required": 3,
+    "informative": true,
+    "status": "FAIL"
+   },
+   "band_coverage80_holdout": 0.8333333333333334,
+   "band_test_portfolio_events": 390,
+   "band_test_status": "INDEPENDENT_FROZEN_BEFORE_PAYROLL_RESULTS",
+   "probability_calibration": "Kalshi's payroll ladders were overconfident: outcomes priced at 5\u201320% happened 34% of the time; they beat a history-based forecast in 66% of reports.",
+   "calibration": {
+    "n_events": 41,
+    "n_strike_forecasts": 354,
+    "brier_kalshi_all": 0.17094582156308852,
+    "reliability": [
+     {
+      "bin": [
+       0,
+       0.05
+      ],
+      "n": 43,
+      "mean_forecast": 0.021046511627906977,
+      "observed_frequency": 0.046511627906976744
+     },
+     {
+      "bin": [
+       0.05,
+       0.2
+      ],
+      "n": 47,
+      "mean_forecast": 0.115,
+      "observed_frequency": 0.3404255319148936
+     },
+     {
+      "bin": [
+       0.2,
+       0.4
+      ],
+      "n": 38,
+      "mean_forecast": 0.29000000000000004,
+      "observed_frequency": 0.47368421052631576
+     },
+     {
+      "bin": [
+       0.4,
+       0.6
+      ],
+      "n": 43,
+      "mean_forecast": 0.5054651162790698,
+      "observed_frequency": 0.627906976744186
+     },
+     {
+      "bin": [
+       0.6,
+       0.8
+      ],
+      "n": 57,
+      "mean_forecast": 0.7081578947368421,
+      "observed_frequency": 0.5614035087719298
+     },
+     {
+      "bin": [
+       0.8,
+       0.95
+      ],
+      "n": 66,
+      "mean_forecast": 0.8801515151515152,
+      "observed_frequency": 0.8333333333333334
+     },
+     {
+      "bin": [
+       0.95,
+       1.0
+      ],
+      "n": 60,
+      "mean_forecast": 0.9764999999999999,
+      "observed_frequency": 1.0
+     }
+    ],
+    "paired_events_vs_naive": 29,
+    "mean_rps_kalshi": 0.1626842507859454,
+    "mean_rps_naive_last24": 0.1943205841065521,
+    "kalshi_better_share": 0.6551724137931034,
+    "naive_definition": "P(X>k) = share of the previous 24 realized releases above k (needs 12)"
+   }
+  }
+ }
+}

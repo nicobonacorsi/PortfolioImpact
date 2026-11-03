@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1010">
+  <meta name="description" content="Explore events that could affect your investments and review estimated portfolio impacts.">
+  <title>Portfolio Impact</title>
+  <link rel="preload" href="./fonts/PlusJakartaSans-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./workspace.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Portfolio Impact home">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none">
+            <path d="M6 26.5h5.3V18H6v8.5Zm9.3 0h5.4V10.5h-5.4v16Zm9.4 0H30V15.7h-5.3v10.8Z" fill="currentColor"/>
+            <path d="m7 12 8.7-5.4 7.1 5.1L30 6" stroke="#0b1010" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-type">portfolio<span>impact</span></span>
+      </a>
+      <div class="topbar-actions">
+        <button class="outline-button" id="edit-button" type="button">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12"/></svg>
+          Edit portfolio
+        </button>
+      </div>
+    </header>
+    <main id="home" tabindex="-1">
+      <div id="app" role="status" aria-live="polite" aria-atomic="false">
+        <div class="initial-loading">Opening the recorded analysis…</div>
+      </div>
+    </main>
+  </div>
+  <dialog id="portfolio-dialog" class="portfolio-dialog" aria-labelledby="portfolio-dialog-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,722 @@
+{
+  "schema": "castle.r125.point2_acceptance.v1",
+  "portfolio_slug": "defense_semis_japan_credit",
+  "started_at_utc": "2026-11-02T17:34:28.738178+00:00",
+  "evaluated_at_utc": "2026-11-02T17:51:14.497354+00:00",
+  "portfolio": [
+    {
+      "symbol": "LMT",
+      "weight": 0.2,
+      "asset_type": "stock"
+    },
+    {
+      "symbol": "SMH",
+      "weight": 0.3,
+      "asset_type": "etf"
+    },
+    {
+      "symbol": "EWJ",
+      "weight": 0.25,
+      "asset_type": "etf"
+    },
+    {
+      "symbol": "LQD",
+      "weight": 0.25,
+      "asset_type": "etf"
+    }
+  ],
+  "notional_usd": 100000.0,
+  "verification_status": "PARTIAL_LIVE_RUN_COVERAGE_OR_REVIEW_GAPS",
+  "r124_style_criteria": null,
+  "point2_r125": {
+    "eligible_event_targets": 8,
+    "numeric_model_estimates": 8,
+    "numeric_share_of_eligible": 1.0,
+    "abstentions": 0,
+    "abstentions_by_class": {},
+    "model_estimates_not_calibrated": true,
+    "prediction_market_contracts": {
+      "exact": 0,
+      "entailment": 4,
+      "related": 30,
+      "rejected": 2987,
+      "not_reviewed": 37
+    },
+    "events_with_exact_model_reviewed_contract": 0,
+    "events_with_market_review": 8,
+    "events_with_targeted_evidence": 8,
+    "evidence_totals": {
+      "targeted_leads": 284,
+      "url_verified_findings": 79,
+      "direct_page_observations_official": 3,
+      "direct_page_observations_specialized": 5,
+      "official_indicator_observations": 0,
+      "web_search_requests_reported_all_stages": 40
+    },
+    "mathematical_coherence": {
+      "every_numeric_forecast_recomputes": true,
+      "every_numeric_forecast_passes_lp_crosscheck": true,
+      "every_numeric_center_inside_interval": true,
+      "every_numeric_masses_sum_to_one": true,
+      "every_numeric_single_final_residual": true
+    },
+    "market_consistency_statuses": [
+      "CONSISTENT_IF_QUOTES_TAKEN_AS_PROBABILITIES",
+      "NO_QUOTED_ENTAILMENT",
+      "NO_QUOTED_ENTAILMENT",
+      "NO_QUOTED_ENTAILMENT",
+      "NO_QUOTED_ENTAILMENT",
+      "NO_QUOTED_ENTAILMENT",
+      "NO_QUOTED_ENTAILMENT",
+      "NO_QUOTED_ENTAILMENT"
+    ],
+    "stability_statuses": [
+      "STABLE",
+      "STABLE",
+      "STABLE",
+      "STABLE",
+      "STABLE",
+      "STABLE",
+      "STABLE",
+      "STABLE"
+    ],
+    "evidence_sufficiency_statuses": [
+      "PARTLY_DOCUMENTED",
+      "PARTLY_DOCUMENTED",
+      "PARTLY_DOCUMENTED",
+      "PARTLY_DOCUMENTED",
+      "PARTLY_DOCUMENTED",
+      "PARTLY_DOCUMENTED",
+      "PARTLY_DOCUMENTED",
+      "PARTLY_DOCUMENTED"
+    ],
+    "all_stage_statuses": {
+      "Massive": "PARTIAL",
+      "Claude": "NO_RETRIEVED_CONTRACTS_WITHIN_BOUNDED_SEARCH",
+      "WebResearch": "SEARCHED_SOURCE_LEADS_NOT_VERIFIED",
+      "GeopoliticalSearch": "RECORDED_BOUNDED_TWO_VENUE_SEARCH",
+      "Kalshi": "READS_COMPLETED",
+      "PriceInObservation": "OBSERVED_MARK_ONLY_NO_CAUSAL_ATTRIBUTION",
+      "Analogues": "MEASURED",
+      "EventEvidence": "COMPLETED",
+      "AutonomousForecast": "UNCALIBRATED_MODEL_RESULTS",
+      "AutonomousImpact": "UNCALIBRATED_JOINT_STRESS",
+      "CommonEndpointImpact": "UNCALIBRATED_COMMON_ENDPOINT_STRESS"
+    },
+    "massive_stage_status": "PARTIAL",
+    "page_fetch_attempts": 48,
+    "page_fetch_outcomes": {
+      "BODY_TOO_LARGE": 3,
+      "EXCERPT_RETRIEVED": 8,
+      "HTTP_301": 2,
+      "HTTP_403": 11,
+      "NO_RELEVANT_VISIBLE_TEXT": 2,
+      "TIMEOUT": 22
+    },
+    "ui_acceptance": {
+      "forecasts_displayed": 8,
+      "numeric_forecasts_displayed": 8,
+      "market_reviews_displayed": 8,
+      "identity_audit_all_checks_pass": true,
+      "identity_audit_checks": {
+        "every_displayed_forecast_identity_ok": true,
+        "every_displayed_forecast_matches_report": true,
+        "every_numeric_forecast_recomputes": true,
+        "every_numeric_forecast_passes_lp_crosscheck": true,
+        "every_numeric_center_inside_interval": true,
+        "every_numeric_masses_sum_to_one": true,
+        "every_numeric_single_final_residual": true,
+        "no_quote_substituted_as_probability": true,
+        "every_displayed_market_review_identity_ok": true,
+        "every_displayed_market_review_matches_report": true,
+        "every_displayed_exact_quote_identity_ok": true,
+        "every_abstention_classified": true,
+        "every_context_matches_its_risk": true
+      }
+    },
+    "q_substituted_as_probability_anywhere": false,
+    "requests": {
+      "anthropic_attempts_all_stages": 49,
+      "estimated_model_message_cost_usd": 21.48369,
+      "cost_scope": "RECORDED_MESSAGE_TOKEN_ESTIMATES_ONLY_NOT_FULL_WEB_SEARCH_FEES",
+      "point2_stage_anthropic_requests": 16,
+      "point2_kalshi_requests": 68,
+      "point2_polymarket_requests": 14
+    },
+    "stage_statuses": {
+      "EventEvidence": "COMPLETED",
+      "AutonomousForecast": "UNCALIBRATED_MODEL_RESULTS"
+    },
+    "per_event": [
+      {
+        "event_id": "NVDA_QUARTERLY_REVENUE_BELOW_GUIDANCE_MIDPOINT_REPORTED_BY_2026-12-31",
+        "target_condition": "Nvidia reports fiscal Q3 2027 revenue below the midpoint of its own prior quarterly revenue guidance, with results released by 2026-12-31",
+        "deadline": "2026-12-31",
+        "status": "MODEL_FORECAST_UNCALIBRATED",
+        "probability_center": 0.0629,
+        "credal_interval": [
+          0.0175,
+          0.15200000000000002
+        ],
+        "abstention_reason": null,
+        "abstention_class": null,
+        "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+        "market_counts": {
+          "exact": 0,
+          "entailment": 0,
+          "related": 12,
+          "rejected": 1494,
+          "not_reviewed": 5
+        },
+        "exact_contracts": [],
+        "market_implied_bounds": {
+          "lower": null,
+          "upper": null,
+          "status": "NO_QUOTED_ENTAILMENT"
+        },
+        "market_consistency": "NO_QUOTED_ENTAILMENT",
+        "evidence_provenance": {
+          "targeted_search_ran": true,
+          "portfolio_leads_available": 48,
+          "portfolio_leads_relevant": 18,
+          "targeted_leads_available": 34,
+          "targeted_leads_relevant": 34,
+          "url_verified_digest_findings": 10,
+          "digest_findings_supplied_to_model": 10,
+          "direct_page_observations_official": 0,
+          "direct_page_observations_specialized": 1,
+          "official_indicator_observations": 0,
+          "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+          "market_contract_counts": {
+            "exact": 0,
+            "entailment": 0,
+            "related": 12,
+            "rejected": 1494,
+            "not_reviewed": 5
+          },
+          "evidence_is_fact_certified": false
+        },
+        "stability": {
+          "status": "STABLE",
+          "replicate_centers": [
+            0.0629,
+            0.0528
+          ],
+          "max_center_gap": 0.010099999999999998,
+          "mean_credal_width": 0.12987500000000002,
+          "spread_ratio": 0.07776708373435993,
+          "numeric_replicates": 2,
+          "evidence_abstentions": 0,
+          "transport_failures": 0
+        },
+        "evidence_sufficiency": "PARTLY_DOCUMENTED",
+        "documented_probability_mass_share": 1.0,
+        "branch_evidence_bases": [
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED"
+        ],
+        "withheld_model_proposal": null,
+        "displayed_in_public_case": true
+      },
+      {
+        "event_id": "BOJ_POLICY_RATE_HIKE_ANY_MEETING_BY_2027-01-31",
+        "target_condition": "Bank of Japan raises its short-term policy interest rate at any monetary policy meeting concluding by 2027-01-31",
+        "deadline": "2027-01-31",
+        "status": "MODEL_FORECAST_UNCALIBRATED",
+        "probability_center": 0.9009999999999999,
+        "credal_interval": [
+          0.8098000000000001,
+          0.9418
+        ],
+        "abstention_reason": null,
+        "abstention_class": null,
+        "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+        "market_counts": {
+          "exact": 0,
+          "entailment": 4,
+          "related": 8,
+          "rejected": 1426,
+          "not_reviewed": 21
+        },
+        "exact_contracts": [],
+        "market_implied_bounds": {
+          "lower": 0.84,
+          "upper": null,
+          "status": "QUOTE_IMPLIED_RANGE_UNDER_STATED_ASSUMPTIONS"
+        },
+        "market_consistency": "CONSISTENT_IF_QUOTES_TAKEN_AS_PROBABILITIES",
+        "evidence_provenance": {
+          "targeted_search_ran": true,
+          "portfolio_leads_available": 48,
+          "portfolio_leads_relevant": 20,
+          "targeted_leads_available": 35,
+          "targeted_leads_relevant": 35,
+          "url_verified_digest_findings": 10,
+          "digest_findings_supplied_to_model": 10,
+          "direct_page_observations_official": 0,
+          "direct_page_observations_specialized": 0,
+          "official_indicator_observations": 0,
+          "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+          "market_contract_counts": {
+            "exact": 0,
+            "entailment": 4,
+            "related": 8,
+            "rejected": 1426,
+            "not_reviewed": 21
+          },
+          "evidence_is_fact_certified": false
+        },
+        "stability": {
+          "status": "STABLE",
+          "replicate_centers": [
+            0.9009999999999999,
+            0.836
+          ],
+          "max_center_gap": 0.06499999999999995,
+          "mean_credal_width": 0.21049999999999996,
+          "spread_ratio": 0.30878859857482166,
+          "numeric_replicates": 2,
+          "evidence_abstentions": 0,
+          "transport_failures": 0
+        },
+        "evidence_sufficiency": "PARTLY_DOCUMENTED",
+        "documented_probability_mass_share": 1.0,
+        "branch_evidence_bases": [
+          "DOCUMENTED_IN_SUPPLIED_SOURCES",
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED"
+        ],
+        "withheld_model_proposal": null,
+        "displayed_in_public_case": true
+      },
+      {
+        "event_id": "CHINA_BLOCKADE_OR_QUARANTINE_TAIWAN_SHIPPING_BY_2027-01-31",
+        "target_condition": "China announces a blockade, quarantine, or inspection regime applying to commercial shipping bound for Taiwan's ports by 2027-01-31",
+        "deadline": "2027-01-31",
+        "status": "MODEL_FORECAST_UNCALIBRATED",
+        "probability_center": 0.06949999999999999,
+        "credal_interval": [
+          0.0144,
+          0.18
+        ],
+        "abstention_reason": null,
+        "abstention_class": null,
+        "market_review_status": "NO_EXACT_FIT_NOTHING_RELATED_WITHIN_SEARCHED_SCOPE",
+        "market_counts": {
+          "exact": 0,
+          "entailment": 0,
+          "related": 0,
+          "rejected": 13,
+          "not_reviewed": 9
+        },
+        "exact_contracts": [],
+        "market_implied_bounds": {
+          "lower": null,
+          "upper": null,
+          "status": "NO_QUOTED_ENTAILMENT"
+        },
+        "market_consistency": "NO_QUOTED_ENTAILMENT",
+        "evidence_provenance": {
+          "targeted_search_ran": true,
+          "portfolio_leads_available": 48,
+          "portfolio_leads_relevant": 12,
+          "targeted_leads_available": 36,
+          "targeted_leads_relevant": 36,
+          "url_verified_digest_findings": 10,
+          "digest_findings_supplied_to_model": 10,
+          "direct_page_observations_official": 0,
+          "direct_page_observations_specialized": 3,
+          "official_indicator_observations": 0,
+          "market_review_status": "NO_EXACT_FIT_NOTHING_RELATED_WITHIN_SEARCHED_SCOPE",
+          "market_contract_counts": {
+            "exact": 0,
+            "entailment": 0,
+            "related": 0,
+            "rejected": 13,
+            "not_reviewed": 9
+          },
+          "evidence_is_fact_certified": false
+        },
+        "stability": {
+          "status": "STABLE",
+          "replicate_centers": [
+            0.06949999999999999,
+            0.07700000000000001
+          ],
+          "max_center_gap": 0.0075000000000000205,
+          "mean_credal_width": 0.17905,
+          "spread_ratio": 0.04188774085451003,
+          "numeric_replicates": 2,
+          "evidence_abstentions": 0,
+          "transport_failures": 0
+        },
+        "evidence_sufficiency": "PARTLY_DOCUMENTED",
+        "documented_probability_mass_share": 1.0,
+        "branch_evidence_bases": [
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED"
+        ],
+        "withheld_model_proposal": null,
+        "displayed_in_public_case": true
+      },
+      {
+        "event_id": "CHINA_DIRECTIVE_BANS_NVIDIA_AI_CHIP_PURCHASES_BY_2027-01-31",
+        "target_condition": "Chinese government issues a formal directive prohibiting Chinese firms from buying Nvidia AI chips by 2027-01-31",
+        "deadline": "2027-01-31",
+        "status": "MODEL_FORECAST_UNCALIBRATED",
+        "probability_center": 0.072,
+        "credal_interval": [
+          0.012499999999999999,
+          0.19199999999999998
+        ],
+        "abstention_reason": null,
+        "abstention_class": null,
+        "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+        "market_counts": {
+          "exact": 0,
+          "entailment": 0,
+          "related": 2,
+          "rejected": 5,
+          "not_reviewed": 0
+        },
+        "exact_contracts": [],
+        "market_implied_bounds": {
+          "lower": null,
+          "upper": null,
+          "status": "NO_QUOTED_ENTAILMENT"
+        },
+        "market_consistency": "NO_QUOTED_ENTAILMENT",
+        "evidence_provenance": {
+          "targeted_search_ran": true,
+          "portfolio_leads_available": 48,
+          "portfolio_leads_relevant": 16,
+          "targeted_leads_available": 34,
+          "targeted_leads_relevant": 34,
+          "url_verified_digest_findings": 10,
+          "digest_findings_supplied_to_model": 10,
+          "direct_page_observations_official": 0,
+          "direct_page_observations_specialized": 1,
+          "official_indicator_observations": 0,
+          "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+          "market_contract_counts": {
+            "exact": 0,
+            "entailment": 0,
+            "related": 2,
+            "rejected": 5,
+            "not_reviewed": 0
+          },
+          "evidence_is_fact_certified": false
+        },
+        "stability": {
+          "status": "STABLE",
+          "replicate_centers": [
+            0.072,
+            0.0455
+          ],
+          "max_center_gap": 0.026499999999999996,
+          "mean_credal_width": 0.15392499999999998,
+          "spread_ratio": 0.17216176709436415,
+          "numeric_replicates": 2,
+          "evidence_abstentions": 0,
+          "transport_failures": 0
+        },
+        "evidence_sufficiency": "PARTLY_DOCUMENTED",
+        "documented_probability_mass_share": 1.0,
+        "branch_evidence_bases": [
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED",
+          "DOCUMENTED_IN_SUPPLIED_SOURCES"
+        ],
+        "withheld_model_proposal": null,
+        "displayed_in_public_case": true
+      },
+      {
+        "event_id": "JAPAN_MOF_YEN_BUYING_INTERVENTION_CONFIRMED_BY_2027-01-31",
+        "target_condition": "Japan's Ministry of Finance confirms yen-buying foreign exchange intervention conducted between 2026-11-03 and 2027-01-31",
+        "deadline": "2027-01-31",
+        "status": "MODEL_FORECAST_UNCALIBRATED",
+        "probability_center": 0.3205,
+        "credal_interval": [
+          0.16160000000000002,
+          0.5165
+        ],
+        "abstention_reason": null,
+        "abstention_class": null,
+        "market_review_status": "NO_EXACT_FIT_NOTHING_RELATED_WITHIN_SEARCHED_SCOPE",
+        "market_counts": {
+          "exact": 0,
+          "entailment": 0,
+          "related": 0,
+          "rejected": 17,
+          "not_reviewed": 0
+        },
+        "exact_contracts": [],
+        "market_implied_bounds": {
+          "lower": null,
+          "upper": null,
+          "status": "NO_QUOTED_ENTAILMENT"
+        },
+        "market_consistency": "NO_QUOTED_ENTAILMENT",
+        "evidence_provenance": {
+          "targeted_search_ran": true,
+          "portfolio_leads_available": 48,
+          "portfolio_leads_relevant": 12,
+          "targeted_leads_available": 36,
+          "targeted_leads_relevant": 27,
+          "url_verified_digest_findings": 10,
+          "digest_findings_supplied_to_model": 10,
+          "direct_page_observations_official": 0,
+          "direct_page_observations_specialized": 0,
+          "official_indicator_observations": 0,
+          "market_review_status": "NO_EXACT_FIT_NOTHING_RELATED_WITHIN_SEARCHED_SCOPE",
+          "market_contract_counts": {
+            "exact": 0,
+            "entailment": 0,
+            "related": 0,
+            "rejected": 17,
+            "not_reviewed": 0
+          },
+          "evidence_is_fact_certified": false
+        },
+        "stability": {
+          "status": "STABLE",
+          "replicate_centers": [
+            0.3205,
+            0.30300000000000005
+          ],
+          "max_center_gap": 0.01749999999999996,
+          "mean_credal_width": 0.34114999999999995,
+          "spread_ratio": 0.05129708339440118,
+          "numeric_replicates": 2,
+          "evidence_abstentions": 0,
+          "transport_failures": 0
+        },
+        "evidence_sufficiency": "PARTLY_DOCUMENTED",
+        "documented_probability_mass_share": 1.0,
+        "branch_evidence_bases": [
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED"
+        ],
+        "withheld_model_proposal": null,
+        "displayed_in_public_case": true
+      },
+      {
+        "event_id": "US_10Y_TREASURY_YIELD_CLOSES_AT_OR_ABOVE_5PCT_BY_2027-01-31",
+        "target_condition": "US 10-year Treasury constant-maturity yield closes at or above 5.00% on any trading day by 2027-01-31",
+        "deadline": "2027-01-31",
+        "status": "MODEL_FORECAST_UNCALIBRATED",
+        "probability_center": 0.7070000000000001,
+        "credal_interval": [
+          0.482,
+          0.8575
+        ],
+        "abstention_reason": null,
+        "abstention_class": null,
+        "market_review_status": "NO_EXACT_FIT_NOTHING_RELATED_WITHIN_SEARCHED_SCOPE",
+        "market_counts": {
+          "exact": 0,
+          "entailment": 0,
+          "related": 0,
+          "rejected": 12,
+          "not_reviewed": 0
+        },
+        "exact_contracts": [],
+        "market_implied_bounds": {
+          "lower": null,
+          "upper": null,
+          "status": "NO_QUOTED_ENTAILMENT"
+        },
+        "market_consistency": "NO_QUOTED_ENTAILMENT",
+        "evidence_provenance": {
+          "targeted_search_ran": true,
+          "portfolio_leads_available": 48,
+          "portfolio_leads_relevant": 6,
+          "targeted_leads_available": 34,
+          "targeted_leads_relevant": 34,
+          "url_verified_digest_findings": 10,
+          "digest_findings_supplied_to_model": 10,
+          "direct_page_observations_official": 0,
+          "direct_page_observations_specialized": 0,
+          "official_indicator_observations": 0,
+          "market_review_status": "NO_EXACT_FIT_NOTHING_RELATED_WITHIN_SEARCHED_SCOPE",
+          "market_contract_counts": {
+            "exact": 0,
+            "entailment": 0,
+            "related": 0,
+            "rejected": 12,
+            "not_reviewed": 0
+          },
+          "evidence_is_fact_certified": false
+        },
+        "stability": {
+          "status": "STABLE",
+          "replicate_centers": [
+            0.7070000000000001,
+            0.762
+          ],
+          "max_center_gap": 0.05499999999999994,
+          "mean_credal_width": 0.36075000000000007,
+          "spread_ratio": 0.15246015246015227,
+          "numeric_replicates": 2,
+          "evidence_abstentions": 0,
+          "transport_failures": 0
+        },
+        "evidence_sufficiency": "PARTLY_DOCUMENTED",
+        "documented_probability_mass_share": 0.9434229137199435,
+        "branch_evidence_bases": [
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED",
+          "ASSUMPTION_NOT_DOCUMENTED"
+        ],
+        "withheld_model_proposal": null,
+        "displayed_in_public_case": true
+      },
+      {
+        "event_id": "US_BIS_AI_CHIP_EXPORT_RULE_CHINA_BY_2027-01-31",
+        "target_condition": "US BIS publishes a new rule or entity-list action tightening export controls on AI accelerators or semiconductor equipment to China by 2027-01-31",
+        "deadline": "2027-01-31",
+        "status": "MODEL_FORECAST_UNCALIBRATED",
+        "probability_center": 0.505,
+        "credal_interval": [
+          0.27,
+          0.7180000000000001
+        ],
+        "abstention_reason": null,
+        "abstention_class": null,
+        "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+        "market_counts": {
+          "exact": 0,
+          "entailment": 0,
+          "related": 2,
+          "rejected": 13,
+          "not_reviewed": 2
+        },
+        "exact_contracts": [],
+        "market_implied_bounds": {
+          "lower": null,
+          "upper": null,
+          "status": "NO_QUOTED_ENTAILMENT"
+        },
+        "market_consistency": "NO_QUOTED_ENTAILMENT",
+        "evidence_provenance": {
+          "targeted_search_ran": true,
+          "portfolio_leads_available": 48,
+          "portfolio_leads_relevant": 14,
+          "targeted_leads_available": 34,
+          "targeted_leads_relevant": 34,
+          "url_verified_digest_findings": 9,
+          "digest_findings_supplied_to_model": 9,
+          "direct_page_observations_official": 2,
+          "direct_page_observations_specialized": 0,
+          "official_indicator_observations": 0,
+          "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+          "market_contract_counts": {
+            "exact": 0,
+            "entailment": 0,
+            "related": 2,
+            "rejected": 13,
+            "not_reviewed": 2
+          },
+          "evidence_is_fact_certified": false
+        },
+        "stability": {
+          "status": "STABLE",
+          "replicate_centers": [
+            0.505,
+            0.4444
+          ],
+          "max_center_gap": 0.06059999999999999,
+          "mean_credal_width": 0.41250000000000003,
+          "spread_ratio": 0.14690909090909088,
+          "numeric_replicates": 2,
+          "evidence_abstentions": 0,
+          "transport_failures": 0
+        },
+        "evidence_sufficiency": "PARTLY_DOCUMENTED",
+        "documented_probability_mass_share": 1.0,
+        "branch_evidence_bases": [
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED",
+          "PARTLY_DOCUMENTED"
+        ],
+        "withheld_model_proposal": null,
+        "displayed_in_public_case": true
+      },
+      {
+        "event_id": "US_FEDERAL_APPROPRIATIONS_LAPSE_SHUTDOWN_BY_2027-01-31",
+        "target_condition": "A lapse in US federal appropriations (government shutdown) is in effect on any day between 2026-11-03 and 2027-01-31",
+        "deadline": "2027-01-31",
+        "status": "MODEL_FORECAST_UNCALIBRATED",
+        "probability_center": 0.252,
+        "credal_interval": [
+          0.114,
+          0.442
+        ],
+        "abstention_reason": null,
+        "abstention_class": null,
+        "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+        "market_counts": {
+          "exact": 0,
+          "entailment": 0,
+          "related": 6,
+          "rejected": 7,
+          "not_reviewed": 0
+        },
+        "exact_contracts": [],
+        "market_implied_bounds": {
+          "lower": null,
+          "upper": null,
+          "status": "NO_QUOTED_ENTAILMENT"
+        },
+        "market_consistency": "NO_QUOTED_ENTAILMENT",
+        "evidence_provenance": {
+          "targeted_search_ran": true,
+          "portfolio_leads_available": 48,
+          "portfolio_leads_relevant": 0,
+          "targeted_leads_available": 35,
+          "targeted_leads_relevant": 35,
+          "url_verified_digest_findings": 10,
+          "digest_findings_supplied_to_model": 10,
+          "direct_page_observations_official": 1,
+          "direct_page_observations_specialized": 0,
+          "official_indicator_observations": 0,
+          "market_review_status": "NO_EXACT_FIT_RELATED_CONTRACTS_ONLY",
+          "market_contract_counts": {
+            "exact": 0,
+            "entailment": 0,
+            "related": 6,
+            "rejected": 7,
+            "not_reviewed": 0
+          },
+          "evidence_is_fact_certified": false
+        },
+        "stability": {
+          "status": "STABLE",
+          "replicate_centers": [
+            0.252,
+            0.2251
+          ],
+          "max_center_gap": 0.026900000000000007,
+          "mean_credal_width": 0.32199999999999995,
+          "spread_ratio": 0.0835403726708075,
+          "numeric_replicates": 2,
+          "evidence_abstentions": 0,
+          "transport_failures": 0
+        },
+        "evidence_sufficiency": "PARTLY_DOCUMENTED",
+        "documented_probability_mass_share": 1.0,
+        "branch_evidence_bases": [
+          "DOCUMENTED_IN_SUPPLIED_SOURCES",
+          "PARTLY_DOCUMENTED",
+          "DOCUMENTED_IN_SUPPLIED_SOURCES"
+        ],
+        "withheld_model_proposal": null,
+        "displayed_in_public_case": true
+      }
+    ]
+  },
+  "does_not_claim_out_of_sample_accuracy": true
+}

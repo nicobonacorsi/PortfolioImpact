@@ -1,0 +1,18 @@
+{
+  "name": "Portfolio Impact · Castle Scenario Analysis",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+  "remoteUser": "vscode",
+  "forwardPorts": [
+    8765
+  ],
+  "portsAttributes": {
+    "8765": {
+      "label": "Portfolio Impact — Connect providers",
+      "onAutoForward": "openBrowser",
+      "protocol": "http"
+    }
+  },
+  "postCreateCommand": "bash scripts/start_v4_codespaces.sh --setup-only",
+  "waitFor": "postCreateCommand",
+  "postAttachCommand": "bash scripts/autostart_v4_codespaces.sh"
+}

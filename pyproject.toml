@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "castle-market-risk"
+version = "0.3.0"
+description = "Auditable event-to-market portfolio risk analysis"
+requires-python = ">=3.12,<3.13"
+dependencies = ["numpy==2.3.5", "scipy==1.17.0", "pandas==2.2.3", "streamlit==1.54.0"]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2", "openpyxl==3.1.5"]
+research = ["openpyxl==3.1.5"]
+
+[tool.setuptools.packages.find]
+include = ["castle_risk*"]
+
+[tool.pytest.ini_options]
+python_files = ["test_*.py"]
+testpaths = ["tests"]
+pythonpath = ["."]
