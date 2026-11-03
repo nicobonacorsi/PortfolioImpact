@@ -1,0 +1,9 @@
+{
+  "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXFEDDECISION-26OCT-H0/orderbook",
+  "retrieved_at": "2026-10-16T15:27:44.313355+00:00",
+  "server_date": "Fri, 16 Oct 2026 15:27:44 GMT",
+  "status": 200,
+  "sha256": "31db64518e3634e349c650390b5763d7c68ab81db0f36644120dd3efa785fa21",
+  "transport": "python urllib GET",
+  "fixture": false
+}

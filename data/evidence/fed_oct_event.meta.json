@@ -1,0 +1,9 @@
+{
+  "url": "https://external-api.kalshi.com/trade-api/v2/events/KXFEDDECISION-26OCT",
+  "retrieved_at": "2026-10-16T15:27:32.368556+00:00",
+  "server_date": "Fri, 16 Oct 2026 15:27:32 GMT",
+  "status": 200,
+  "sha256": "2a282af5cef36f7f4d0ab3e161afb673e443473ec49a336ff9cce9d58b4b7a7b",
+  "transport": "python urllib GET",
+  "fixture": false
+}
