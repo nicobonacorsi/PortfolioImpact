@@ -1,0 +1,1194 @@
+{
+ "schema": "castle.r94_kalshi_release_surprises.v1",
+ "built_at_utc": "2026-10-31T15:42:34+00:00",
+ "source": "Kalshi public API hourly candlesticks (series KXCPI, KXFED, KXPAYROLLS); last candle at or before the release time, bid/ask midpoint when the spread is at most 10 cents; settlement values from Kalshi.",
+ "method": "Expected value from the monotone (pool-adjacent-violators) survival ladder; see docs/R94_PREREGISTRATION_KALSHI_SURPRISE_20261031.md.",
+ "preregistration_sha256": "e3af0d285bfef455caf95619204f012457d36ceacadff2346c636d0bc30e617b",
+ "families": {
+  "CPI": [
+   {
+    "date": "2021-11-10",
+    "kalshi_event": "CPI-21OCT",
+    "expected": 0.5025,
+    "realized": 0.9,
+    "surprise": 0.3975,
+    "priced_strikes": 3,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2021-12-10",
+    "kalshi_event": "CPI-21NOV",
+    "expected": 0.7695,
+    "realized": 0.8,
+    "surprise": 0.0305,
+    "priced_strikes": 3,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-01-12",
+    "kalshi_event": "CPI-21DEC",
+    "expected": 0.647,
+    "realized": 0.5,
+    "surprise": -0.147,
+    "priced_strikes": 4,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-02-10",
+    "kalshi_event": "CPI-22JAN",
+    "expected": 0.5565,
+    "realized": 0.6,
+    "surprise": 0.0435,
+    "priced_strikes": 4,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-03-10",
+    "kalshi_event": "CPI-22FEB",
+    "expected": 0.7095,
+    "realized": 0.8,
+    "surprise": 0.0905,
+    "priced_strikes": 4,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-04-12",
+    "kalshi_event": "CPI-22MAR",
+    "expected": 1.104,
+    "realized": 1.2,
+    "surprise": 0.096,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-05-11",
+    "kalshi_event": "CPI-22APR",
+    "expected": 0.3315,
+    "realized": 0.3,
+    "surprise": -0.0315,
+    "priced_strikes": 11,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-06-10",
+    "kalshi_event": "CPI-22MAY",
+    "expected": 0.8045,
+    "realized": 1.0,
+    "surprise": 0.1955,
+    "priced_strikes": 12,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-07-13",
+    "kalshi_event": "CPI-22JUN",
+    "expected": 1.0815,
+    "realized": 1.3,
+    "surprise": 0.2185,
+    "priced_strikes": 13,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-08-10",
+    "kalshi_event": "CPI-22JUL",
+    "expected": 0.324,
+    "realized": 0.0,
+    "surprise": -0.324,
+    "priced_strikes": 11,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-09-13",
+    "kalshi_event": "CPI-22AUG",
+    "expected": 0.0335,
+    "realized": 0.1,
+    "surprise": 0.0665,
+    "priced_strikes": 11,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-10-13",
+    "kalshi_event": "CPI-22SEP",
+    "expected": 0.2865,
+    "realized": 0.4,
+    "surprise": 0.1135,
+    "priced_strikes": 11,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-11-10",
+    "kalshi_event": "CPI-22OCT",
+    "expected": 0.69,
+    "realized": 0.4,
+    "surprise": -0.29,
+    "priced_strikes": 8,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2022-12-13",
+    "kalshi_event": "CPI-22NOV",
+    "expected": 0.2995,
+    "realized": 0.1,
+    "surprise": -0.1995,
+    "priced_strikes": 8,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-01-12",
+    "kalshi_event": "CPI-22DEC",
+    "expected": 0.014,
+    "realized": -0.1,
+    "surprise": -0.114,
+    "priced_strikes": 5,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-02-14",
+    "kalshi_event": "CPI-23JAN",
+    "expected": 0.4625,
+    "realized": 0.5,
+    "surprise": 0.0375,
+    "priced_strikes": 9,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-03-14",
+    "kalshi_event": "CPI-23FEB",
+    "expected": 0.407,
+    "realized": 0.4,
+    "surprise": -0.007,
+    "priced_strikes": 9,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-04-12",
+    "kalshi_event": "CPI-23MAR",
+    "expected": 0.226,
+    "realized": 0.1,
+    "surprise": -0.126,
+    "priced_strikes": 7,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-05-10",
+    "kalshi_event": "CPI-23APR",
+    "expected": 0.412,
+    "realized": 0.4,
+    "surprise": -0.012,
+    "priced_strikes": 8,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-06-13",
+    "kalshi_event": "CPI-23MAY",
+    "expected": 0.1265,
+    "realized": 0.1,
+    "surprise": -0.0265,
+    "priced_strikes": 9,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-07-12",
+    "kalshi_event": "CPI-23JUN",
+    "expected": 0.191,
+    "realized": 0.2,
+    "surprise": 0.009,
+    "priced_strikes": 5,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-08-10",
+    "kalshi_event": "CPI-23JUL",
+    "expected": 0.2045,
+    "realized": 0.2,
+    "surprise": -0.0045,
+    "priced_strikes": 9,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-09-13",
+    "kalshi_event": "CPI-23AUG",
+    "expected": 0.641,
+    "realized": 0.6,
+    "surprise": -0.041,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-10-12",
+    "kalshi_event": "CPI-23SEP",
+    "expected": 0.331,
+    "realized": 0.4,
+    "surprise": 0.069,
+    "priced_strikes": 7,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-11-14",
+    "kalshi_event": "CPI-23OCT",
+    "expected": 0.0965,
+    "realized": 0.0,
+    "surprise": -0.0965,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2023-12-12",
+    "kalshi_event": "CPI-23NOV",
+    "expected": 0.0555,
+    "realized": 0.1,
+    "surprise": 0.0445,
+    "priced_strikes": 5,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-01-11",
+    "kalshi_event": "CPI-23DEC",
+    "expected": 0.2435,
+    "realized": 0.3,
+    "surprise": 0.0565,
+    "priced_strikes": 7,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-02-13",
+    "kalshi_event": "CPI-24JAN",
+    "expected": 0.163,
+    "realized": 0.3,
+    "surprise": 0.137,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-03-12",
+    "kalshi_event": "CPI-24FEB",
+    "expected": 0.44,
+    "realized": 0.4,
+    "surprise": -0.04,
+    "priced_strikes": 5,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-04-10",
+    "kalshi_event": "CPI-24MAR",
+    "expected": 0.2915,
+    "realized": 0.4,
+    "surprise": 0.1085,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-05-15",
+    "kalshi_event": "CPI-24APR",
+    "expected": 0.379,
+    "realized": 0.3,
+    "surprise": -0.079,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-06-12",
+    "kalshi_event": "CPI-24MAY",
+    "expected": 0.116,
+    "realized": 0.0,
+    "surprise": -0.116,
+    "priced_strikes": 8,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-07-11",
+    "kalshi_event": "CPI-24JUN",
+    "expected": 0.0455,
+    "realized": -0.1,
+    "surprise": -0.1455,
+    "priced_strikes": 8,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-08-14",
+    "kalshi_event": "CPI-24JUL",
+    "expected": 0.175,
+    "realized": 0.2,
+    "surprise": 0.025,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-09-11",
+    "kalshi_event": "CPI-24AUG",
+    "expected": 0.1975,
+    "realized": 0.2,
+    "surprise": 0.0025,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-10-10",
+    "kalshi_event": "CPI-24SEP",
+    "expected": 0.0965,
+    "realized": 0.2,
+    "surprise": 0.1035,
+    "priced_strikes": 8,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-11-13",
+    "kalshi_event": "CPI-24OCT",
+    "expected": 0.4915,
+    "realized": 0.2,
+    "surprise": -0.2915,
+    "priced_strikes": 4,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2024-12-11",
+    "kalshi_event": "KXCPI-24NOV",
+    "expected": 0.293,
+    "realized": 0.3,
+    "surprise": 0.007,
+    "priced_strikes": 5,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-01-15",
+    "kalshi_event": "KXCPI-24DEC",
+    "expected": 0.3745,
+    "realized": 0.4,
+    "surprise": 0.0255,
+    "priced_strikes": 7,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-02-12",
+    "kalshi_event": "KXCPI-25JAN",
+    "expected": 0.317,
+    "realized": 0.5,
+    "surprise": 0.183,
+    "priced_strikes": 7,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-03-12",
+    "kalshi_event": "KXCPI-25FEB",
+    "expected": 0.3055,
+    "realized": 0.2,
+    "surprise": -0.1055,
+    "priced_strikes": 7,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-05-13",
+    "kalshi_event": "KXCPI-25APR",
+    "expected": 0.386,
+    "realized": 0.2,
+    "surprise": -0.186,
+    "priced_strikes": 4,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-06-11",
+    "kalshi_event": "KXCPI-25MAY",
+    "expected": 0.204,
+    "realized": 0.1,
+    "surprise": -0.104,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-07-15",
+    "kalshi_event": "KXCPI-25JUN",
+    "expected": 0.3945,
+    "realized": 0.3,
+    "surprise": -0.0945,
+    "priced_strikes": 5,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-08-12",
+    "kalshi_event": "KXCPI-25JUL",
+    "expected": 0.258,
+    "realized": 0.2,
+    "surprise": -0.058,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-09-11",
+    "kalshi_event": "KXCPI-25AUG",
+    "expected": 0.323,
+    "realized": 0.4,
+    "surprise": 0.077,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2025-12-18",
+    "kalshi_event": "KXCPI-25NOV",
+    "expected": 0.235,
+    "realized": 0.2,
+    "surprise": -0.035,
+    "priced_strikes": 5,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-01-13",
+    "kalshi_event": "KXCPI-25DEC",
+    "expected": 0.322,
+    "realized": 0.3,
+    "surprise": -0.022,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-02-13",
+    "kalshi_event": "KXCPI-26JAN",
+    "expected": 0.2475,
+    "realized": 0.2,
+    "surprise": -0.0475,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-03-11",
+    "kalshi_event": "KXCPI-26FEB",
+    "expected": 0.255,
+    "realized": 0.3,
+    "surprise": 0.045,
+    "priced_strikes": 6,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-04-10",
+    "kalshi_event": "KXCPI-26MAR",
+    "expected": 0.9,
+    "realized": 0.9,
+    "surprise": 0.0,
+    "priced_strikes": 15,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-05-12",
+    "kalshi_event": "KXCPI-26APR",
+    "expected": 0.5975,
+    "realized": 0.6,
+    "surprise": 0.0025,
+    "priced_strikes": 12,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-06-10",
+    "kalshi_event": "KXCPI-26MAY",
+    "expected": 0.4995,
+    "realized": 0.5,
+    "surprise": 0.0005,
+    "priced_strikes": 14,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-07-14",
+    "kalshi_event": "KXCPI-26JUN",
+    "expected": -0.1495,
+    "realized": -0.4,
+    "surprise": -0.2505,
+    "priced_strikes": 9,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-08-12",
+    "kalshi_event": "KXCPI-26JUL",
+    "expected": 0.087,
+    "realized": 0.1,
+    "surprise": 0.013,
+    "priced_strikes": 10,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-09-11",
+    "kalshi_event": "KXCPI-26AUG",
+    "expected": 0.364,
+    "realized": 0.4,
+    "surprise": 0.036,
+    "priced_strikes": 15,
+    "unit": "headline_cpi_mom_percentage_points"
+   },
+   {
+    "date": "2026-10-14",
+    "kalshi_event": "KXCPI-26SEP",
+    "expected": 0.574,
+    "realized": 0.6,
+    "surprise": 0.026,
+    "priced_strikes": 14,
+    "unit": "headline_cpi_mom_percentage_points"
+   }
+  ],
+  "FOMC": [
+   {
+    "date": "2022-03-16",
+    "kalshi_event": "FED-22MAR",
+    "expected": 0.25875,
+    "realized": 0.25,
+    "surprise": -0.00875,
+    "priced_strikes": 3,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2022-05-04",
+    "kalshi_event": "FED-22MAY",
+    "expected": 0.50125,
+    "realized": 0.5,
+    "surprise": -0.00125,
+    "priced_strikes": 4,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2022-06-15",
+    "kalshi_event": "FED-22JUN",
+    "expected": 0.73125,
+    "realized": 0.75,
+    "surprise": 0.01875,
+    "priced_strikes": 7,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2022-07-27",
+    "kalshi_event": "FED-22JUL",
+    "expected": 0.75,
+    "realized": 0.75,
+    "surprise": 0.0,
+    "priced_strikes": 11,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2022-09-21",
+    "kalshi_event": "FED-22SEP",
+    "expected": 0.75875,
+    "realized": 0.75,
+    "surprise": -0.00875,
+    "priced_strikes": 14,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2022-11-02",
+    "kalshi_event": "FED-22NOV",
+    "expected": 0.73,
+    "realized": 0.75,
+    "surprise": 0.02,
+    "priced_strikes": 5,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2022-12-14",
+    "kalshi_event": "FED-22DEC",
+    "expected": 0.4825,
+    "realized": 0.5,
+    "surprise": 0.0175,
+    "priced_strikes": 9,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2023-02-01",
+    "kalshi_event": "FED-23FEB",
+    "expected": 0.25125,
+    "realized": 0.25,
+    "surprise": -0.00125,
+    "priced_strikes": 6,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2023-03-22",
+    "kalshi_event": "FED-23MAR",
+    "expected": 0.20875,
+    "realized": 0.25,
+    "surprise": 0.04125,
+    "priced_strikes": 6,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2023-05-03",
+    "kalshi_event": "FED-23MAY",
+    "expected": 0.235,
+    "realized": 0.25,
+    "surprise": 0.015,
+    "priced_strikes": 3,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2023-06-14",
+    "kalshi_event": "FED-23JUN",
+    "expected": -0.00125,
+    "realized": 0.0,
+    "surprise": 0.00125,
+    "priced_strikes": 7,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2023-07-26",
+    "kalshi_event": "FED-23JUL",
+    "expected": 0.25125,
+    "realized": 0.25,
+    "surprise": -0.00125,
+    "priced_strikes": 3,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2023-09-20",
+    "kalshi_event": "FED-23SEP",
+    "expected": 0.00875,
+    "realized": 0.0,
+    "surprise": -0.00875,
+    "priced_strikes": 4,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2023-11-01",
+    "kalshi_event": "FED-23NOV",
+    "expected": -0.005,
+    "realized": 0.0,
+    "surprise": 0.005,
+    "priced_strikes": 3,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2023-12-13",
+    "kalshi_event": "FED-23DEC",
+    "expected": -0.005833,
+    "realized": 0.0,
+    "surprise": 0.005833,
+    "priced_strikes": 4,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2024-06-12",
+    "kalshi_event": "FED-24JUN",
+    "expected": -0.006875,
+    "realized": 0.0,
+    "surprise": 0.006875,
+    "priced_strikes": 5,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2024-07-31",
+    "kalshi_event": "FED-24JUL",
+    "expected": -0.025,
+    "realized": 0.0,
+    "surprise": 0.025,
+    "priced_strikes": 3,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2024-09-18",
+    "kalshi_event": "FED-24SEP",
+    "expected": -0.32,
+    "realized": -0.5,
+    "surprise": -0.18,
+    "priced_strikes": 7,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2024-11-07",
+    "kalshi_event": "FED-24NOV",
+    "expected": -0.268125,
+    "realized": -0.25,
+    "surprise": 0.018125,
+    "priced_strikes": 7,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2024-12-18",
+    "kalshi_event": "FED-24DEC",
+    "expected": -0.24875,
+    "realized": -0.25,
+    "surprise": -0.00125,
+    "priced_strikes": 7,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2025-01-29",
+    "kalshi_event": "FED-25JAN",
+    "expected": 0.0125,
+    "realized": 0.0,
+    "surprise": -0.0125,
+    "priced_strikes": 7,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2025-05-07",
+    "kalshi_event": "FED-25MAY",
+    "expected": -0.0075,
+    "realized": 0.0,
+    "surprise": 0.0075,
+    "priced_strikes": 3,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2025-06-18",
+    "kalshi_event": "FED-25JUN",
+    "expected": -0.0025,
+    "realized": 0.0,
+    "surprise": 0.0025,
+    "priced_strikes": 4,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2025-09-17",
+    "kalshi_event": "FED-25SEP",
+    "expected": -0.27,
+    "realized": -0.25,
+    "surprise": 0.02,
+    "priced_strikes": 5,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2025-10-29",
+    "kalshi_event": "FED-25OCT",
+    "expected": -0.255,
+    "realized": -0.25,
+    "surprise": 0.005,
+    "priced_strikes": 5,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2025-12-10",
+    "kalshi_event": "FED-25DEC",
+    "expected": -0.2475,
+    "realized": -0.25,
+    "surprise": -0.0025,
+    "priced_strikes": 3,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2026-01-28",
+    "kalshi_event": "KXFED-26JAN",
+    "expected": 0.0075,
+    "realized": 0.0,
+    "surprise": -0.0075,
+    "priced_strikes": 11,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2026-03-18",
+    "kalshi_event": "KXFED-26MAR",
+    "expected": 0.01,
+    "realized": 0.0,
+    "surprise": -0.01,
+    "priced_strikes": 6,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2026-04-29",
+    "kalshi_event": "KXFED-26APR",
+    "expected": -0.0025,
+    "realized": 0.0,
+    "surprise": 0.0025,
+    "priced_strikes": 6,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2026-06-17",
+    "kalshi_event": "KXFED-26JUN",
+    "expected": 0.0075,
+    "realized": 0.0,
+    "surprise": -0.0075,
+    "priced_strikes": 8,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2026-07-29",
+    "kalshi_event": "KXFED-26JUL",
+    "expected": 0.0425,
+    "realized": 0.0,
+    "surprise": -0.0425,
+    "priced_strikes": 5,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2026-09-16",
+    "kalshi_event": "KXFED-26SEP",
+    "expected": 0.225,
+    "realized": 0.25,
+    "surprise": 0.025,
+    "priced_strikes": 6,
+    "unit": "policy_rate_change_percentage_points"
+   },
+   {
+    "date": "2026-10-28",
+    "kalshi_event": "KXFED-26OCT",
+    "expected": 0.0075,
+    "realized": 0.0,
+    "surprise": -0.0075,
+    "priced_strikes": 3,
+    "unit": "policy_rate_change_percentage_points"
+   }
+  ],
+  "PAYROLLS": [
+   {
+    "date": "2023-04-07",
+    "kalshi_event": "PROLLS-23MAR",
+    "expected": 279.0,
+    "realized": 236.0,
+    "surprise": -43.0,
+    "priced_strikes": 6,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2023-05-05",
+    "kalshi_event": "PROLLS-23APR",
+    "expected": 247.0,
+    "realized": 253.0,
+    "surprise": 6.0,
+    "priced_strikes": 6,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2023-06-02",
+    "kalshi_event": "PROLLS-23MAY",
+    "expected": 274.0,
+    "realized": 339.0,
+    "surprise": 65.0,
+    "priced_strikes": 5,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2023-07-07",
+    "kalshi_event": "PROLLS-23JUN",
+    "expected": 344.0,
+    "realized": 209.0,
+    "surprise": -135.0,
+    "priced_strikes": 6,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2023-09-01",
+    "kalshi_event": "PROLLS-23AUG",
+    "expected": 217.5,
+    "realized": 187.0,
+    "surprise": -30.5,
+    "priced_strikes": 6,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2023-10-06",
+    "kalshi_event": "PROLLS-23SEP",
+    "expected": 207.0,
+    "realized": 336.0,
+    "surprise": 129.0,
+    "priced_strikes": 6,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2023-11-03",
+    "kalshi_event": "PROLLS-23OCT",
+    "expected": 243.5,
+    "realized": 150.0,
+    "surprise": -93.5,
+    "priced_strikes": 6,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2023-12-08",
+    "kalshi_event": "PROLLS-23NOV",
+    "expected": 218.5,
+    "realized": 199.0,
+    "surprise": -19.5,
+    "priced_strikes": 7,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-01-05",
+    "kalshi_event": "PROLLS-23DECB",
+    "expected": 226.555,
+    "realized": 216.0,
+    "surprise": -10.555,
+    "priced_strikes": 4,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-02-02",
+    "kalshi_event": "PROLLS-24JAN",
+    "expected": 270.499,
+    "realized": 353.0,
+    "surprise": 82.501,
+    "priced_strikes": 5,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-03-08",
+    "kalshi_event": "PAYROLLS-24FEB",
+    "expected": 261.564,
+    "realized": 275.0,
+    "surprise": 13.436,
+    "priced_strikes": 8,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-04-05",
+    "kalshi_event": "PAYROLLS-24MAR",
+    "expected": 228.625,
+    "realized": 303.0,
+    "surprise": 74.375,
+    "priced_strikes": 8,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-05-03",
+    "kalshi_event": "PAYROLLS-24APR",
+    "expected": 248.97,
+    "realized": 175.0,
+    "surprise": -73.97,
+    "priced_strikes": 7,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-06-07",
+    "kalshi_event": "PAYROLLS-24MAY",
+    "expected": 227.375,
+    "realized": 272.0,
+    "surprise": 44.625,
+    "priced_strikes": 5,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-07-05",
+    "kalshi_event": "PAYROLLS-24JUN",
+    "expected": 291.5,
+    "realized": 206.0,
+    "surprise": -85.5,
+    "priced_strikes": 4,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-08-02",
+    "kalshi_event": "PAYROLLS-24JUL",
+    "expected": 249.75,
+    "realized": 114.0,
+    "surprise": -135.75,
+    "priced_strikes": 3,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-09-06",
+    "kalshi_event": "PAYROLLS-24AUG",
+    "expected": 204.0,
+    "realized": 142.0,
+    "surprise": -62.0,
+    "priced_strikes": 6,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-10-04",
+    "kalshi_event": "PAYROLLS-24SEP",
+    "expected": 170.34,
+    "realized": 254.0,
+    "surprise": 83.66,
+    "priced_strikes": 8,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-11-01",
+    "kalshi_event": "PAYROLLS-24OCT",
+    "expected": 156.12,
+    "realized": 12.0,
+    "surprise": -144.12,
+    "priced_strikes": 8,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2024-12-06",
+    "kalshi_event": "KXPAYROLLS-24NOV",
+    "expected": 265.25,
+    "realized": 227.0,
+    "surprise": -38.25,
+    "priced_strikes": 9,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-01-10",
+    "kalshi_event": "KXPAYROLLS-24DEC",
+    "expected": 206.05,
+    "realized": 256.0,
+    "surprise": 49.95,
+    "priced_strikes": 8,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-02-07",
+    "kalshi_event": "KXPAYROLLS-25JAN",
+    "expected": 244.54,
+    "realized": 143.0,
+    "surprise": -101.54,
+    "priced_strikes": 7,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-03-07",
+    "kalshi_event": "KXPAYROLLS-25FEB",
+    "expected": 164.0,
+    "realized": 151.0,
+    "surprise": -13.0,
+    "priced_strikes": 7,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-04-04",
+    "kalshi_event": "KXPAYROLLS-25MAR",
+    "expected": 165.75,
+    "realized": 228.0,
+    "surprise": 62.25,
+    "priced_strikes": 7,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-05-02",
+    "kalshi_event": "KXPAYROLLS-25APR",
+    "expected": 241.75,
+    "realized": 177.0,
+    "surprise": -64.75,
+    "priced_strikes": 4,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-06-06",
+    "kalshi_event": "KXPAYROLLS-25MAY",
+    "expected": 199.25,
+    "realized": 139.0,
+    "surprise": -60.25,
+    "priced_strikes": 5,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-07-03",
+    "kalshi_event": "KXPAYROLLS-25JUN",
+    "expected": 128.5,
+    "realized": 147.0,
+    "surprise": 18.5,
+    "priced_strikes": 7,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-08-01",
+    "kalshi_event": "KXPAYROLLS-25JUL",
+    "expected": 143.625,
+    "realized": 73.0,
+    "surprise": -70.625,
+    "priced_strikes": 8,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-09-05",
+    "kalshi_event": "KXPAYROLLS-25AUG",
+    "expected": 92.625,
+    "realized": 22.0,
+    "surprise": -70.625,
+    "priced_strikes": 10,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-10-03",
+    "kalshi_event": "KXPAYROLLS-25SEP",
+    "expected": 50.625,
+    "realized": 119.0,
+    "surprise": 68.375,
+    "priced_strikes": 7,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2025-12-16",
+    "kalshi_event": "KXPAYROLLS-25NOV",
+    "expected": 78.5,
+    "realized": 64.0,
+    "surprise": -14.5,
+    "priced_strikes": 10,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-01-09",
+    "kalshi_event": "KXPAYROLLS-25DEC",
+    "expected": 83.725,
+    "realized": 50.0,
+    "surprise": -33.725,
+    "priced_strikes": 13,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-02-11",
+    "kalshi_event": "KXPAYROLLS-26JAN",
+    "expected": 48.4,
+    "realized": 130.0,
+    "surprise": 81.6,
+    "priced_strikes": 13,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-03-06",
+    "kalshi_event": "KXPAYROLLS-26FEB",
+    "expected": 64.9,
+    "realized": -92.0,
+    "surprise": -156.9,
+    "priced_strikes": 13,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-04-03",
+    "kalshi_event": "KXPAYROLLS-26MAR",
+    "expected": 74.95,
+    "realized": 178.0,
+    "surprise": 103.05,
+    "priced_strikes": 16,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-05-08",
+    "kalshi_event": "KXPAYROLLS-26APR",
+    "expected": 70.0,
+    "realized": 115.0,
+    "surprise": 45.0,
+    "priced_strikes": 19,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-06-05",
+    "kalshi_event": "KXPAYROLLS-26MAY",
+    "expected": 93.325,
+    "realized": 172.0,
+    "surprise": 78.675,
+    "priced_strikes": 17,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-07-02",
+    "kalshi_event": "KXPAYROLLS-26JUN",
+    "expected": 130.05,
+    "realized": 57.0,
+    "surprise": -73.05,
+    "priced_strikes": 15,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-08-07",
+    "kalshi_event": "KXPAYROLLS-26JUL",
+    "expected": 77.525,
+    "realized": -23.0,
+    "surprise": -100.525,
+    "priced_strikes": 13,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-09-04",
+    "kalshi_event": "KXPAYROLLS-26AUG",
+    "expected": 46.25,
+    "realized": 162.0,
+    "surprise": 115.75,
+    "priced_strikes": 19,
+    "unit": "nonfarm_payroll_change_thousands"
+   },
+   {
+    "date": "2026-10-02",
+    "kalshi_event": "KXPAYROLLS-26SEP",
+    "expected": 88.2,
+    "realized": 29.0,
+    "surprise": -59.2,
+    "priced_strikes": 13,
+    "unit": "nonfarm_payroll_change_thousands"
+   }
+  ]
+ }
+}

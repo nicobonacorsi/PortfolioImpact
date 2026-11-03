@@ -1,0 +1,10 @@
+{
+  "url": "https://assets.kalshi.com/contract_terms/CPI.pdf",
+  "retrieved_at": "2026-10-16T16:22:52.325306+00:00",
+  "status": 200,
+  "server_date": "Thu, 15 Oct 2026 20:30:06 GMT",
+  "sha256": "2cdb3a94c1419e18d0652c47133dd82284a2c153366a7603c03ac0370daf57e6",
+  "raw_path": "data/evidence/nonidentity/CPI_terms.pdf",
+  "transport": "https GET",
+  "fixture": false
+}

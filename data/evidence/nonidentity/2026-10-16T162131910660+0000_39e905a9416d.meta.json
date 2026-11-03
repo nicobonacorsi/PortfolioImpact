@@ -1,0 +1,12 @@
+{
+  "url": "https://external-api.kalshi.com/trade-api/v2/events/KXCPI-26OCT",
+  "retrieved_at": "2026-10-16T16:21:31.910660+00:00",
+  "status": 200,
+  "server_date": "Fri, 16 Oct 2026 16:21:31 GMT",
+  "sha256": "f86b8c3800d554dc280c9a7fdc1087abe543ee0354058c9ab5bcc36c4aafc867",
+  "raw_path": "data/evidence/nonidentity/2026-10-16T162131910660+0000_39e905a9416d.json",
+  "transport": "https GET",
+  "fixture": false,
+  "redacted": false,
+  "cache_hit": false
+}

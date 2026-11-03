@@ -1,0 +1,12 @@
+{
+  "url": "https://external-api.kalshi.com/trade-api/v2/markets/KXCPI-26OCT-T0.2/orderbook",
+  "retrieved_at": "2026-10-16T16:22:43.703726+00:00",
+  "status": 200,
+  "server_date": "Fri, 16 Oct 2026 16:22:43 GMT",
+  "sha256": "1b7958d7f71852c02ae033d0ef1bc932ecd615e4730c2672ed5d8e440ffbe1d7",
+  "raw_path": "data/evidence/nonidentity/2026-10-16T162243703726+0000_f509dea9bb94.json",
+  "transport": "https GET",
+  "fixture": false,
+  "redacted": false,
+  "cache_hit": false
+}

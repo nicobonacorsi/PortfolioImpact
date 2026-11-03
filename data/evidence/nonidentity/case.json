@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "case_id": "cpi_oct26_common_value_nonidentity",
+  "mode": "ARCHIVED_REAL_REPLAY",
+  "event_ticker": "KXCPI-26OCT",
+  "family": "cpi_oct26",
+  "label": "CPI Oct 2026 — nonidentity, conditional settlement-value model",
+  "target": {
+    "event_id": "cpi-settlement-2026-10-ge-0.35",
+    "title": "October 2026 common Kalshi CPI settlement reference value >= 0.35%; includes the venue's common fallback value when applicable, under the displayed common-resolution assumptions. This is not the unrestricted first BLS release event.",
+    "description": "October 2026 common Kalshi CPI settlement reference value >= 0.35%; includes the venue's common fallback value when applicable, under the displayed common-resolution assumptions. This is not the unrestricted first BLS release event.",
+    "event_date": "2026-11-10",
+    "predicate": {
+      "metric": "kalshi_headline_cpi_u_sa_mom_common_expiration_value",
+      "source": "Bureau of Labor Statistics; Kalshi CPI settlement terms",
+      "period": "2026-10",
+      "vintage": "value_at_common_expiration_including_documented_fallback",
+      "unit": "percent",
+      "operator": "ge",
+      "threshold": 0.35,
+      "cancellation_policy": "common_resolution_model:sha256:2cdb3a94c1419e18d0652c47133dd82284a2c153366a7603c03ac0370daf57e6"
+    },
+    "definition_origin": "USER_DEFINED",
+    "definition_scope": "NONIDENTITY_SETTLEMENT_RULE_DEFINED",
+    "accepted_model_assumptions": [
+      "All selected KXCPI-26OCT strikes use one common scalar expiration value and the same final determination time.",
+      "The displayed strict-threshold payout criterion applies without a contract-specific discretionary override or nonbinary payout.",
+      "The unresolved API-versus-PDF exceptional-expiration provisions are represented by a common convention; no precedence is asserted."
+    ],
+    "required_model_assumptions": [
+      "All selected KXCPI-26OCT strikes use one common scalar expiration value and the same final determination time.",
+      "The displayed strict-threshold payout criterion applies without a contract-specific discretionary override or nonbinary payout.",
+      "The unresolved API-versus-PDF exceptional-expiration provisions are represented by a common convention; no precedence is asserted."
+    ]
+  },
+  "natural_macro_target": {
+    "event_id": "cpi-bls-first-release-2026-10-ge-0.35",
+    "title": "First BLS October 2026 headline CPI-U seasonally adjusted MoM release is at least 0.35%",
+    "description": "Use the first published October 2026 BLS headline CPI-U seasonally adjusted monthly percent change. No settlement fallback or later revision is substituted.",
+    "event_date": "2026-11-10",
+    "predicate": {
+      "metric": "headline_cpi_u_sa_mom",
+      "source": "Bureau of Labor Statistics",
+      "period": "2026-10",
+      "vintage": "first_published_release",
+      "unit": "percent",
+      "operator": "ge",
+      "threshold": 0.35,
+      "cancellation_policy": "no_release_means_event_undefined"
+    },
+    "definition_origin": "USER_DEFINED",
+    "definition_scope": "UNRESTRICTED_BLS_FIRST_RELEASE"
+  },
+  "source_artifacts": {
+    "event": "data/evidence/nonidentity/2026-10-16T162131910660+0000_39e905a9416d.json",
+    "series": "data/evidence/nonidentity/2026-10-16T162138476747+0000_5d700ebc792d.json",
+    "terms": "data/evidence/nonidentity/CPI_terms.pdf"
+  },
+  "market_ids": [
+    "KXCPI-26OCT-T0.2",
+    "KXCPI-26OCT-T0.3",
+    "KXCPI-26OCT-T0.4"
+  ],
+  "orderbook_artifacts": {
+    "KXCPI-26OCT-T0.2": "data/evidence/nonidentity/2026-10-16T162243703726+0000_f509dea9bb94.json",
+    "KXCPI-26OCT-T0.3": "data/evidence/nonidentity/2026-10-16T162246398040+0000_d1f2a0ff2f61.json",
+    "KXCPI-26OCT-T0.4": "data/evidence/nonidentity/2026-10-16T162249266939+0000_a42248b40a81.json"
+  },
+  "reviewed_context": {
+    "event": {
+      "category": "Economics",
+      "collateral_return_type": "DIRECNET",
+      "event_ticker": "KXCPI-26OCT",
+      "exchange_index": 0,
+      "last_updated_ts": "0001-01-01T00:00:00Z",
+      "mutually_exclusive": false,
+      "series_ticker": "KXCPI",
+      "settlement_sources": [
+        {
+          "name": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/cpi/"
+        }
+      ],
+      "strike_period": "",
+      "sub_title": "In Oct 2026",
+      "title": "CPI in October"
+    },
+    "series": {
+      "additional_prohibitions": [
+        "Persons who are employed by any of the Source Agencies are not permitted to trade on the Contract.",
+        "Persons who hold any material, non-public information on the Underlying are not permitted to trade on the Contract."
+      ],
+      "categories": [
+        "Economics"
+      ],
+      "category": "Economics",
+      "contract_terms_url": "https://assets.kalshi.com/contract_terms/CPI.pdf",
+      "contract_url": "https://assets.kalshi.com/regulatory/product-certifications/CPI.pdf",
+      "exchange_index": 0,
+      "fee_multiplier": 1,
+      "fee_type": "quadratic_with_maker_fees",
+      "frequency": "monthly",
+      "last_updated_ts": "2026-10-13T14:35:44.907407Z",
+      "product_metadata": {
+        "scope": "Calendar"
+      },
+      "settlement_sources": [
+        {
+          "name": "Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/cpi/"
+        }
+      ],
+      "tags": [
+        "Inflation"
+      ],
+      "ticker": "KXCPI",
+      "title": "CPI"
+    },
+    "terms_sha256": "2cdb3a94c1419e18d0652c47133dd82284a2c153366a7603c03ac0370daf57e6"
+  },
+  "required_model_assumptions": [
+    "All selected KXCPI-26OCT strikes use one common scalar expiration value and the same final determination time.",
+    "The displayed strict-threshold payout criterion applies without a contract-specific discretionary override or nonbinary payout.",
+    "The unresolved API-versus-PDF exceptional-expiration provisions are represented by a common convention; no precedence is asserted."
+  ],
+  "excluded_event_market_ids": [
+    "KXCPI-26OCT-T-0.1",
+    "KXCPI-26OCT-T0.0",
+    "KXCPI-26OCT-T0.1",
+    "KXCPI-26OCT-T0.5",
+    "KXCPI-26OCT-T0.6",
+    "KXCPI-26OCT-T0.7",
+    "KXCPI-26OCT-T0.8",
+    "KXCPI-26OCT-T0.9",
+    "KXCPI-26OCT-T1.0"
+  ],
+  "selection_policy": "Three preselected thresholds 0.2,0.3,0.4 bracket and nest around the user-defined threshold 0.35; selection made before reading books. Other event markets intentionally omitted to keep the LP and request budget bounded.",
+  "retrieval_accounting": {
+    "public_api_gets": 5,
+    "public_document_gets": 1,
+    "authenticated_requests": 0,
+    "paid_model_requests": 0,
+    "public_api_cap": 12,
+    "retries": 0
+  },
+  "source_limitations": [
+    "The API and series PDF differ on exceptional expiration timing; the application does not assert which source overrides.",
+    "The PDF fallback formula is preserved verbatim; the application does not calculate it or silently infer its unit convention.",
+    "Settlement reference values are modeled on the real line, not a presumed decimal lattice.",
+    "Receipt timestamps do not reveal exchange quote update times.",
+    "This development case was inspected during parser construction; it is not an unseen holdout."
+  ]
+}
