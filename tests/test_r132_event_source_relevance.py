@@ -19,7 +19,7 @@ from castle_risk.structural_event_forecast import (
     impact_event_source_bundle, forecast_events,
 )
 from test_r116_autonomous_event_impact import POSITIONS, _context
-from test_r131_point3_event_evidence_handoff import CaptureAbstain, mark
+from test_event_evidence_integration import CaptureAbstain, mark
 
 TARGETED_URL = "https://www.imo.org/en/MediaCentre/PressBriefings/Pages/security-routing.aspx"
 BROAD_URL = "https://www.lloydslist.com/safety/war-risk-coverage-guidance"
