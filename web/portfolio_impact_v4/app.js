@@ -15,10 +15,11 @@ const state = {
   snapshots:null, events:[], holdings:SAMPLE.map(h=>({...h})), notional:250000,
   activeExample:PRIMARY_EXAMPLE_ID, sample:true, selected:null, details:false, showOther:false,
   selectedContract:null, selectedOutcomeId:null, jobStatus:"", jobError:"",
-  draft:SAMPLE.map(h=>({symbol:h.symbol,value:h.weight*100})),
+  draft:SAMPLE.map(h=>({symbol:h.symbol,value:h.weight*100})), draftNotional:250000,
   mode:"weight", editorTab:"manual", csvName:"", validation:""
 };
 let toastTimer;
+let analysisVersion=0;
 
 function esc(value){
   return String(value == null ? "" : value).replace(/[&<>"']/g,function(ch){
@@ -91,6 +92,7 @@ function selectEvent(id){
 function chooseExample(id){
   const sample=state.snapshots?.cases.find(c=>c.id===id);
   if(!sample)return;
+  invalidateAnalysisView();
   state.activeExample=id;
   state.sample=true;
   state.jobStatus="";
@@ -300,7 +302,7 @@ function htmlManualEditor(){
   return '<div>'+
     '<div class="field-spread"><label for="total-value">Portfolio value (USD)</label>'+
       (state.mode==="weight"
-        ?'<input class="field-input" id="total-value" type="number" min="1" step="any" value="'+esc(state.notional)+'">'
+        ?'<input class="field-input" id="total-value" type="number" min="1" step="any" value="'+esc(state.draftNotional)+'">'
         :'<span class="section-note">Calculated from position values</span>')+
     '</div>'+
     '<div class="field-spread"><span class="field-label" style="margin:0">Your holdings</span>'+
@@ -341,10 +343,11 @@ function renderEditor(){
 function openEditor(){
   state.mode="weight";state.editorTab="manual";state.validation="";state.csvName="";
   state.draft=state.holdings.map(h=>({symbol:h.symbol,value:h.weight*100}));
+  state.draftNotional=state.notional;
   renderEditor();portfolioDialog.showModal();
 }
 function resetEditor(){
-  state.mode="weight";state.editorTab="manual";state.notional=250000;state.validation="";state.csvName="";
+  state.mode="weight";state.editorTab="manual";state.draftNotional=250000;state.validation="";state.csvName="";
   state.draft=SAMPLE.map(h=>({symbol:h.symbol,value:h.weight*100}));
   renderEditor();
 }
@@ -368,11 +371,18 @@ function savePortfolio(){
     state.validation="Weights currently total "+sum.toFixed(1)+"%. Adjust them to 100%.";
     renderEditor();return;
   }
-  if(state.mode==="weight"&&(!Number.isFinite(state.notional)||state.notional<=0)){
+  if(state.mode==="weight"&&(!Number.isFinite(state.draftNotional)||state.draftNotional<=0)){
     state.validation="Enter a positive portfolio value.";renderEditor();return;
   }
-  if(state.mode==="value")state.notional=sum;
+  const nextNotional=state.mode==="value"?sum:state.draftNotional;
+  if(!Number.isFinite(nextNotional)||nextNotional<=0){
+    state.validation="Enter a positive portfolio value.";renderEditor();return;
+  }
+  invalidateAnalysisView();
+  state.notional=nextNotional;
   state.holdings=rows.map(r=>({symbol:r.symbol,weight:r.value/sum}));
+  state.events=[];
+  state.selected=null;
   const matchesExample=samePortfolio(state.holdings)&&Math.abs(state.notional-250000)<.01;
   state.sample=matchesExample;
   state.activeExample=matchesExample?PRIMARY_EXAMPLE_ID:"custom";
@@ -422,7 +432,7 @@ async function loadCsv(file){
     state.draft=rows;state.mode=useValue?"value":"weight";
     state.csvName=file.name;state.validation="";
     state.editorTab="manual";
-    if(useValue)state.notional=rows.reduce((v,r)=>v+r.value,0);
+    if(useValue)state.draftNotional=rows.reduce((v,r)=>v+r.value,0);
     renderEditor();
     showToast("CSV loaded. Review your holdings, then continue.");
   }catch(error){
@@ -430,47 +440,99 @@ async function loadCsv(file){
     renderEditor();
   }
 }
+function invalidateAnalysisView(){
+  analysisVersion+=1;
+  state.jobStatus="";
+  state.jobError="";
+}
+function analysisIsCurrent(request){
+  return request.version===analysisVersion;
+}
+function analysisPositions(holdings,notional){
+  if(!Number.isFinite(notional)||notional<=0||!Array.isArray(holdings)||!holdings.length)
+    throw new Error("The portfolio is incomplete.");
+  const seen=new Set();
+  let weightSum=0;
+  const rows=holdings.map(h=>{
+    const symbol=String(h.symbol||"").trim().toUpperCase();
+    if(!symbol||seen.has(symbol)||!Number.isFinite(h.weight)||h.weight<0)
+      throw new Error("The portfolio holdings are invalid.");
+    seen.add(symbol);
+    weightSum+=h.weight;
+    return {symbol,type:"auto",cents:Math.round(notional*h.weight*100)};
+  }).sort((a,b)=>a.symbol.localeCompare(b.symbol));
+  if(Math.abs(weightSum-1)>1e-8)throw new Error("The portfolio weights must add up to 100%.");
+  const cents=Math.round(notional*100);
+  rows[rows.length-1].cents+=cents-rows.reduce((sum,row)=>sum+row.cents,0);
+  if(rows.some(row=>row.cents<=0))throw new Error("Each holding must have a positive value in cents.");
+  return rows.map(row=>({symbol:row.symbol,type:row.type,amount:row.cents/100}));
+}
+function analysisPortfolioKey(holdings,notional){
+  return JSON.stringify(analysisPositions(holdings,notional).map(row=>[row.symbol,Math.round(row.amount*100)]));
+}
+function analysisRequest(){
+  return {version:++analysisVersion,holdings:state.holdings.map(h=>({...h})),notional:state.notional};
+}
+function applyLiveAnalysis(job,request){
+  if(!analysisIsCurrent(request))return false;
+  const report=job.case;
+  if(!report||!Array.isArray(report.risks))throw new Error("The service returned an incomplete report.");
+  const key=analysisPortfolioKey(report.positions,report.notional);
+  if(key!==request.key)throw new Error("This saved analysis belongs to a different portfolio. Your current holdings have not been changed.");
+  const sourceDate=String(report.capture||job.created_at||"").slice(0,10);
+  const events=eventsFromSnapshot(report,/^\d{4}-\d{2}-\d{2}$/.test(sourceDate)?sourceDate:undefined);
+  if(!events.length)throw new Error("No quantified event scenarios were returned for these holdings.");
+  state.holdings=report.positions.map(h=>({symbol:h.symbol,weight:h.weight}));
+  state.notional=report.notional;
+  state.events=events;
+  state.sample=true;
+  state.activeExample="live";
+  state.jobStatus="";
+  state.jobError="";
+  selectEvent(events[0].id);
+  render();
+  showToast("Your analysis is ready.");
+  return true;
+}
 async function runAnalysis(){
   if(state.jobStatus)return;
+  const request=analysisRequest();
   state.jobError="";
   state.jobStatus="Checking the analysis service…";
   render();
   try{
+    request.positions=analysisPositions(request.holdings,request.notional);
+    request.key=analysisPortfolioKey(request.holdings,request.notional);
     const statusReply=await fetch("/api/status",{credentials:"same-origin",cache:"no-store"});
+    if(!analysisIsCurrent(request))return;
     if(!statusReply.ok)throw new Error("Live analysis is not connected to this preview. The research portfolios remain available.");
     const config=await statusReply.json();
+    if(!analysisIsCurrent(request))return;
     if(!config.available||!config.csrf_token)throw new Error("The live analysis service is not ready.");
     if(!window.confirm("Live research uses external data and model APIs and may incur usage charges. Start this analysis?")){
       state.jobStatus="";
       render();
       return;
     }
-    const positions=state.holdings.map(h=>({symbol:h.symbol,type:"auto",amount:Math.round(state.notional*h.weight*100)/100}));
-    const amountGap=state.notional-positions.reduce((s,r)=>s+r.amount,0);
-    positions[positions.length-1].amount+=Math.round(amountGap*100)/100;
     const started=await fetch("/api/analyze",{
       method:"POST",credentials:"same-origin",
       headers:{"Content-Type":"application/json","X-Portfolio-Impact":"1","X-CSRF-Token":config.csrf_token},
-      body:JSON.stringify({positions})
+      body:JSON.stringify({positions:request.positions})
     });
     const first=await started.json().catch(()=>({}));
+    if(!analysisIsCurrent(request))return;
     if(!started.ok||!first.job_id)throw new Error(first.error||"The analysis could not start.");
     const startTime=Date.now();
     while(Date.now()-startTime<40*60*1000){
       await new Promise(resolve=>setTimeout(resolve,2500));
+      if(!analysisIsCurrent(request))return;
       const poll=await fetch("/api/jobs/"+encodeURIComponent(first.job_id),{credentials:"same-origin",cache:"no-store"});
+      if(!analysisIsCurrent(request))return;
       if(!poll.ok)throw new Error("Could not check the analysis status.");
       const job=await poll.json();
+      if(!analysisIsCurrent(request))return;
       if(job.status==="complete"){
-        if(!job.case||!Array.isArray(job.case.risks))throw new Error("The service returned an incomplete report.");
-        state.events=eventsFromSnapshot(job.case,new Date().toISOString().slice(0,10));
-        if(!state.events.length)throw new Error("No quantified event scenarios were returned for these holdings.");
-        state.sample=true;
-        state.activeExample="live";
-        state.jobStatus="";
-        selectEvent(state.events[0].id);
-        render();
-        showToast("Your analysis is ready.");
+        applyLiveAnalysis(job,request);
         return;
       }
       if(job.status==="failed")throw new Error(job.error||"The analysis stopped.");
@@ -479,6 +541,7 @@ async function runAnalysis(){
     }
     throw new Error("The analysis exceeded the waiting window. Refresh before retrying.");
   }catch(error){
+    if(!analysisIsCurrent(request))return;
     state.jobStatus="";
     state.jobError=error.message||"The analysis service is unavailable.";
     render();
@@ -508,9 +571,10 @@ document.addEventListener("click",function(event){
     case "toggle-mode":{
       const total=state.draft.reduce((v,r)=>v+(Number(r.value)||0),0);
       if(state.mode==="weight"){
-        state.draft=state.draft.map(r=>({...r,value:Number(r.value)*state.notional/100}));
+        state.draft=state.draft.map(r=>({...r,value:Number(r.value)*state.draftNotional/100}));
         state.mode="value";
       }else{
+        state.draftNotional=total;
         state.draft=state.draft.map(r=>({...r,value:total>0?Number(r.value)*100/total:0}));
         state.mode="weight";
       }
@@ -530,7 +594,7 @@ document.addEventListener("input",function(event){
     const index=Number(event.target.dataset.index);
     if(state.draft[index])state.draft[index][field==="ticker"?"symbol":"value"]=event.target.value;
   }
-  if(event.target.id==="total-value")state.notional=Number(event.target.value);
+  if(event.target.id==="total-value")state.draftNotional=Number(event.target.value);
 });
 document.addEventListener("change",function(event){
   if(event.target.id==="csv-file")loadCsv(event.target.files?.[0]);
