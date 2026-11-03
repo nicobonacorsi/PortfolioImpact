@@ -11,18 +11,18 @@ Portfolio Impact connects stocks and ETFs to dated macroeconomic and geopolitica
 1. Select **Create codespace** from the link above. The Python environment is configured automatically and the private application port opens in your browser.
 2. On the connection screen, choose **Open Portfolio Impact** to explore recorded analyses without entering credentials.
 3. Select an example portfolio, or use **Edit portfolio** to enter holdings, dollar amounts and weights or import CSV data.
-4. Review events ranked by modeled portfolio impact. Open any event to compare **YES** and **NO** outcomes on the same evaluation date.
-5. Expand **Definitions & sources** for exact event terms, related prediction-market contracts, assumptions, ETF exposures and research provenance.
+4. Review dated scenarios ranked by portfolio impact. Compare **YES** and **NO** when a paired contract is available; otherwise inspect the recorded economic outcome categories.
+5. Expand **Definitions & sources** to review the event rule, exposed holdings, probability evidence and conditional portfolio model.
 
 For a *new* portfolio, connect Massive market data and Anthropic research in the private connection screen. Provider charges may apply. Credentials are held in server memory, not committed to the repository; keep the Codespaces port **Private**.
 
 ## Included demonstration data
 
-- A recorded $100,000 portfolio from October 30, 2026: XOM 20%, TSM 25%, LMT 15%, SPY 25%, TLT 15%.
-- A browser scenario collection containing, among other cases, an NVDA / QQQ / TLT portfolio and paired contract-outcome scenarios.
-- A November 2 research snapshot for LMT, SMH, EWJ and LQD, including modeled event probabilities and conditional portfolio outcomes.
+- **NVDA 20% / QQQ 50% / TLT 30%** — $250,000 demonstration portfolio, including dated Taiwan-related YES/NO contract scenarios and US macroeconomic outcomes.
+- **BND 60% / IEF 40%** — $100,000 bond portfolio with interest-rate and economic scenarios.
+- **AAPL 35% / JPM 35% / GLD 30%** — $100,000 multi-asset portfolio with geopolitical and macroeconomic scenarios.
 
-Saved outcomes are reproducible *scenario calculations*, not realized investment returns. Probability intervals and market quotes are shown with their definitions and evidence status.
+All dollar figures displayed in these examples come from the saved scenario data, including outcome-specific P&L ranges; no dollar impact is injected through interface constants. These are conditional scenario estimates, not realized returns. Contract prices and modeled scenario weights are identified separately. The examples are dated research snapshots, not live quotes.
 
 ## What the system does
 

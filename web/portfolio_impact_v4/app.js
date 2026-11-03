@@ -1,72 +1,19 @@
 "use strict";
 
-// Load recorded research examples and their source metadata.
-// Keep event-model forecasts and contract-market quotes in separate fields.
-const DATA_URL = "./r125_defense_semis_japan_credit_acceptance_summary_20261102.json";
+// Recorded scenario data are the sole source of demonstration portfolio impacts.
 const MARKET_URL = "./market_scenarios_20261025.json";
+const PRIMARY_EXAMPLE_ID = "technology_and_treasury";
 const SAMPLE = [
-  {symbol:"LMT",weight:.20},
-  {symbol:"SMH",weight:.30},
-  {symbol:"EWJ",weight:.25},
-  {symbol:"LQD",weight:.25}
+  {symbol:"NVDA",weight:.20},
+  {symbol:"QQQ",weight:.50},
+  {symbol:"TLT",weight:.30}
 ];
-const IMPACTS = Object.freeze({
-  NVDA_QUARTERLY_REVENUE_BELOW_GUIDANCE_MIDPOINT_REPORTED_BY_2026_12_31:-3993.75,
-  BOJ_POLICY_RATE_HIKE_ANY_MEETING_BY_2027_01_31:-420.00,
-  CHINA_BLOCKADE_OR_QUARANTINE_TAIWAN_SHIPPING_BY_2027_01_31:-9920.00,
-  CHINA_DIRECTIVE_BANS_NVIDIA_AI_CHIP_PURCHASES_BY_2027_01_31:-703.50,
-  JAPAN_MOF_YEN_BUYING_INTERVENTION_CONFIRMED_BY_2027_01_31:-518.75,
-  US_10Y_TREASURY_YIELD_CLOSES_AT_OR_ABOVE_5PCT_BY_2027_01_31:-4542.50,
-  US_BIS_AI_CHIP_EXPORT_RULE_CHINA_BY_2027_01_31:-911.25
-});
-const EVENT_COPY = Object.freeze({
-  NVDA_QUARTERLY_REVENUE_BELOW_GUIDANCE_MIDPOINT_REPORTED_BY_2026_12_31:{
-    name:"Nvidia misses revenue guidance",
-    trigger:"Nvidia reports fiscal Q3 2027 revenue below the midpoint of its previous quarterly guidance.",
-    channel:"SMH holds semiconductor stocks, including businesses sensitive to Nvidia's results."
-  },
-  BOJ_POLICY_RATE_HIKE_ANY_MEETING_BY_2027_01_31:{
-    name:"Bank of Japan raises rates",
-    trigger:"The Bank of Japan increases its short-term policy rate at a monetary policy meeting.",
-    channel:"Japanese interest rates can affect the companies held by EWJ and the yen exchange rate."
-  },
-  CHINA_BLOCKADE_OR_QUARANTINE_TAIWAN_SHIPPING_BY_2027_01_31:{
-    name:"China restricts Taiwan shipping",
-    trigger:"China announces a blockade, quarantine, or inspections of commercial ships bound for Taiwanese ports.",
-    channel:"SMH and EWJ are exposed to semiconductor supply chains and Japanese equities in the region."
-  },
-  CHINA_DIRECTIVE_BANS_NVIDIA_AI_CHIP_PURCHASES_BY_2027_01_31:{
-    name:"China bars Nvidia AI chip purchases",
-    trigger:"China issues a formal directive prohibiting Chinese companies from buying Nvidia AI chips.",
-    channel:"A Chinese purchase ban could affect chip demand and semiconductor holdings within SMH."
-  },
-  JAPAN_MOF_YEN_BUYING_INTERVENTION_CONFIRMED_BY_2027_01_31:{
-    name:"Japan intervenes to support the yen",
-    trigger:"Japan's finance ministry confirms a yen-buying intervention after 2 November 2026.",
-    channel:"Yen movements can change the U.S.-dollar value of Japanese equities held through EWJ."
-  },
-  US_10Y_TREASURY_YIELD_CLOSES_AT_OR_ABOVE_5PCT_BY_2027_01_31:{
-    name:"U.S. 10-year Treasury yield reaches 5%",
-    trigger:"The U.S. 10-year Treasury constant-maturity yield closes at 5.00% or higher on a trading day.",
-    channel:"LQD owns investment-grade corporate bonds that are sensitive to interest-rate changes."
-  },
-  US_BIS_AI_CHIP_EXPORT_RULE_CHINA_BY_2027_01_31:{
-    name:"U.S. tightens AI chip export controls",
-    trigger:"U.S. BIS tightens export rules or entity-list restrictions on AI chips or semiconductor equipment shipped to China.",
-    channel:"Export rules can affect semiconductor companies held through SMH."
-  },
-  US_FEDERAL_APPROPRIATIONS_LAPSE_SHUTDOWN_BY_2027_01_31:{
-    name:"U.S. government shutdown",
-    trigger:"A lapse in U.S. federal appropriations causes a government shutdown after 2 November 2026.",
-    channel:"Funding interruptions can influence equity sentiment and credit markets."
-  }
-});
 const appRoot = document.getElementById("app");
 const portfolioDialog = document.getElementById("portfolio-dialog");
 const toast = document.getElementById("toast");
 const state = {
-  report:null, snapshots:null, events:[], holdings:SAMPLE.map(h=>({...h})), notional:100000,
-  activeExample:"latest", sample:true, selected:null, details:false, showOther:false,
+  snapshots:null, events:[], holdings:SAMPLE.map(h=>({...h})), notional:250000,
+  activeExample:PRIMARY_EXAMPLE_ID, sample:true, selected:null, details:false, showOther:false,
   selectedContract:null, selectedOutcomeId:null, jobStatus:"", jobError:"",
   draft:SAMPLE.map(h=>({symbol:h.symbol,value:h.weight*100})),
   mode:"weight", editorTab:"manual", csvName:"", validation:""
@@ -104,8 +51,6 @@ function shortDate(iso){
   return Number.isNaN(date.getTime())?"Date pending":
     new Intl.DateTimeFormat("en-US",{month:"short",day:"numeric",timeZone:"UTC"}).format(date);
 }
-function key(id){return String(id||"").replaceAll("-","_");}
-function isPair(option){return option?.id?.endsWith(":YES") || option?.id?.endsWith(":NO");}
 function selectedOption(event){
   if(!event || event.kind!=="market")return null;
   return event.outcomes.find(o=>o.id===state.selectedOutcomeId)||
@@ -120,11 +65,8 @@ function impactFor(event){
   }
   return Number.isFinite(event.impact)?event.impact*state.notional/100000:null;
 }
-function eventLabel(event){
-  return event.kind==="market"?"Market-implied (dated)":"Model forecast";
-}
 function eventsFromSnapshot(snapshot,sourceDate){
-  const now="2026-11-02";
+  const now=new Date().toISOString().slice(0,10);
   return (snapshot.risks||[]).filter(r=>r.date>=now&&r.outcomes?.some(o=>Number.isFinite(o.pnl))).map(r=>({
     id:r.id,name:r.title,deadline:r.date,condition:r.original_question,
     trigger:r.broad_definition,kind:"market",outcomes:r.outcomes,
@@ -132,29 +74,6 @@ function eventsFromSnapshot(snapshot,sourceDate){
     sourceDate:sourceDate||"2026-10-25"
   })).sort((a,b)=>Math.max(...b.outcomes.map(o=>Math.abs(o.pnl||0)))-
     Math.max(...a.outcomes.map(o=>Math.abs(o.pnl||0))));
-}
-function eventsFromReport(report){
-  const source=report&&report.point2_r125&&report.point2_r125.per_event;
-  if(!Array.isArray(source)||source.length!==8)throw new Error("The recorded event data are incomplete.");
-  return source.map(function(entry){
-    const id=key(entry.event_id);
-    const info=EVENT_COPY[id];
-    if(!info||!Array.isArray(entry.credal_interval)||entry.credal_interval.length!==2)
-      throw new Error("An event definition is missing from the recorded report.");
-    return {
-      id:id,name:info.name,trigger:info.trigger,channel:info.channel,condition:entry.target_condition,
-      kind:"model",
-      deadline:entry.deadline,probability:entry.probability_center,
-      bounds:entry.credal_interval,impact:Object.hasOwn(IMPACTS,id)?IMPACTS[id]:null,
-      market:entry.market_review_status,
-      marketCounts:entry.market_counts||{},stability:entry.stability?.status||"NOT_REPORTED",
-      evidence:entry.evidence_sufficiency||"NOT_REPORTED"
-    };
-  }).sort(function(a,b){
-    const av=Number.isFinite(a.impact)?Math.abs(a.impact):-1;
-    const bv=Number.isFinite(b.impact)?Math.abs(b.impact):-1;
-    return bv-av;
-  });
 }
 function selectedEvent(){
   return state.events.find(e=>e.id===state.selected)||state.events[0];
@@ -170,21 +89,15 @@ function selectEvent(id){
   state.details=false;
 }
 function chooseExample(id){
+  const sample=state.snapshots?.cases.find(c=>c.id===id);
+  if(!sample)return;
   state.activeExample=id;
   state.sample=true;
   state.jobStatus="";
   state.jobError="";
-  if(id==="latest"){
-    state.notional=100000;
-    state.holdings=SAMPLE.map(h=>({...h}));
-    state.events=eventsFromReport(state.report);
-  }else{
-    const sample=state.snapshots.cases.find(c=>c.id===id);
-    if(!sample)return;
-    state.notional=sample.notional;
-    state.holdings=sample.positions.map(p=>({symbol:p.symbol,weight:p.weight}));
-    state.events=eventsFromSnapshot(sample,state.snapshots.snapshot_date);
-  }
+  state.notional=sample.notional;
+  state.holdings=sample.positions.map(p=>({symbol:p.symbol,weight:p.weight}));
+  state.events=eventsFromSnapshot(sample,state.snapshots.snapshot_date);
   selectEvent(state.events[0]?.id);
   state.showOther=false;
   render();
@@ -210,8 +123,7 @@ function htmlPortfolio(){
     }).join("")+'</div>'+
     '<div class="example-picker"><label for="example-select">Portfolio</label>'+
       '<select id="example-select" aria-label="Choose a research portfolio">'+
-        '<option value="latest" '+(state.activeExample==="latest"?"selected":"")+'>LMT · SMH · EWJ · LQD</option>'+
-        (state.snapshots?.cases||[]).map(c=>'<option value="'+esc(c.id)+'" '+(state.activeExample===c.id?"selected":"")+'>'+esc(c.label)+'</option>').join("")+
+                (state.snapshots?.cases||[]).map(c=>'<option value="'+esc(c.id)+'" '+(state.activeExample===c.id?"selected":"")+'>'+esc(c.label)+'</option>').join("")+
         (state.activeExample==="custom"||state.activeExample==="live"?
           '<option value="'+esc(state.activeExample)+'" selected>Your holdings</option>':"")+
       '</select></div>'+
@@ -223,7 +135,7 @@ function htmlEventItem(event,index){
   return '<button class="risk-event '+(isActive?"selected":"")+'" type="button" data-action="event" data-id="'+esc(event.id)+'"'+
     ' aria-pressed="'+String(isActive)+'" aria-label="'+esc(event.name)+'; '+esc(hint)+'; portfolio effect '+esc(money(impact,true))+'">'+
     '<span class="risk-name">'+esc(event.name)+'</span>'+
-    '<span class="risk-meta"><span>'+shortDate(event.deadline)+' · '+(event.kind==="model"?'<strong>'+pct(event.probability,0)+'</strong> chance':'Market scenario')+'</span>'+
+    '<span class="risk-meta"><span>'+shortDate(event.deadline)+' · '+(event.kind==="model"?'<strong>'+pct(event.probability,0)+'</strong> chance':'Recorded scenario')+'</span>'+
     '<strong class="risk-effect '+(!Number.isFinite(impact)?"pending":impact<0?"negative":impact>0?"positive":"neutral")+'">'+
       (Number.isFinite(impact)?money(impact,true):"Impact pending")+'</strong></span></button>';
 }
@@ -243,39 +155,20 @@ function htmlEventList(){
     '</div>':'')+
   '</aside>';
 }
-function marketMatchLabel(event){
-  if(event.marketCounts.entailment>0)return "One-way market match";
-  if(event.marketCounts.related>0)return "Related markets reviewed";
-  return "No matching quote";
-}
-function marketReviewSentence(event){
-  const oneWay=Number(event.marketCounts.entailment||0);
-  const related=Number(event.marketCounts.related||0);
-  if(oneWay>0)return oneWay+" one-way matches and "+related+" related contracts reviewed.";
-  if(related>0)return related+" related contracts reviewed; none matched the event exactly.";
-  return "No corresponding Kalshi or Polymarket contract was found.";
-}
 function methodRow(label,content){
   return '<div class="method-row"><span class="method-key">'+esc(label)+'</span><p>'+esc(content)+'</p></div>';
 }
 function htmlMethod(event){
-  if(event.kind==="market"){
-    const names=event.exposure.slice(0,5).map(x=>x.symbol+" "+pct(x.weight,1)).join(" · ");
-    return '<div class="method-content" id="event-method" aria-label="Definitions and calculation details">'+
-      methodRow("Event rule",event.trigger||event.condition)+
-      methodRow("Exposed holdings",names||"Not reported for this event.")+
-      methodRow("Market evidence","Recorded quote for the selected market question, with its settlement terms and deadline.")+
-      methodRow("Portfolio model","Conditional portfolio response under the selected outcome and scenario inputs.")+
-      '<p class="method-asof">Dated research snapshot · '+esc(event.sourceDate)+'.</p></div>';
-  }
-  return '<div class="method-content" id="event-method" aria-label="Sources and calculation details">'+
-    methodRow("Event rule",event.trigger)+
-    methodRow("Portfolio exposure",event.channel)+
-    methodRow("Probability", "Structural probability estimate. "+marketReviewSentence(event))+
-    methodRow("Dollar difference", "Difference between YES and NO portfolio scenarios at the same future date.")+
-    methodRow("Coverage", "SMH constituent holdings and available EWJ/LQD exposure data reviewed for this portfolio.")+
-    '<p class="method-asof">Dated research · 2 November 2026</p>'+
-  '</div>';
+  const names=event.exposure.slice(0,5).map(x=>x.symbol+" "+pct(x.weight,1)).join(" · ");
+  const hasContract=event.outcomes.some(o=>Boolean(o.contract_id));
+  return '<div class="method-content" id="event-method" aria-label="Definitions and calculation details">'+
+    methodRow("Event rule",event.trigger||event.condition)+
+    methodRow("Exposed holdings",names||"Not reported for this event.")+
+    methodRow("Probability evidence",hasContract
+      ?"Recorded prediction-market quote for the selected contract and settlement rule."
+      :"Recorded scenario weights for the named economic outcomes.")+
+    methodRow("Portfolio model","Conditional portfolio response under the selected outcome and scenario inputs.")+
+    '<p class="method-asof">Dated research snapshot · '+esc(event.sourceDate)+'.</p></div>';
 }
 function htmlMarketControls(event){
   const yesOptions=event.outcomes.filter(o=>o.id.endsWith(":YES")&&o.contract_id);
@@ -322,7 +215,8 @@ function htmlImpactPanel(){
   const selected=market?selectedOption(event):null;
   const yes=market?event.outcomes.find(o=>o.contract_id===selected?.contract_id&&o.id.endsWith(":YES")):null;
   const no=market?event.outcomes.find(o=>o.contract_id===selected?.contract_id&&o.id.endsWith(":NO")):null;
-  const quoted=market?(yes||selected):null;
+  const hasContract=Boolean(selected?.contract_id);
+  const quoted=hasContract?(yes||selected):selected;
   const impact=adjustedImpact(event);
   const probability=market?quoted?.q_reference:event.probability;
   const range=market?quoted?.q_interval:event.bounds;
@@ -332,27 +226,27 @@ function htmlImpactPanel(){
   const center=validRange?Math.max(left,Math.min(right,probability*100)):0;
   const diff=Number.isFinite(impact)?money(impact,false):"No estimate";
   const outcomeLabel=market?(selected?.label?.replace(/^YES:\s*/,"").replace(/^NO:\s*/,"")||"Selected outcome"):"Event occurs vs. does not occur";
-  const probLabel=market?(yes?"YES contract price":"Outcome quote"):"Chance of happening";
+  const probLabel=hasContract?"YES contract price":"Scenario weight";
   const impactLabel=market?"Portfolio change":"Portfolio difference";
   const comparison=yes&&no&&Number.isFinite(yes.pnl)&&Number.isFinite(no.pnl)?yes.pnl-no.pnl:null;
   return '<article class="result-pane" aria-labelledby="selected-event-title">'+
-    '<div class="result-head"><span class="result-date">'+(market?"Market research · "+esc(event.sourceDate):"Event deadline · "+prettyDate(event.deadline))+'</span>'+
-       '<span class="result-source-tag">'+(market?"Market scenario":"Model forecast")+'</span></div>'+
+    '<div class="result-head"><span class="result-date">Research snapshot · '+esc(event.sourceDate)+'</span>'+
+       '<span class="result-source-tag">'+(hasContract?"Contract scenario":"Recorded scenario")+'</span></div>'+
     '<h2 id="selected-event-title" class="result-title">'+esc(event.name)+'</h2>'+
     (market?htmlMarketControls(event):"")+
     '<div class="results-grid">'+
       '<div class="result-metric probability-metric"><span>'+probLabel+'</span><strong>'+pct(probability,market?1:0)+'</strong>'+
-        '<small>'+(market?"Recorded contract quote":"Structural model estimate")+'</small></div>'+
+        '<small>'+(hasContract?"Recorded contract quote":"Recorded scenario estimate")+'</small></div>'+
       '<div class="result-metric impact-metric '+(impact<0?"is-loss":impact>0?"is-gain":"")+'"><span>'+impactLabel+'</span>'+
         '<strong class="'+(!Number.isFinite(impact)?"result-pending":impact<0?"result-loss":impact>0?"result-gain":"result-flat")+'">'+diff+'</strong>'+
         '<small>'+(Number.isFinite(impact)?esc(outcomeLabel):"Not quantified")+'</small></div>'+
     '</div>'+
     (market&&Number.isFinite(comparison)?'<div class="comparison-line"><span>YES − NO difference</span><strong class="'+(comparison<0?"result-loss":comparison>0?"result-gain":"")+'">'+money(comparison,false)+'</strong></div>':"")+
-    '<div class="result-range"><div class="range-label"><span>'+(market?"Market quote range":"Model probability range")+'</span><strong>'+(validRange?pct(range[0],1)+' – '+pct(range[1],1):"Not available")+'</strong></div>'+
+    '<div class="result-range"><div class="range-label"><span>'+(hasContract?"Market quote range":"Scenario-weight range")+'</span><strong>'+(validRange?pct(range[0],1)+' – '+pct(range[1],1):"Not available")+'</strong></div>'+
       '<div class="range-track" role="img" aria-label="Estimate '+pct(probability,1)+' within range '+(validRange?pct(range[0],1)+' to '+pct(range[1],1):"not available")+'">'+
         '<div class="range-band" style="left:'+left+'%;width:'+(right-left)+'%"></div>'+
         '<div class="range-dot" style="left:'+center+'%"></div></div>'+
-      '<p>'+(market?"Range of quoted market prices for this contract.":"Range across admitted model assumptions.")+'</p></div>'+
+      '<p>'+(hasContract?"Range of recorded prices for the selected contract.":"Range across recorded scenario weights.")+'</p></div>'+
     htmlDollarRange(market?selected?.pnl_interval:null,impact)+
     '<div class="result-foot">'+
       '<button class="method-toggle" type="button" data-action="details" aria-expanded="'+String(state.details)+'" aria-controls="event-method">'+
@@ -378,7 +272,7 @@ function htmlCustom(){
     '</section>';
 }
 function render(){
-  if(!state.report)return;
+  if(!state.snapshots)return;
   const previousScroll=appRoot.querySelector(".event-scroll")?.scrollTop||0;
   appRoot.removeAttribute("role");
   appRoot.innerHTML=htmlPortfolio()+(state.sample?htmlRecorded():htmlCustom());
@@ -427,7 +321,7 @@ function htmlCsvEditor(){
       '<input type="file" id="csv-file" accept=".csv,text/csv" aria-label="Choose CSV portfolio">'+
       '<label for="csv-file">Choose CSV</label>'+
     '</div>'+
-    '<div class="example-csv">ticker,weight\nLMT,20\nSMH,30\nEWJ,25\nLQD,25</div>'+
+    '<div class="example-csv">ticker,weight\nNVDA,20\nQQQ,50\nTLT,30</div>'+
     '<p class="inline-note">Accepted columns: ticker + weight (percent), or ticker + value (USD).</p>'+
     (state.csvName?'<div class="validation-msg validation-ok">Loaded: '+esc(state.csvName)+' · '+state.draft.length+' holdings. Review them under Add holdings.</div>':"")+
     (state.validation?'<div class="validation-msg" role="alert">'+esc(state.validation)+'</div>':"")+
@@ -450,7 +344,7 @@ function openEditor(){
   renderEditor();portfolioDialog.showModal();
 }
 function resetEditor(){
-  state.mode="weight";state.editorTab="manual";state.notional=100000;state.validation="";state.csvName="";
+  state.mode="weight";state.editorTab="manual";state.notional=250000;state.validation="";state.csvName="";
   state.draft=SAMPLE.map(h=>({symbol:h.symbol,value:h.weight*100}));
   renderEditor();
 }
@@ -479,13 +373,15 @@ function savePortfolio(){
   }
   if(state.mode==="value")state.notional=sum;
   state.holdings=rows.map(r=>({symbol:r.symbol,weight:r.value/sum}));
-  state.sample=samePortfolio(state.holdings);
-  state.activeExample=state.sample?"latest":"custom";
+  const matchesExample=samePortfolio(state.holdings)&&Math.abs(state.notional-250000)<.01;
+  state.sample=matchesExample;
+  state.activeExample=matchesExample?PRIMARY_EXAMPLE_ID:"custom";
   state.validation="";state.details=false;
   state.jobStatus="";state.jobError="";
   portfolioDialog.close();
-  render();
-  showToast(state.sample?"Sample portfolio loaded":"Portfolio ready. Select Start analysis.");
+  if(matchesExample)chooseExample(PRIMARY_EXAMPLE_ID);
+  else render();
+  showToast(matchesExample?"Sample portfolio loaded":"Portfolio ready. Select Start analysis.");
 }
 function parseCsvLine(text){
   const result=[];let current="",quoted=false;
@@ -605,7 +501,7 @@ document.addEventListener("click",function(event){
     case "details":
       state.details=!state.details;render();break;
     case "restore-sample":
-      chooseExample("latest");showToast("Sample portfolio loaded.");break;
+      chooseExample(PRIMARY_EXAMPLE_ID);showToast("Sample portfolio loaded.");break;
     case "run-analysis":runAnalysis();break;
     case "editor-tab":
       state.editorTab=action.dataset.tab;state.validation="";renderEditor();break;
@@ -665,17 +561,17 @@ portfolioDialog.addEventListener("drop",function(event){
 });
 document.getElementById("edit-button").addEventListener("click",openEditor);
 
-Promise.all([DATA_URL,MARKET_URL].map(url=>fetch(url,{cache:"no-store"}).then(response=>{
-  if(!response.ok)throw new Error("Could not open the research data.");
+fetch(MARKET_URL,{cache:"no-store"}).then(function(response){
+  if(!response.ok)throw new Error("Could not open the research examples.");
   return response.json();
-}))).then(function([report,snapshots]){
-  if(report.portfolio_slug!=="defense_semis_japan_credit")
-    throw new Error("The portfolio identity is incomplete.");
+}).then(function(snapshots){
   if(snapshots.schema!=="portfolio-impact.ui.market-scenarios.v1"||!Array.isArray(snapshots.cases))
-    throw new Error("The contract scenarios did not pass the data check.");
-  state.report=report;
+    throw new Error("The recorded scenarios did not pass the data check.");
+  const example=snapshots.cases.find(c=>c.id===PRIMARY_EXAMPLE_ID);
+  if(!example||!example.risks?.some(r=>r.outcomes?.some(o=>Number.isFinite(o.pnl))))
+    throw new Error("The starting portfolio is missing quantified scenarios.");
   state.snapshots=snapshots;
-  chooseExample("latest");
+  chooseExample(PRIMARY_EXAMPLE_ID);
 }).catch(function(error){
   appRoot.innerHTML='<div class="custom-placeholder"><h2>Could not load the analysis</h2>'+
     '<p>'+esc(error.message)+'</p></div>';

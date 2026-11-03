@@ -408,7 +408,6 @@ class PortfolioImpactHandler(BaseHTTPRequestHandler):
             # Exact original v4 design assets; names are allowlisted, not directory-wildcarded.
             '/app.js', '/styles.css', '/workspace.css', '/recovery.js',
             '/market_scenarios_20261025.json',
-            '/r125_defense_semis_japan_credit_acceptance_summary_20261102.json',
             # Source-scoped, derived numeric aggregates used by the browser.
             # Raw issuer/API receipts are deliberately not served.
             '/r55_rate_ief_summary.json', '/r56_bond_portfolio_summary.json',
@@ -431,8 +430,8 @@ class PortfolioImpactHandler(BaseHTTPRequestHandler):
             self._send(404, {'error': 'Not found'})
             return
         content = target.read_bytes()
-        # The approved v4 assets remain byte-for-byte unchanged. The private
-        # server adds this same-origin, optional restart adapter at response time.
+        # Inject the restart adapter only on the v4 application origin.
+        # Static access is restricted to the route allowlist above.
         if relative == 'index.html' and self.server.asset_root.name == 'portfolio_impact_v4':
             original_tag = b'<script src="./app.js" defer></script>'
             if original_tag in content:

@@ -13,12 +13,11 @@ from castle_risk.public_server import PublicPortfolioServer
 ROOT = Path(__file__).resolve().parents[1]
 V4 = ROOT / "web" / "portfolio_impact_v4"
 SOURCE_BLOB_SHA = {
-    "app.js": "bd972d2e8a2acffaf8b280aca6dc30a4c23e7744",
+    "app.js": "a44845aa2186fb721d6db8d2dfa54ae5b498be4c",
     "index.html": "87555a1a76c78c4f17f3105f072c7a4441a35ce4",
     "styles.css": "06bebb08f649203b6ccd5a198570804ad81e1019",
     "workspace.css": "fb753af34ac3556558ff5793a1ae729c3dda86b3",
     "market_scenarios_20261025.json": "29acd9638ad16fb91f27203ca1f0001230301390",
-    "r125_defense_semis_japan_credit_acceptance_summary_20261102.json": "b4b7f18722feb393030211298a5d8b3a7ae56ed3",
     "fonts/InstrumentSerif-Italic.woff2": "e1f3123a86f0196825de76d34f32fc02b6bb6b12",
     "fonts/InstrumentSerif-OFL.txt": "669ce7917bec662fcf7244d37f49c4277f6fbd73",
     "fonts/PlusJakartaSans-OFL.txt": "ea69b0ca12a02556c436680ea0a159efb7a748fa",
@@ -69,13 +68,40 @@ def test_authenticated_single_origin_v4_static_routes(monkeypatch):
         for path in (
             "/app.js", "/styles.css", "/workspace.css",
             "/market_scenarios_20261025.json",
-            "/r125_defense_semis_japan_credit_acceptance_summary_20261102.json",
             "/fonts/PlusJakartaSans-variable.woff2",
         ):
             assert _get(server, path, correct)[0] == 200, path
+        assert _get(server, "/r125_defense_semis_japan_credit_acceptance_summary_20261102.json", correct)[0] == 404
         assert _get(server, "/private.txt", correct)[0] == 404
         assert _get(server, "/api/status", correct)[0] == 200
     finally:
         server.shutdown()
         server.server_close()
         worker.join(timeout=5)
+
+def test_recorded_ui_has_numeric_source_backed_scenarios():
+    import json
+
+    source = (V4 / "app.js").read_text(encoding="utf-8")
+    assert "const IMPACTS =" not in source
+    assert "eventsFromReport" not in source
+    assert "r125_defense_semis" not in source
+    recorded = json.loads((V4 / "market_scenarios_20261025.json").read_text(encoding="utf-8"))
+    cases = {case["id"]: case for case in recorded["cases"]}
+    assert {"technology_and_treasury", "bonds", "outside_old_registry"} <= cases.keys()
+    for case in cases.values():
+        visible = [
+            risk for risk in case["risks"]
+            if risk["date"] >= "2026-11-03" and any(
+                isinstance(outcome.get("pnl"), (int, float)) for outcome in risk["outcomes"]
+            )
+        ]
+        assert visible, case["id"]
+        for risk in visible:
+            for outcome in risk["outcomes"]:
+                pnl = outcome["pnl"]
+                low, high = outcome["pnl_interval"]
+                q_low, q_high = outcome["q_interval"]
+                assert isinstance(pnl, (int, float))
+                assert low <= pnl <= high, (case["id"], risk["id"], outcome["id"])
+                assert 0 <= q_low <= outcome["q_reference"] <= q_high <= 1
